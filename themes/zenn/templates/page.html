@@ -19,7 +19,7 @@
 
         {% if page.extra.zenn_applause %}
             <div class="applause-wrapper">
-                <applause-button color="#a6a28c"></applause-button>
+                <applause-button color="#a6a28c" url="{{ page.permalink | safe }}"></applause-button>
             </div>
         {% endif %}
     </article>
