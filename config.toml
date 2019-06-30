@@ -1,0 +1,34 @@
+base_url = "https://blog.timvisee.com"
+
+title = "Tim Visée"
+description = "My personal blog"
+
+theme = "after-dark"
+default_language = "en"
+
+compile_sass = true
+highlight_code = true
+highlight_theme = "1337" # or: boron
+insert_anchor_links = true
+generate_rss = true
+build_search_index = true
+# check_external_links = true
+
+taxonomies = [
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+
+[extra]
+author = "Tim Visée"
+
+after_dark_title = "Tim Visée"
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/projects", name = "Projects"},
+    {url = "$BASE_URL/blog", name = "Blog"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/about", name = "About"},
+    {url = "https://timvisee.com", name = "timvisee.com"},
+]
