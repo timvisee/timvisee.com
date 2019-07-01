@@ -1,6 +1,9 @@
 +++
 title = "About me"
 description = "About me"
+
+[extra]
+zenn_hide_header_meta = true
 +++
 
 Open-source & free software enthusiast · Linux fanatic · Rust evangelist · Git master · Vim wizard

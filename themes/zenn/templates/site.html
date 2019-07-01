@@ -50,26 +50,30 @@
                     {% if section.title %}
                         <header>
                             <h1>
+                                {% include "anchor-link.html" %}
                                 {{ section.title }}
                                 {% if paginator %}
                                     {% if paginator.current_index > 1 %}
                                         &nbsp;&middot;&nbsp; Page {{ paginator.current_index }}
                                     {% endif %}
                                 {% endif %}
-                                {% include "anchor-link.html" %}
                             </h1>
 
-                            {% block header_meta %}{% endblock header_meta %}
+                            {% if not section.extra.zenn_hide_header_meta %}
+                                {% block header_meta %}{% endblock header_meta %}
+                            {% endif %}
                         </header>
                     {% endif %}
                     {% if page.title %}
                         <header>
                             <h1>
-                                {{ page.title }}
                                 {% include "anchor-link.html" %}
+                                {{ page.title }}
                             </h1>
 
-                            {% block header_meta %}{% endblock header_meta %}
+                            {% if not page.extra.zenn_hide_header_meta %}
+                                {% block header_meta %}{% endblock header_meta %}
+                            {% endif %}
                         </header>
                     {% endif %}
 

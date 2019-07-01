@@ -2,6 +2,9 @@
 title = "Dungeon Maze"
 description = "Dungeon Maze Bukkit plugin"
 date = 2015-10-06
+
+[extra]
+zenn_hide_header_meta = true
 +++
 
 _Current version: v0.1.5.2_

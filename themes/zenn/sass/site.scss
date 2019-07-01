@@ -324,8 +324,8 @@ footer {
     transition: opacity 0.5s ease;
     opacity: 0;
     font-size: 1rem;
-    position: relative;
-    left: 0.5rem;
+    position: absolute;
+    margin: 0.5rem 0 0 -1.5rem;
 }
 *:hover > .anchor,
 .anchor:active,
