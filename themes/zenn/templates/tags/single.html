@@ -1,0 +1,9 @@
+{% extends "site.html" %}
+
+{% block body %}
+    <h1>Tag: {{ term.name }}</h1>
+
+    {% for page in term.pages %}
+        {{ post_macros::page_in_list(page=page) }}
+    {% endfor %}
+{% endblock body %}

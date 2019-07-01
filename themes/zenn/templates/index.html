@@ -1,133 +1,20 @@
+{% extends "site.html" %}
 {% import "post_macros.html" as post_macros %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+{% block body %}
+    {% for page in paginator.pages %}
+        {{ post_macros::page_in_list(page=page) }}
+    {% endfor %}
 
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>
-            {% block title %}
-                {% if page.title %}
-                    {{ page.title }} &middot;
-                {% endif %}
-                {% if section.title %}
-                    {{ section.title }} &middot;
-                {% endif %}
-                {{ config.title }}
-            {% endblock title %}
-        </title>
-
-        {% block css %}
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i|Fira+Mono&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="{{ get_url(path="zenn.css", trailing_slash=false) | safe }}">
-        {% endblock css %}
-
-        {% if config.generate_rss %}
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
-        {% endif %}
-
-        {% block extra_head %}
-        {% endblock extra_head %}
-    </head>
-
-    <body>
-        {% if config.extra.zenn_title %}
-            {% block header %}
-                <header>
-                    <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
-                </header>
-            {% endblock header %}
-        {% endif %}
-
-        {% block content %}
-            <main>
-                <content>
-                    {% if section.title %}
-                        <h1>{{ section.title }}</h1>
-                    {% endif %}
-
-                    {% for page in paginator.pages %}
-                        {{ post_macros::page_in_list(page=page) }}
-                    {% endfor %}
-
-                    <nav>
-                    <p class="muted">
-                        {% if paginator.previous %}
-                        <a href="{{ paginator.previous }}">&laquo; Previous</a> &middot;
-                        {% endif %}
-                        Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
-                        {% if paginator.next %}
-                        &middot; <a href="{{ paginator.next }}">Next &raquo;</a>
-                        {% endif %}
-                    </p>
-                    </nav>
-                </content>
-                <sidebar>
-                    {% if config.extra.zenn_menu %}
-                        <section>
-                            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                <ul>
-                                    {% for item in config.extra.after_dark_menu %}
-                                        <li>
-                                            <a itemprop="url"
-                                            class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                                            href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
-                                                <span itemprop="name">{{ item.name }}</span>
-                                            </a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            </nav>
-                        </section>
-                    {% endif %}
-
-                    <section>
-                        <h1><a href="/categories">Categories</a></h1>
-                        <section>
-                            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                <ul>
-                                    <li>
-                                        <a itemprop="url" href="/categories/dev">
-                                            <span itemprop="name">Dev</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a itemprop="url" href="#">
-                                            <span itemprop="name">Releases</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </section>
-                    </section>
-
-                    <section>
-                        <h1><a href="/tags">Tags</a></h1>
-                        <div class="tags">
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                        </div>
-                    </section>
-
-                    <p class="muted">
-                        Copyright &copy; {{ config.title }} {{ now() | date(format="%Y") }}
-                        {% if config.extra.zenn_source %}
-                            <br /><a href="{{ config.extra.zenn_source }}">Source</a>
-                        {% endif %}
-                    </p>
-                </sidebar>
-            </main>
-        {% endblock content %}
-    </body>
-
-</html>
+    <nav>
+        <p class="muted">
+            {% if paginator.previous %}
+            <a href="{{ paginator.previous }}">&laquo; Previous</a> &middot;
+            {% endif %}
+            Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
+            {% if paginator.next %}
+            &middot; <a href="{{ paginator.next }}">Next &raquo;</a>
+            {% endif %}
+        </p>
+    </nav>
+{% endblock body %}

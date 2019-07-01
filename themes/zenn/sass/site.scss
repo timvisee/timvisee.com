@@ -294,3 +294,24 @@ content .tag {
 sidebar .tag {
     background-color: $background;
 }
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+    font-family: $font-title;
+}
+
+.anchor {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+}
+*:hover > .anchor,
+.anchor:active,
+.anchor:focus {
+    opacity: 1;
+}

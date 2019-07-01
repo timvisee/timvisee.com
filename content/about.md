@@ -1,9 +1,8 @@
 +++
-title = "About"
+title = "About me"
 description = "About me"
 +++
 
-# About me
 Open-source & free software enthusiast · Linux fanatic · Rust evangelist · Git master · Vim wizard
 
 Self-educated software engineer started at 8 years old, always looking to expand my technical knowledge with challenging projects.

@@ -4,7 +4,6 @@ description = "Dungeon Maze Bukkit plugin"
 date = 2015-10-06
 +++
 
-# Dungeon Maze - An epic Minecraft world generator
 _Current version: v0.1.5.2_
 
 Dungeon Maze is a world generator for Minecraft, it's a CraftBukkit plugin.
