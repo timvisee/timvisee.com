@@ -24,7 +24,7 @@
 
         {% block css %}
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i|Fira+Mono&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="{{ get_url(path="zenn.css", trailing_slash=false) | safe }}">
+            <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
         {% endblock css %}
 
         {% if config.generate_rss %}

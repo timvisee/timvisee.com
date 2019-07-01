@@ -3,7 +3,7 @@ base_url = "https://blog.timvisee.com"
 title = "Tim Visée"
 description = "My personal blog"
 
-theme = "after-dark"
+theme = "zenn"
 default_language = "en"
 
 compile_sass = true
