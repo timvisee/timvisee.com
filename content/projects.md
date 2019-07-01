@@ -5,4 +5,4 @@ description = "Projects index"
 
 This page lists some of the projects I've developed over time.
 
-- [Bukkit projects](/projects/bukkit):  _CraftBukkit plugins_
+- [Bukkit projects](@/projects/bukkit.md):  _CraftBukkit plugins_
