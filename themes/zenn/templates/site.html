@@ -84,8 +84,8 @@
                 <sidebar>
                     {% if config.extra.zenn_menu %}
                         <section>
-                            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                <ul>
+                            <ul>
+                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
                                     {% for item in config.extra.zenn_menu %}
                                         <li>
                                             <a itemprop="url"
@@ -95,8 +95,32 @@
                                             </a>
                                         </li>
                                     {% endfor %}
-                                </ul>
-                            </nav>
+                                </nav>
+                            </ul>
+                        </section>
+                    {% endif %}
+
+                    {# Table of contents #}
+                    {% if toc %}
+                        <section>
+                            <h1>Quick jump</h1>
+                            <ul>
+                                <li><a href="{{ current_url }}#">0. {{ page.title }}</a></li>
+                                {% for h1 in toc %}
+                                    <li>
+                                        <a href="{{ h1.permalink | safe }}">{{ loop.index }}. {{ h1.title }}</a>
+                                        {% if h1.children %}
+                                            {# <ul> #}
+                                            {% for h2 in h1.children %}
+                                                <li class="sub">
+                                                    <a href="{{h2.permalink | safe}}">{{ loop.index }}. {{ h2.title }}</a>
+                                                </li>
+                                            {% endfor %}
+                                            {# </ul> #}
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
                         </section>
                     {% endif %}
 
@@ -105,8 +129,8 @@
                     {% if categories.items | length > 0 %}
                         <section>
                             <h1><a href="/categories">Categories</a></h1>
-                            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                <ul>
+                            <ul>
+                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
                                     {% for category in categories.items %}
                                         <li>
                                             <a itemprop="url"
@@ -116,8 +140,8 @@
                                             </a>
                                         </li>
                                     {% endfor %}
-                                </ul>
-                            </nav>
+                                </nav>
+                            </ul>
                         </section>
                     {% endif %}
 
