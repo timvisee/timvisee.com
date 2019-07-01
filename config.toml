@@ -22,7 +22,7 @@ taxonomies = [
 [extra]
 author = "Tim Visée"
 
-zenn_title = "Tim Visée"
+zenn_title = "Tim Visee"
 zenn_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/projects", name = "Projects"},

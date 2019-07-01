@@ -8,6 +8,11 @@ $link-color: #ae9513;
 $link-color-hover: lighten($link-color, 15%);
 $logo-color: #fff;
 $logo-color-hover: $link-color-hover;
+$font-base: "Source Sans Pro", Ubuntu, sans-serif;
+$font-title: "Zilla Slab", "Open Sans", sans-serif;
+$font-article: "Merriweather", serif;
+$font-monospace: "Fira Mono", monospace;
+$font-logo: "Source Sans Pro", Helvetica, sans-serif;
 
 // Setup the function in your functions or helpers files, wherever you keep these bits.
 @function headings($from:1, $to:6) {
@@ -27,15 +32,7 @@ body {
     max-width: 1120px;
     margin: 0 auto;
     color: $light-text;
-
-    // TODO: check these
-    // background-color: #212931;
-    // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/background.jpg");
-    // background-size: auto, 100% auto;
-    // background-position: center, top center;
-    // background-repeat: no-repeat, no-repeat;
-    // background-attachment: scroll, scroll;
-    font-family: 'Source Sans Pro', Ubuntu, sans-serif;
+    font-family: $font-base;
     background-color: #212931;
     background-image: url("/images/background.jpg");
     background-size: 100% auto;
@@ -45,11 +42,21 @@ body {
 }
 
 #{headings(1,6)} {
-    font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
+    font-family: $font-title;
     color: $header-color;
 
     a {
         color: $header-color;
+
+        &:focus {
+            background-color: rgba($header-color, 0.1);
+        }
+        &:active {
+            background-color: rgba($header-color, 0.2);
+        }
+        &:focus:hover {
+            background-color: rgba($link-color-hover, 0.1);
+        }
     }
 }
 
@@ -70,12 +77,19 @@ h4 {
 }
 
 a {
+    display: inline-block;
     color: $link-color;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     outline: 0;
 
     &:hover {
         color: $link-color-hover;
+    }
+    &:focus {
+        background-color: rgba($link-color, 0.1);
+    }
+    &:active {
+        background-color: rgba($link-color-hover, 0.2);
     }
 }
 
@@ -105,7 +119,7 @@ body > header .logo {
     border-style: solid;
     border-color: $logo-color;
     border-width: 5px !important;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: $font-logo;
     font-size: 2.25rem;
     font-weight: 900;
     letter-spacing: 0.075em;
@@ -136,7 +150,7 @@ main .muted {
 }
 
 main .meta {
-    font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
+    font-family: $font-title;
 }
 
 content {
@@ -166,6 +180,7 @@ content img {
 content pre {
     padding: 0.5em;
     overflow: auto;
+    font-family: $font-monospace;
 }
 content img {
     padding: 0.25em;
@@ -206,7 +221,7 @@ sidebar > section {
 
 article {
     padding: 2.5em 0;
-    font-family: 'Merriweather', serif;
+    font-family: $font-article;
     text-align: justify;
     border-bottom: 1px solid $background-border;
 
