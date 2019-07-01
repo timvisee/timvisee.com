@@ -2,7 +2,7 @@
 
 {% block body %}
     <header>
-        <h1>Tag: {{ term.name }}</h1>
+        <h1>Tag: <span class="tag">{{ term.name }}</span></h1>
     </header>
 
     {% for page in term.pages %}

@@ -310,10 +310,9 @@ article > header {
     line-height: 1;
     margin: 0 0.2em 0.2em 0;
     transition: box-shadow 0.2s ease;
-
-    &:hover {
-        box-shadow: 0 0 10px 5px rgba($background-border, 0.3);
-    }
+}
+a.tag:hover {
+    box-shadow: 0 0 10px 5px rgba($background-border, 0.3);
 }
 
 content .tag {
