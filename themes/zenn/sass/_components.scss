@@ -1,0 +1,137 @@
+/**
+ * Logo banner.
+ */
+header#banner .logo {
+    display: inline-block;
+    margin: 0.5em 0;
+    padding: 1rem 1.75rem;
+    overflow: visible;
+    white-space: nowrap;
+    text-decoration: none;
+    user-select: none;
+    transition: border-color 0.2s ease-in-out,
+        color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
+    color: $logo-color;
+    border: $logo-color solid 5px;
+    font-family: $font-logo;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: $logo-color-hover !important;
+        color: $logo-color-hover !important;
+    }
+    &:active {
+        border-color: $logo-color-hover !important;
+        color: $logo-color-hover !important;
+        background-color: rgba($logo-color-hover, 0.2) !important;
+    }
+}
+
+/**
+ * HTML elements in pages.
+ */
+
+content {
+    pre, img {
+        box-sizing: border-box;
+        background-color: $color-main-bg-alt;
+        border: 1px solid $color-main-border;
+        box-shadow: 0 0 10px 5px rgba($color-main-border, 0.4);
+        border-radius: 4px;
+    }
+
+    pre {
+        padding: 0.5em;
+        overflow: auto;
+        font-family: $font-mono;
+    }
+
+    img {
+        padding: 0.25em;
+        max-width: 100%;
+    }
+
+    code {
+        padding: 0 0.2em;
+        display: inline-block;
+        font-family: $font-mono;
+        background-color: $color-main-bg-alt;
+        border-radius: 3px;
+    }
+}
+
+/**
+ * Text style modifiers.
+ */
+
+.muted {
+    color: $color-text-muted;
+}
+
+.meta {
+    font-family: $font-main;
+}
+
+/**
+ * Tags
+ */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid $color-main-border;
+    border-radius: 3px;
+    font-family: $font-main;
+    padding: 0.2em 0.4em;
+    line-height: 1;
+    margin: 0 0.2em 0.2em 0;
+    transition: box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+a.tag {
+    &:hover, &:active, &:focus {
+        box-shadow: 0 0 10px 5px rgba($color-main-border, 0.3);
+    }
+    &:focus {
+        background-color: rgba($color-link, 0.1);
+    }
+    &:active {
+        background-color: rgba($color-link-hover, 0.2);
+    }
+}
+
+content .tag {
+    background-color: $color-main-bg-alt;
+}
+
+sidebar .tag {
+    background-color: $color-main-bg;
+}
+
+/**
+ * Title anchors
+ */
+
+.anchor {
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    font-size: 1rem;
+    position: absolute;
+    margin: 0.5rem 0 0 -1.5rem;
+}
+
+*:hover > .anchor,
+.anchor:active,
+.anchor:focus {
+    opacity: 1;
+}

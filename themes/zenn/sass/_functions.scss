@@ -1,0 +1,8 @@
+// Setup the function in your functions or helpers files, wherever you keep these bits.
+@function headings($from:1, $to:6, $prefix:"") {
+    @if $from == $to {
+        @return $prefix + ' h#{$from}';
+    } @else {
+        @return $prefix + 'h#{$from},' + headings($from+1, $to, $prefix);
+    }
+}

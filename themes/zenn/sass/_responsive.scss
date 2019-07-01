@@ -1,0 +1,31 @@
+@media (max-width: $responsive-medium) {
+    main {
+        flex-direction: column;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        margin: 0;
+    }
+
+    sidebar {
+        width: auto;
+    }
+}
+
+@media (max-width: $responsive-small) {
+    header#banner {
+        margin: 0.5em 0;
+        min-height: auto;
+        background: none
+    }
+
+    header#banner .logo {
+        padding: 0.7rem 1.25rem;
+        font-size: 1.5rem;
+        border-width: 4px;
+    }
+
+    content {
+        padding: 1.5em 1em;
+    }
+}

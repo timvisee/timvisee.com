@@ -1,0 +1,25 @@
+// Responsive sizes
+$responsive-medium: 900px;
+$responsive-small: 550px;
+
+// Colors
+$color-text:  #a6a28c;
+$color-text-muted: darken($color-text, 25%);
+$color-main-bg: #20201d;
+$color-main-bg-alt: darken($color-main-bg, 4%);
+$color-main-border: darken($color-main-bg, 8%);
+$color-header: #ff6f33;
+$color-link: #ae9513;
+$color-link-hover: lighten($color-link, 15%);
+
+// Top logo
+$logo-color: #fff;
+$logo-color-hover: $color-link-hover;
+
+// Fonts
+$font-base: "Source Sans Pro", Ubuntu, sans-serif;
+$font-main: "Zilla Slab", "Open Sans", sans-serif;
+$font-read: "Merriweather", serif;
+$font-mono: "Fira Mono", monospace;
+// $font-logo: "Source Sans Pro", Helvetica, sans-serif;
+$font-logo: $font-main;
