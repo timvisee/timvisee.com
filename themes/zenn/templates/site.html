@@ -96,38 +96,37 @@
                         </section>
                     {% endif %}
 
-                    <section>
-                        <h1><a href="/categories">Categories</a></h1>
+                    {# Categories #}
+                    {% set categories = get_taxonomy(kind="categories") %}
+                    {% if categories.items | length > 0 %}
                         <section>
+                            <h1><a href="/categories">Categories</a></h1>
                             <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
-                                    <li>
-                                        <a itemprop="url" href="/categories/dev">
-                                            <span itemprop="name">Dev</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a itemprop="url" href="#">
-                                            <span itemprop="name">Releases</span>
-                                        </a>
-                                    </li>
+                                    {% for catgegory in categories.items %}
+                                        <li>
+                                            <a itemprop="url" href="{{ catgegory.permalink | safe }}">
+                                                <span itemprop="name">{{ catgegory.name | title }}</span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                             </nav>
                         </section>
-                    </section>
+                    {% endif %}
 
-                    <section>
-                        <h1><a href="/tags">Tags</a></h1>
-                        <div class="tags">
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                            <a href="/tags/test" class="tag">test</a>
-                        </div>
-                    </section>
+                    {# Tags #}
+                    {% set tags = get_taxonomy(kind="tags") %}
+                    {% if tags.items | length > 0 %}
+                        <section>
+                            <h1><a href="/tags">Tags</a></h1>
+                            <div class="tags">
+                                {% for tag in tags.items %}
+                                    <a href="{{ tag.permalink | safe }}" class="tag">{{ tag.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
 
                     <p class="muted">
                         Copyright &copy; {{ config.title }} {{ now() | date(format="%Y") }}

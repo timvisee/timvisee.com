@@ -1,13 +1,15 @@
 {% extends "site.html" %}
 
 {% block body %}
-    <h1>Categories</h1>
+    <header>
+        <h1>Categories</h1>
+    </header>
 
     {% if terms %}
         <ul>
             {% for term in terms %}
                 <li>
-                    <a href="{{ term.permalink | safe }}">{{ term.name }}</a>({{ term.pages | length }})
+                    <a href="{{ term.permalink | safe }}">{{ term.name | title }}</a> ({{ term.pages | length }})
                 </li>
             {% endfor %}
         </ul>
