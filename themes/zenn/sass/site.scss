@@ -3,7 +3,7 @@ $dark-text:  #a6a28c;
 $background: #20201d;
 $background-darker: darken($background, 4%);
 $background-border: darken($background, 8%);
-$header-color: #e4ad7d;
+$header-color: #ff6f33;
 $link-color: #ae9513;
 $link-color-hover: lighten($link-color, 15%);
 $logo-color: #fff;
@@ -79,12 +79,6 @@ a {
     }
 }
 
-pre {
-    border: 1px solid $background-border;
-    padding: 0.5em;
-    box-shadow: 0 0 10px 5px rgba($background-border, 0.4);
-}
-
 body > header {
     text-align: center;
     margin: 0.5em 0;
@@ -130,7 +124,7 @@ body > header .logo:active {
 }
 
 main {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     display: flex;
     color: $dark-text;
     border: 1px solid $background-border;
@@ -161,12 +155,43 @@ content > #{headings(1,6)} {
     border-bottom: 1px solid $background-border;
 }
 
+content pre,
+content img {
+    box-sizing: border-box;
+    background-color: $background-darker;
+    border: 1px solid $background-border;
+    box-shadow: 0 0 10px 5px rgba($background-border, 0.4);
+    border-radius: 4px;
+}
+content pre {
+    padding: 0.5em;
+    overflow: auto;
+}
+content img {
+    padding: 0.25em;
+    max-width: 100%;
+}
+
 sidebar {
     width: 20em;
     padding: 2.5em 1.5em;
     box-sizing: border-box;
     background: $background-darker;
 }
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    sidebar {
+        width: auto
+    }
+}
+
 sidebar h1 {
     font-size: 1.4em;
 }
@@ -179,22 +204,16 @@ sidebar > section {
     padding: 1em 0;
 }
 
-@media (max-width: 900px) {
-    main {
-        flex-direction: column;
-        border-left: none;
-        border-right: none;
-    }
-    sidebar {
-        width: auto
-    }
-}
-
 article {
     padding: 2.5em 0;
     font-family: 'Merriweather', serif;
     text-align: justify;
     border-bottom: 1px solid $background-border;
+
+    // Hack to fix <pre> overflow
+    width: 100%;
+    display: table;
+    table-layout: fixed;
 }
 
 article.single {

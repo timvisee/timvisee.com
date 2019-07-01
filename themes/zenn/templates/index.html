@@ -56,13 +56,13 @@
                     {% endfor %}
 
                     <nav>
-                    <p>
+                    <p class="muted">
                         {% if paginator.previous %}
-                        <a href="{{ paginator.previous }}">&laquo; Previous</a> |
+                        <a href="{{ paginator.previous }}">&laquo; Previous</a> &middot;
                         {% endif %}
-                        <span class="muted">Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+                        Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
                         {% if paginator.next %}
-                        | <a href="{{ paginator.next }}">Next &raquo;</a>
+                        &middot; <a href="{{ paginator.next }}">Next &raquo;</a>
                         {% endif %}
                     </p>
                     </nav>
@@ -84,11 +84,11 @@
                     {% endif %}
 
                     <section>
-                        <h1>Categories</h1>
+                        <h1><a href="/categories">Categories</a></h1>
                         <p>...</p>
                     </section>
                     <section>
-                        <h1>Tags</h1>
+                        <h1><a href="/tags">Tags</a></h1>
                         <p>...</p>
                     </section>
 

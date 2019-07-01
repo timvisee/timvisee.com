@@ -31,7 +31,7 @@
         {% if page.summary %}
             <div itemprop="summary">
                 {{ page.summary | safe }}
-                <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Read More&nbsp;&raquo;</a></nav>
+                <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}#continue-reading">Read More&nbsp;&raquo;</a></nav>
             </div>
         {% endif %}
     </article>
