@@ -1,3 +1,5 @@
+$responsive-medium: 900px;
+$responsive-small: 550px;
 $light-text: #202020;
 $dark-text:  #a6a28c;
 $background: #20201d;
@@ -30,7 +32,7 @@ html {
 
 body {
     width: 100%;
-    max-width: 1120px;
+    max-width: 1150px;
     margin: 0 auto;
     color: $light-text;
     font-family: $font-base;
@@ -97,14 +99,7 @@ a {
 
 body > header#banner {
     text-align: center;
-    margin: 0.5em 0;
-}
-@media (max-width: 400px) {
-    body > header#banner {
-        margin-top: 1em;
-        min-height: auto;
-        background: none
-    }
+    margin: 1em 0;
 }
 
 body > header#banner .logo {
@@ -120,9 +115,9 @@ body > header#banner .logo {
     color: $logo-color;
     border-style: solid;
     border-color: $logo-color;
-    border-width: 5px !important;
+    border-width: 5px;
     font-family: $font-logo;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 900;
     letter-spacing: 0.075em;
     line-height: 1;
@@ -138,13 +133,26 @@ body > header#banner .logo:active {
     color: $logo-color-hover !important;
     background-color: rgba($logo-color-hover, 0.2) !important;
 }
+@media (max-width: $responsive-small) {
+    body > header#banner {
+        margin: 0.5em 0;
+        min-height: auto;
+        background: none
+    }
+    body > header#banner .logo {
+        padding: 0.7rem 1.25rem;
+        font-size: 1.5rem;
+        border-width: 4px;
+    }
+}
 
 main {
-    margin-bottom: 2em;
+    margin: 0 1em 1em 1em;
     display: flex;
     color: $dark-text;
     border: 1px solid $background-border;
     box-shadow: 0 0 10px 5px rgba($background-border, 0.4);
+    overflow: auto;
 }
 
 main .muted {
@@ -163,9 +171,9 @@ content {
     background: $background;
     flex: 1;
 }
-@media (max-width: 550px) {
+@media (max-width: $responsive-small) {
     content {
-        padding: 2.5em 1em;
+        padding: 1.5em 1em;
     }
 }
 
@@ -212,18 +220,19 @@ sidebar {
     padding: 0.5em 1.5em 1.5em 1.5em;
     box-sizing: border-box;
     background: $background-darker;
+    box-shadow: 0 0 10px 5px rgba($background-border, 0.4);
 }
 
-@media (max-width: 900px) {
+@media (max-width: $responsive-medium) {
     main {
         flex-direction: column;
         border-left: none;
         border-right: none;
         border-bottom: none;
-        margin-bottom: 0;
+        margin: 0;
     }
     sidebar {
-        width: auto
+        width: auto;
     }
 }
 
@@ -300,6 +309,11 @@ article > header {
     padding: 0.2em 0.4em;
     line-height: 1;
     margin: 0 0.2em 0.2em 0;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 0 10px 5px rgba($background-border, 0.3);
+    }
 }
 
 content .tag {
