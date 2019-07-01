@@ -15,11 +15,11 @@ $font-monospace: "Fira Mono", monospace;
 $font-logo: "Source Sans Pro", Helvetica, sans-serif;
 
 // Setup the function in your functions or helpers files, wherever you keep these bits.
-@function headings($from:1, $to:6) {
+@function headings($from:1, $to:6, $prefix:"") {
     @if $from == $to {
-        @return 'h#{$from}';
+        @return $prefix + ' h#{$from}';
     } @else {
-        @return 'h#{$from},' + headings($from+1, $to);
+        @return $prefix + 'h#{$from},' + headings($from+1, $to, $prefix);
     }
 }
 
@@ -94,19 +94,19 @@ a {
     }
 }
 
-body > header {
+body > header#banner {
     text-align: center;
     margin: 0.5em 0;
 }
 @media (max-width: 400px) {
-    body > header {
+    body > header#banner {
         margin-top: 1em;
         min-height: auto;
         background: none
     }
 }
 
-body > header .logo {
+body > header#banner .logo {
     display: inline-block;
     margin: 0.5em 0;
     overflow: visible;
@@ -128,11 +128,11 @@ body > header .logo {
     padding: 1rem 1.75rem;
     text-transform: uppercase;
 }
-body > header .logo:hover {
+body > header#banner .logo:hover {
     border-color: $logo-color-hover !important;
     color: $logo-color-hover !important;
 }
-body > header .logo:active {
+body > header#banner .logo:active {
     border-color: $logo-color-hover !important;
     color: $logo-color-hover !important;
     background-color: rgba($logo-color-hover, 0.2) !important;
@@ -164,10 +164,17 @@ content {
         padding: 2.5em 1em;
     }
 }
-content > #{headings(1,6)} {
+
+content > header {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed $background-border;
+}
+
+#{headings(1,6,"content header >")} {
     margin: 0;
     padding-bottom: 0.3em;
-    border-bottom: 1px dashed $background-border;
+    border-bottom: 0;
 }
 
 content pre,
@@ -215,12 +222,14 @@ sidebar {
     }
 }
 
-sidebar h1 {
-    font-size: 1.4em;
-}
-sidebar #{headings(1,6)} {
-    margin: 0;
-    padding-bottom: 0.3em;
+sidebar {
+    h1 {
+        font-size: 1.4em;
+    }
+    #{headings(1,6)} {
+        margin: 0;
+        padding-bottom: 0.3em;
+    }
 }
 
 sidebar > section {
@@ -264,7 +273,7 @@ article {
 }
 
 article.single {
-    border-bottom: 0;
+    padding: 0.5em 0;
 }
 
 article > header {
@@ -297,6 +306,9 @@ sidebar .tag {
 
 p {
     line-height: 1.5;
+}
+p#zola-continue-reading {
+    height: 0px;
 }
 
 footer {

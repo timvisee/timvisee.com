@@ -38,7 +38,7 @@
     <body>
         {% if config.extra.zenn_title %}
             {% block header %}
-                <header>
+                <header id="banner">
                     <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
                 </header>
             {% endblock header %}
@@ -48,26 +48,30 @@
             <main>
                 <content>
                     {% if section.title %}
-                        <h1>
-                            {{ section.title }}
-
-                            {% if paginator %}
-                                {% if paginator.current_index > 1 %}
-                                    &nbsp;&middot;&nbsp; Page {{ paginator.current_index }}
+                        <header>
+                            <h1>
+                                {{ section.title }}
+                                {% if paginator %}
+                                    {% if paginator.current_index > 1 %}
+                                        &nbsp;&middot;&nbsp; Page {{ paginator.current_index }}
+                                    {% endif %}
                                 {% endif %}
-                            {% endif %}
+                                {% include "anchor-link.html" %}
+                            </h1>
 
-                            {% include "anchor-link.html" %}
-                        </h1>
+                            {% block header_meta %}{% endblock header_meta %}
+                        </header>
                     {% endif %}
                     {% if page.title %}
-                        <h1>
-                            {{ page.title }}
+                        <header>
+                            <h1>
+                                {{ page.title }}
+                                {% include "anchor-link.html" %}
+                            </h1>
 
-                            {% include "anchor-link.html" %}
-                        </h1>
+                            {% block header_meta %}{% endblock header_meta %}
+                        </header>
                     {% endif %}
-                    {% block header_meta %}{% endblock header_meta %}
 
                     {% block body %}{% endblock body %}
 
@@ -78,7 +82,7 @@
                         <section>
                             <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
-                                    {% for item in config.extra.after_dark_menu %}
+                                    {% for item in config.extra.zenn_menu %}
                                         <li>
                                             <a itemprop="url"
                                             class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"

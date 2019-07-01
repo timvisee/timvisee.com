@@ -3,4 +3,4 @@ title = "Bukkit projects"
 description = "Bukkit projects index"
 +++
 
-- [Dungeon Maze](bukkit/dungeon-maze/)
+- [Dungeon Maze](@/projects/bukkit/dungeon-maze.md)
