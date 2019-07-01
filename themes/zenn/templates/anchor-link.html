@@ -1,5 +1,9 @@
 {% if id %}
-    <a class="anchor" href="#{{ id }}" aria-label="Anchor link for: {{ id }}">🔗</a>
+    <a class="anchor" href="#{{ id }}" aria-label="Anchor link for: {{ id }}">
+        {{ load_data(path="static/icons/glyphicons-halflings-138-anchor.svg") | safe }}
+    </a>
 {% else %}
-    <a class="anchor" href="#" aria-label="Anchor link">🔗</a>
+    <a class="anchor" href="#" aria-label="Anchor link">
+        {{ load_data(path="static/icons/glyphicons-halflings-138-anchor.svg") | safe }}
+    </a>
 {% endif %}

@@ -1,0 +1,17 @@
+#glyphicons-halflings {
+    display: inline-block;
+    max-width: 1.2em;
+    max-height: 1.2em;
+    margin-bottom: -5px;
+    fill: $color-text;
+}
+
+#{headings(1,6)} {
+    #glyphicons-halflings {
+        fill: $color-header;
+    }
+}
+
+.muted #glyphicons-halflings {
+    fill: $color-text-muted;
+}
