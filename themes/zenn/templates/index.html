@@ -70,31 +70,61 @@
                 <sidebar>
                     {% if config.extra.zenn_menu %}
                         <section>
-                            <h1>Menu</h1>
                             <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            {% for item in config.extra.after_dark_menu %}
-                                <a itemprop="url"
-                                class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                                href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
-                                    <span itemprop="name">{{ item.name }}</span>
-                                </a>
-                            {% endfor %}
+                                <ul>
+                                    {% for item in config.extra.after_dark_menu %}
+                                        <li>
+                                            <a itemprop="url"
+                                            class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                                            href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+                                                <span itemprop="name">{{ item.name }}</span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
                             </nav>
                         </section>
                     {% endif %}
 
                     <section>
                         <h1><a href="/categories">Categories</a></h1>
-                        <p>...</p>
-                    </section>
-                    <section>
-                        <h1><a href="/tags">Tags</a></h1>
-                        <p>...</p>
+                        <section>
+                            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                                <ul>
+                                    <li>
+                                        <a itemprop="url" href="/categories/dev">
+                                            <span itemprop="name">Dev</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a itemprop="url" href="#">
+                                            <span itemprop="name">Releases</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </section>
                     </section>
 
-                    <span class="muted">
+                    <section>
+                        <h1><a href="/tags">Tags</a></h1>
+                        <div class="tags">
+                            <a href="/tags/test" class="tag">test</a>
+                            <a href="/tags/test" class="tag">test</a>
+                            <a href="/tags/test" class="tag">test</a>
+                            <a href="/tags/test" class="tag">test</a>
+                            <a href="/tags/test" class="tag">test</a>
+                            <a href="/tags/test" class="tag">test</a>
+                            <a href="/tags/test" class="tag">test</a>
+                        </div>
+                    </section>
+
+                    <p class="muted">
                         Copyright &copy; {{ config.title }} {{ now() | date(format="%Y") }}
-                    </span>
+                        {% if config.extra.zenn_source %}
+                            <br /><a href="{{ config.extra.zenn_source }}">Source</a>
+                        {% endif %}
+                    </p>
                 </sidebar>
             </main>
         {% endblock content %}

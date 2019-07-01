@@ -7,12 +7,14 @@ tags = ["test"]
 categories = ["dev"]
 +++
 
-Ut enim ad minim veniam, quis
+Ut enim ad minim `veniam`, quis
 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ```bash
 # A random command
 ffsend upload $file --copy
+
+ffsend upload $file --copy some really long command to see how wrapping/overflowing goes
 
 rm -rf /
 ```
