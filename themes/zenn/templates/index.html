@@ -91,6 +91,10 @@
                         <h1>Tags</h1>
                         <p>...</p>
                     </section>
+
+                    <span class="muted">
+                        Copyright &copy; {{ config.title }} {{ now() | date(format="%Y") }}
+                    </span>
                 </sidebar>
             </main>
         {% endblock content %}

@@ -1,14 +1,13 @@
 $light-text: #202020;
-$dark-text:  #ccc;
-$background: #212931;
+$dark-text:  #a6a28c;
+$background: #20201d;
 $background-darker: darken($background, 4%);
 $background-border: darken($background, 8%);
-$header-color: #BEA38C;
-$link-color: $header-color;
+$header-color: #e4ad7d;
+$link-color: #ae9513;
 $link-color-hover: lighten($link-color, 15%);
-
 $logo-color: #fff;
-$logo-color-hover: $link-color;
+$logo-color-hover: $link-color-hover;
 
 // Setup the function in your functions or helpers files, wherever you keep these bits.
 @function headings($from:1, $to:6) {
@@ -48,6 +47,10 @@ body {
 #{headings(1,6)} {
     font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
     color: $header-color;
+
+    a {
+        color: $header-color;
+    }
 }
 
 h1 {
@@ -69,6 +72,7 @@ h4 {
 a {
     color: $link-color;
     transition: color 0.2s ease-in-out;
+    outline: 0;
 
     &:hover {
         color: $link-color-hover;
@@ -99,6 +103,7 @@ body > header .logo {
     overflow: visible;
     white-space: nowrap;
     text-decoration: none;
+    user-select: none;
 
     // TODO: update these!
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
@@ -119,8 +124,9 @@ body > header .logo:hover {
     color: $logo-color-hover !important;
 }
 body > header .logo:active {
-    background-color: rgba($logo-color-hover, 0.2) !important;
+    border-color: $logo-color-hover !important;
     color: $logo-color-hover !important;
+    background-color: rgba($logo-color-hover, 0.2) !important;
 }
 
 main {
@@ -129,6 +135,14 @@ main {
     color: $dark-text;
     border: 1px solid $background-border;
     box-shadow: 0 0 10px 5px rgba($background-border, 0.4);
+}
+
+main .muted {
+    color: darken($dark-text, 25%);
+}
+
+main .meta {
+    font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
 }
 
 content {
@@ -145,13 +159,6 @@ content > #{headings(1,6)} {
     margin: 0;
     padding-bottom: 0.3em;
     border-bottom: 1px solid $background-border;
-}
-
-content .muted {
-    color: darken($dark-text, 25%);
-}
-content .meta {
-    font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
 }
 
 sidebar {

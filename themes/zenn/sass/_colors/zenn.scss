@@ -1,0 +1,10 @@
+$light-text: #202020;
+$dark-text:  #ccc;
+$background: #212931;
+$background-darker: darken($background, 4%);
+$background-border: darken($background, 8%);
+$header-color: #BEA38C;
+$link-color: $header-color;
+$link-color-hover: lighten($link-color, 15%);
+$logo-color: #fff;
+$logo-color-hover: $link-color;
