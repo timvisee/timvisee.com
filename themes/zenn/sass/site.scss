@@ -263,7 +263,7 @@ sidebar > section {
                 padding: 0 1.5rem;
                 font-family: $font-title;
 
-                &:hover, &.active {
+                &.active {
                     background-color: rgba($link-color, 0.1);
                 }
                 &:active {

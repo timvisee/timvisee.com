@@ -89,8 +89,8 @@
                                     {% for item in config.extra.zenn_menu %}
                                         <li>
                                             <a itemprop="url"
-                                            class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                                            href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+                                                    class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                                                    href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
                                                 <span itemprop="name">{{ item.name }}</span>
                                             </a>
                                         </li>
@@ -107,10 +107,12 @@
                             <h1><a href="/categories">Categories</a></h1>
                             <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
-                                    {% for catgegory in categories.items %}
+                                    {% for category in categories.items %}
                                         <li>
-                                            <a itemprop="url" href="{{ catgegory.permalink | safe }}">
-                                                <span itemprop="name">{{ catgegory.name | title }}</span>
+                                            <a itemprop="url"
+                                                    class="{% if category.permalink | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                                                    href="{{ category.permalink | safe }}">
+                                                <span itemprop="name">{{ category.name | title }}</span>
                                             </a>
                                         </li>
                                     {% endfor %}
@@ -126,7 +128,10 @@
                             <h1><a href="/tags">Tags</a></h1>
                             <div class="tags">
                                 {% for tag in tags.items %}
-                                    <a href="{{ tag.permalink | safe }}" class="tag">{{ tag.name }}</a>
+                                    <a href="{{ tag.permalink | safe }}"
+                                            class="tag {% if tag.permalink | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}">
+                                        {{ tag.name }}
+                                    </a>
                                 {% endfor %}
                             </div>
                         </section>
