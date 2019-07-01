@@ -150,6 +150,9 @@ content > #{headings(1,6)} {
 content .muted {
     color: darken($dark-text, 25%);
 }
+content .meta {
+    font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
+}
 
 sidebar {
     width: 20em;

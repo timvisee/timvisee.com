@@ -10,7 +10,17 @@
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+        <title>
+            {% block title %}
+                {% if page.title %}
+                    {{ page.title }} &middot;
+                {% endif %}
+                {% if section.title %}
+                    {{ section.title }} &middot;
+                {% endif %}
+                {{ config.title }}
+            {% endblock title %}
+        </title>
 
         {% block css %}
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
