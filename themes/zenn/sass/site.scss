@@ -327,3 +327,9 @@ footer {
 .anchor:focus {
     opacity: 1;
 }
+
+ul {
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    padding-left: 0;
+}

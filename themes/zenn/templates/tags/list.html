@@ -8,7 +8,10 @@
     {% if terms %}
         <ul>
             {% for term in terms %}
-                <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})</li>
+                <li>
+                    <a href="{{ term.permalink | safe }}" class="tag">{{ term.name }}</a>:
+                    {{ term.pages | length }} article{{ term.pages | length | pluralize }}
+                </li>
             {% endfor %}
         </ul>
     {% endif %}
