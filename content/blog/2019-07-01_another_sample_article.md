@@ -4,7 +4,7 @@ description = "Another sample article"
 
 [taxonomies]
 tags = ["test"]
-categories = ["dev"]
+categories = ["dev", "release"]
 +++
 
 Ut enim ad minim `veniam`, quis

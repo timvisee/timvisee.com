@@ -12,7 +12,8 @@ $font-base: "Source Sans Pro", Ubuntu, sans-serif;
 $font-title: "Zilla Slab", "Open Sans", sans-serif;
 $font-article: "Merriweather", serif;
 $font-monospace: "Fira Mono", monospace;
-$font-logo: "Source Sans Pro", Helvetica, sans-serif;
+// $font-logo: "Source Sans Pro", Helvetica, sans-serif;
+$font-logo: $font-title;
 
 // Setup the function in your functions or helpers files, wherever you keep these bits.
 @function headings($from:1, $to:6, $prefix:"") {
@@ -155,6 +156,9 @@ main .meta {
 }
 
 content {
+    // TODO: makes font-family in article obsolete?
+    font-family: $font-article;
+
     padding: 2.5em 3em;
     background: $background;
     flex: 1;
@@ -203,6 +207,7 @@ content code {
 }
 
 sidebar {
+    font-family: $font-title;
     width: 20em;
     padding: 0.5em 1.5em 1.5em 1.5em;
     box-sizing: border-box;
@@ -330,6 +335,7 @@ footer {
 
 ul {
     list-style-type: disclosure-closed;
-    list-style-position: inside;
-    padding-left: 0;
+    // list-style-position: inside;
+    padding-left: 1em;
+    line-height: 1.5;
 }

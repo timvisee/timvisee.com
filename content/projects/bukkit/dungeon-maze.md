@@ -26,7 +26,7 @@ time:
 - The Dungeon Maze plugin does have some commands to easily generate a new Dungeon Maze world.
 - And a lot more...
 
-# Planned Features
+## Planned Features
 - A lot of new structures should be added! In the future there's probably also
   going to be a future available to add custom structures, made by yourself.
 - Config files to setup things for each world, like how much spawners a certain

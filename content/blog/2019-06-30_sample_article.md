@@ -3,7 +3,7 @@ title = "Sample article"
 description = "A sample article for testing Zola"
 
 [taxonomies]
-tags = ["test"]
+tags = ["test", "some", "random", "tags", "here", "long tag"]
 categories = ["dev"]
 +++
 

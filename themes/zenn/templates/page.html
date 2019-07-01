@@ -23,25 +23,28 @@
     <footer class="muted">
         <p>
             {% if config.extra.author %}
-                Published by {{ config.extra.author }}
+                Published by
+                <a href="{{ get_url(path="@/about.md") | safe }}">{{ config.extra.author }}</a>
             {% endif %}
             {% if page.taxonomies.categories %}
                 {% set category = page.taxonomies.categories[0] %}
-                in <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">{{ category }}</a>
+                in <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">{{ category | title }}</a>
             {% endif %}
             {% if page.taxonomies.tags %}
                 and tagged
                 {% for tag in page.taxonomies.tags %}
                     <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+                    {#
                     {% if page.taxonomies.tags | length > 1 %}
                         {% if loop.index != page.taxonomies.tags | length %}
                             {% if loop.index == page.taxonomies.tags | length - 1 %}
-                                and
+                                &amp;
                             {% else %}
                                 ,
                             {% endif %}
                         {% endif %}
                     {% endif %}
+                    #}
                 {% endfor %}
             {% endif %}
         </p>
