@@ -1,0 +1,12 @@
+name = "zenn"
+description = "A robust, elegant dark theme"
+license = "GPL-3.0"
+homepage = "https://gitlab.com/timvisee/blog.timvisee.com"
+min_version = "0.8.0"
+demo = "https://blog.timvisee.com/"
+
+[extra]
+
+[author]
+name = "Tim Visée"
+homepage = "https://timvisee.com/"

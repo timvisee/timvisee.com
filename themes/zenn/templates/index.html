@@ -1,0 +1,89 @@
+{% import "post_macros.html" as post_macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+        {% block css %}
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="{{ get_url(path="zenn.css", trailing_slash=false) | safe }}">
+        {% endblock css %}
+
+        {% if config.generate_rss %}
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
+        {% endif %}
+
+        {% block extra_head %}
+        {% endblock extra_head %}
+    </head>
+
+    <body>
+        {% if config.extra.zenn_title %}
+            {% block header %}
+                <header>
+                    <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
+                </header>
+            {% endblock header %}
+        {% endif %}
+
+        {% block content %}
+            <main>
+                <content>
+                    {% if section.title %}
+                        <h1>{{ section.title }}</h1>
+                    {% endif %}
+
+                    {% for page in paginator.pages %}
+                        {{ post_macros::page_in_list(page=page) }}
+                    {% endfor %}
+
+                    <nav>
+                    <p>
+                        {% if paginator.previous %}
+                        <a href="{{ paginator.previous }}">&laquo; Previous</a> |
+                        {% endif %}
+                        <span class="muted">Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+                        {% if paginator.next %}
+                        | <a href="{{ paginator.next }}">Next &raquo;</a>
+                        {% endif %}
+                    </p>
+                    </nav>
+                </content>
+                <sidebar>
+                    {% if config.extra.zenn_menu %}
+                        <section>
+                            <h1>Menu</h1>
+                            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            {% for item in config.extra.after_dark_menu %}
+                                <a itemprop="url"
+                                class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                                href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+                                    <span itemprop="name">{{ item.name }}</span>
+                                </a>
+                            {% endfor %}
+                            </nav>
+                        </section>
+                    {% endif %}
+
+                    <section>
+                        <h1>Categories</h1>
+                        <p>...</p>
+                    </section>
+                    <section>
+                        <h1>Tags</h1>
+                        <p>...</p>
+                    </section>
+                </sidebar>
+            </main>
+        {% endblock content %}
+    </body>
+
+</html>
