@@ -28,4 +28,4 @@ zenn_menu = [
     {url = "$BASE_URL/blog/", name = "Blog"},
     {url = "$BASE_URL/about/", name = "About"},
 ]
-zenn_source = "https://gitlab.com/timvisee/blog.timvisee.com/"
+zenn_source = "https://gitlab.com/timvisee/timvisee.com/"
