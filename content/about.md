@@ -14,6 +14,6 @@ Drive to built reliable, secure, robust & high-performance software with the bes
 Interests: application back-end development, systems programming (Rust), automation, containerization (Docker), Linux
 Experience: Java, web technologies (PHP, HTML, JavaScript), CI/CD, Python, Bash, C#, LaTeX, Windows and more
 
-## Useful links
+## Me around the web
 - [gitlab.com/timvisee](https://gitlab.com/timvisee)
 - [github.com/timvisee](https://github.com/timvisee)

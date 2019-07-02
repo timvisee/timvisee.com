@@ -50,21 +50,23 @@ h4 {
     font-size: 1.25em;
 }
 
-#{headings(1,6)} {
-    font-family: $font-main;
-    color: $color-header;
-
-    a {
+main {
+    #{headings(1,6)} {
+        font-family: $font-main;
         color: $color-header;
 
-        &:focus {
-            background-color: rgba($color-header, 0.1);
-        }
-        &:active {
-            background-color: rgba($color-header, 0.2);
-        }
-        &:focus:hover {
-            background-color: rgba($color-link-hover, 0.1);
+        a {
+            color: $color-header;
+
+            &:focus {
+                background-color: rgba($color-header, 0.1);
+            }
+            &:active {
+                background-color: rgba($color-header, 0.2);
+            }
+            &:focus:hover {
+                background-color: rgba($color-link-hover, 0.1);
+            }
         }
     }
 }

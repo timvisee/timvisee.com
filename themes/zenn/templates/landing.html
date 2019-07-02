@@ -1,0 +1,95 @@
+{% extends "site.html" %}
+{% import "post_macros.html" as post_macros %}
+
+{% block header %}
+    <header id="banner">
+        <p class="greeting top">Hey, I'm</p>
+        <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
+        <p class="greeting bottom">I build and break applications.</p>
+
+        <div class="links">
+            <div class="left">
+                <b>Quick links</b>
+                <ul>
+                    <li class="described">
+                        <span>
+                            Easily and securely share files from the CLI.
+                            Fully featured Firefox Send client.
+                        </span>
+                        <a href="https://github.com/timvisee/ffsend">ffsend</a>
+                    </li>
+                    <li class="described">
+                        <span>
+                            Bar management application for payments and
+                            inventory.
+                        </span>
+                        <a href="https://github.com/timvisee/barbapappa">BARbapAPPa</a>
+                    </li>
+                    <li>
+                        <a href="{{ get_url(path="@/projects.md") | safe }}">Projects</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="{{ get_url(path="@/blog/_index.md") | safe }}">Blog</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="{{ get_url(path="@/about.md") | safe }}">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <b>Me around the web</b>
+                <ul>
+                    <li>
+                        <a href="https://github.com/timvisee">GitHub</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://gitlab.com/timvisee">GitLab</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://git.sr.ht/~timvisee">sr.ht</a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/1000145">StackOverflow</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://stackexchange.com/users/980236?tab=accounts">Exchange</a>
+                    </li>
+                    <li>
+                        <a href="https://reddit.com/r/timvisee">Reddit</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://news.ycombinator.com/user?id=timvisee">Hacker News</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://lobste.rs/u/timvisee/">Lobsters</a>
+                    </li>
+                    <li>
+                        <a href="https://mastodon.social/@timvisee">Mastodon</a>
+                    </li>
+                    <li><a href="{{ get_url(path="@/about.md#me-around-the-web") | safe }}"><i>More...</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+{% endblock header %}
+
+{% block body %}
+    Some body content
+    {#
+    {% for page in paginator.pages %}
+        {{ post_macros::page_in_list(page=page) }}
+    {% endfor %}
+    #}
+{% endblock body %}
+
+{% block page_footer %}
+    Some footer
+    {#
+    <footer class="muted">
+        <nav>
+            <p class="muted">
+                {% if paginator.previous %}
+                <a href="{{ paginator.previous }}">&laquo; Previous</a> &middot;
+                {% endif %}
+                Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
+                {% if paginator.next %}
+                &middot; <a href="{{ paginator.next }}">Next &raquo;</a>
+                {% endif %}
+            </p>
+        </nav>
+    </footer>
+    #}
+{% endblock page_footer %}
