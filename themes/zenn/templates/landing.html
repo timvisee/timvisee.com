@@ -67,29 +67,5 @@
 {% endblock header %}
 
 {% block body %}
-    Some body content
-    {#
-    {% for page in paginator.pages %}
-        {{ post_macros::page_in_list(page=page) }}
-    {% endfor %}
-    #}
+    {{ section.content | safe }}
 {% endblock body %}
-
-{% block page_footer %}
-    Some footer
-    {#
-    <footer class="muted">
-        <nav>
-            <p class="muted">
-                {% if paginator.previous %}
-                <a href="{{ paginator.previous }}">&laquo; Previous</a> &middot;
-                {% endif %}
-                Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
-                {% if paginator.next %}
-                &middot; <a href="{{ paginator.next }}">Next &raquo;</a>
-                {% endif %}
-            </p>
-        </nav>
-    </footer>
-    #}
-{% endblock page_footer %}
