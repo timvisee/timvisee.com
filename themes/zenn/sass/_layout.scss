@@ -35,21 +35,27 @@ content > header {
     }
 }
 
-content ul {
-    list-style-type: disclosure-closed;
+content ul,
+content ol {
     padding-left: 1em;
     line-height: 1.5;
+}
+content ul {
+    list-style-type: disclosure-closed;
 }
 
 article {
     padding: 2em 0;
-    text-align: justify;
     border-bottom: 1px dashed $color-main-border;
 
     // Hack to fix <pre> overflow
     width: 100%;
     display: table;
     table-layout: fixed;
+
+    p {
+        text-align: justify;
+    }
 }
 
 article.single {
