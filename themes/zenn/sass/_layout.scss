@@ -9,7 +9,6 @@ main {
     color: $color-text;
     border: 1px solid $color-main-border;
     box-shadow: 0 0 10px 5px rgba($color-main-border, 0.4);
-    overflow: auto;
 }
 
 content {
@@ -17,6 +16,8 @@ content {
     padding: 2.5em 3em;
     background: $color-main-bg;
     flex: 1;
+    overflow-x: auto;
+    overflow-y: visible;
 
     #{headings(1,6,"header >")} {
         margin: 0;

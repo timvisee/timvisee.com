@@ -18,7 +18,9 @@
         </div>
 
         {% if page.extra.zenn_applause %}
-            <applause-button color="#a6a28c"></applause-button>
+            <div class="applause-wrapper">
+                <applause-button color="#a6a28c"></applause-button>
+            </div>
         {% endif %}
     </article>
 {% endblock body %}

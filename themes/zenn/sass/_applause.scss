@@ -1,8 +1,15 @@
 /**
  * Applause button, move to center of page.
  */
+
+.applause-wrapper {
+    font-family: $font-main;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 applause-button {
     width: 3em;
     height: 3em;
-    margin: 2.5em auto 1.5em;
+    margin: 2.5em auto 2em;
 }
