@@ -127,6 +127,6 @@ you can also contact me; Safe Creeper page on [dev.bukkit.org][dev.bukkit.org].
 [download-dropbox]: https://old.timvisee.com/download/191
 [download-mediafire]: https://old.timvisee.com/download/192
 [download-older]: https://old.timvisee.com/projects/bukkit/safe-creeper/downloads
-[changelog]: httpss://old.timvisee.com/projects/bukkit/safe-creeper/changelog
+[changelog]: https://old.timvisee.com/projects/bukkit/safe-creeper/changelog
 [donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/safe-creeper/

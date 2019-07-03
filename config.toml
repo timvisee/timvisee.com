@@ -11,7 +11,7 @@ highlight_code = true
 highlight_theme = "1337" # or: boron
 generate_rss = true
 build_search_index = true
-# check_external_links = true
+check_external_links = false
 
 taxonomies = [
     {name = "categories", paginate_by = 5, rss = true},

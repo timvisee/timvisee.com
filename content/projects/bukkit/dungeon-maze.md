@@ -127,6 +127,6 @@ you can also contact me; Dungeon Maze page on [dev.bukkit.org][dev.bukkit.org].
 [download-older]: https://old.timvisee.com/projects/bukkit/dungeon-maze/downloads
 [tutorial-first-world]: http://dev.bukkit.org/server-mods/dungeon-maze/pages/how-to-create-your-first-dungeon-maze-world/
 [tutorial-multiverse]: http://dev.bukkit.org/server-mods/dungeon-maze/pages/how-to-use-dungeon-maze-with-multiverse/
-[changelog]: httpss://old.timvisee.com/projects/bukkit/dungeon-maze/changelog
+[changelog]: https://old.timvisee.com/projects/bukkit/dungeon-maze/changelog
 [donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/dungeon-maze/

@@ -127,6 +127,6 @@ you can also contact me; Glowstone Lanterns page on
 [download-dropbox]: https://old.timvisee.com/download/75
 [download-mediafire]: https://old.timvisee.com/download/76
 [download-older]: https://old.timvisee.com/projects/bukkit/glowstone-lanterns/downloads
-[changelog]: httpss://old.timvisee.com/projects/bukkit/glowstone-lanterns/changelog
+[changelog]: https://old.timvisee.com/projects/bukkit/glowstone-lanterns/changelog
 [donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/glowstone-lanterns/
