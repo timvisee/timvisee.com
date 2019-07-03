@@ -1,0 +1,24 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  ZOLA_VERSION: "v0.8.0"
+
+stages:
+  - build
+  - deploy
+
+build:
+  script:
+    - curl -L https://github.com/getzola/zola/releases/download/$ZOLA_VERSION/zola-$ZOLA_VERSION-x86_64-unknown-linux-gnu.tar.gz > zola.tar.gz
+    - tar -xzf zola.tar.gz
+    - ./zola build
+  artifacts:
+    paths:
+      - public
+
+# TODO: job to move deployment files
+# deploy:
+#   script: []
+#   dependencies:
+#   - build
+#   only:
+#   - deploy
