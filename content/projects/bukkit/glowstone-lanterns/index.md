@@ -2,6 +2,10 @@
 title = "Glowstone Lanterns"
 description = "Glowstone Lanterns Bukkit plugin"
 date = 2011-07-09
+
+[taxonomies]
+tags = ["bukkit"]
+categories = ["project"]
 +++
 
 _Source code: [GitHub][github]_  

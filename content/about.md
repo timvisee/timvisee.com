@@ -80,8 +80,8 @@ Here are some other noteworthy profiles of mine:
 To send me a message, please check out the [Contact](@/contact.md) page.
 
 ## Other things I like
-Here are some other random things I like besides my usual development activity
-which I didn't list above:
+Some other random things I like besides my usual development activity that I
+didn't list above are:
 
 - Music, to listen to, usually while at work
   - Deep house, House, Electronic, Techno and _related_

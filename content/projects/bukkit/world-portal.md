@@ -2,6 +2,10 @@
 title = "World Portal"
 description = "World Portal Bukkit plugin"
 date = 2012-09-03
+
+[taxonomies]
+tags = ["bukkit"]
+categories = ["project"]
 +++
 
 _Source code: [GitHub][github]_  

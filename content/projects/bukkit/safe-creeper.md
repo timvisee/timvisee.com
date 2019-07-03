@@ -2,6 +2,10 @@
 title = "Safe Creeper"
 description = "Safe Creeper Bukkit plugin"
 date = 2013-11-12
+
+[taxonomies]
+tags = ["bukkit"]
+categories = ["project"]
 +++
 
 _Source code: [GitHub][github]_  

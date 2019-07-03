@@ -2,6 +2,10 @@
 title = "Dungeon Maze"
 description = "Dungeon Maze Bukkit plugin"
 date = 2012-11-21
+
+[taxonomies]
+tags = ["bukkit"]
+categories = ["project"]
 +++
 
 _Source code: [GitHub][github]_  
