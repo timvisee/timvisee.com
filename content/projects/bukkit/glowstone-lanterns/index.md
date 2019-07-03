@@ -6,6 +6,9 @@ date = 2011-07-09
 [taxonomies]
 tags = ["bukkit"]
 categories = ["project"]
+
+[extra]
+zenn_applause = true
 +++
 
 _Source code: [GitHub][github]_  
