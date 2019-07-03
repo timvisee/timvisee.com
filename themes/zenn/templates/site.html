@@ -9,6 +9,7 @@
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/favicon.png" />
 
         <title>
             {% block title %}
@@ -27,13 +28,13 @@
             <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
 
             {% if page.extra.zenn_applause %}
-                <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+                <link rel="stylesheet" href="{{ get_url(path="vendor/applause-button/applause-button.css", trailing_slash=false) | safe }}">
             {% endif %}
         {% endblock css %}
 
         {% block js %}
             {% if page.extra.zenn_applause %}
-                <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+                <script src="{{ get_url(path="vendor/applause-button/applause-button.js", trailing_slash=false) | safe }}"></script>
             {% endif %}
         {% endblock js %}
 
