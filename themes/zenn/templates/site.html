@@ -25,7 +25,17 @@
         {% block css %}
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i|Fira+Mono&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+
+            {% if page.extra.zenn_applause %}
+                <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+            {% endif %}
         {% endblock css %}
+
+        {% block js %}
+            {% if page.extra.zenn_applause %}
+                <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+            {% endif %}
+        {% endblock js %}
 
         {% if config.generate_rss %}
             <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">

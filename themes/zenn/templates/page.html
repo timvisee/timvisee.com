@@ -16,6 +16,10 @@
         <div itemprop="articleBody">
             {{ page.content | safe }}
         </div>
+
+        {% if page.extra.zenn_applause %}
+            <applause-button color="#a6a28c"></applause-button>
+        {% endif %}
     </article>
 {% endblock body %}
 

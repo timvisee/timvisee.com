@@ -5,6 +5,9 @@ description = "A fresh and shiny new website, hurray!"
 [taxonomies]
 categories = ["release"]
 tags = ["website"]
+
+[extra]
+zenn_applause = true
 +++
 
 My personal website had basically been unchanged, lacking content, collecting
@@ -50,11 +53,11 @@ or see the sidebar (bottom of the page on mobile devices) for a listing of
 _Oh, and, you're reading the first blog post right now!_
 
 ## 3-2-1 Publish
-Today (2019-07-03), along with _this_ post, I'm publishing this new website at
-my personal `timvisee.com` domain. I'd be happy to hear your thoughts!
+Today (2019-07-03) I'm publishing this new website at my personal `timvisee.com`
+domain along with this post. I'd be happy to hear your thoughts!
 
 Of course, as a proper _open-sourcerer_, the source code for this website as a
-whole is available on my GitHub profile [here][source].
+whole is available in [this][source] repository.
 And a big thanks to the developers of [Zola][zola] for building an amazing site
 engine I was able to build this website in.
 
