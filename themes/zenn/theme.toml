@@ -3,7 +3,7 @@ description = "A robust, elegant dark theme"
 license = "GPL-3.0"
 homepage = "https://gitlab.com/timvisee/timvisee.com"
 min_version = "0.8.0"
-demo = "https://blog.timvisee.com/"
+demo = "https://timvisee.com/"
 
 [extra]
 
