@@ -3,40 +3,27 @@ header#banner {
     font-family: $font-main;
 }
 
-header#banner p.greeting {
-    font-size: 2em;
-    text-shadow: 0 0 0.75em $color-main-border;
+header#banner .greeting {
     font-family: $font-read;
-    font-style: italic;
+    font-size: 2em;
+    line-height: 2;
+    text-shadow: 0 0 0.75em $color-main-border;
 
     &.top {
         margin: 4em auto 0 auto;
     }
     &.bottom {
-        margin: 0 auto 2em auto;
+        margin: 0 auto 3em auto;
     }
 }
 
-header#banner .links {
-    font-size: 2em;
+header#banner .greeting .links {
     display: flex;
     align-content: flex-start;
     justify-content: space-evenly;
-    line-height: 1.5;
-    text-align: left;
-    text-shadow: 0 0 0.75em $color-main-border;
-
-    margin-bottom: 2em;
-
-    div {
-        flex-basis: 40%;
-    }
-
-    .left {
-        text-align: right;
-    }
 
     a {
+        font-family: $font-main;
         display: inline-block;
         color: $logo-color;
         text-decoration: none;
@@ -50,26 +37,6 @@ header#banner .links {
         }
         &:active {
             background-color: rgba($color-link-hover, 0.2);
-        }
-    }
-}
-
-header#banner ul {
-    font-size: 1.5rem;
-    margin-top: 0.5em;
-    padding-left: 0;
-    list-style: none;
-
-    .described {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        span {
-            margin: 0.35em 1em 0.35em 0;
-            font-family: $font-read;
-            font-size: 0.75em;
-            font-style: italic;
         }
     }
 }

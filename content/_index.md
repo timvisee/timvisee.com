@@ -3,7 +3,7 @@ title = "Homepage"
 template = "landing.html"
 +++
 
-Welcome to my personal homepage.  
+Welcome to my personal homepage.
 
 This website shows what I'm currently working on, and what I've worked on in the
 past. See an overview on the [Projects](@/projects.md) page. I usually prefer to

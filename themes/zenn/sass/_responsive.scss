@@ -1,22 +1,3 @@
-@media (max-width: $responsive-medium) {
-    header#banner .links {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center !important;
-        .left {
-            text-align: center !important;
-        }
-
-        .described {
-            flex-direction: column-reverse;
-
-            span {
-                margin: 0.2em 0.8em 0.8em 0.8em;
-            }
-        }
-    }
-}
-
 @media (max-width: $responsive-small) {
     main {
         flex-direction: column;
@@ -35,17 +16,12 @@
     header#banner {
         font-size: 0.7rem;
         margin: 0.5em 0;
-        min-height: auto;
-        background: none;
 
         p.greeting.top {
             margin-top: 2.5em;
         }
         a {
             font-size: 1.3rem;
-        }
-        ul .described span {
-            font-size: 1rem;
         }
     }
 
@@ -57,5 +33,11 @@
 
     content {
         padding: 1.5em 1em;
+    }
+}
+
+@media (max-width: $responsive-tiny) {
+    header#banner .links {
+        flex-direction: column;
     }
 }
