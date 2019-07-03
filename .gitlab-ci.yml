@@ -4,7 +4,7 @@ variables:
 
 stages:
   - build
-  # - deploy
+  - deploy
 
 build:
   stage: build
@@ -18,6 +18,7 @@ build:
 
 deploy:
   image: alpine:latest
+  stage: deploy
   script:
     - apk add openssh sshpass
     - "sshpass -p '$DEPLOY_SSH_PASS' ssh $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST 'rm -rf /var/customers/webs/timvisee/timvisee.com/*'"
