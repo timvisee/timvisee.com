@@ -52,16 +52,35 @@ content {
     }
 
     img {
+        overflow: scroll;
         padding: 0.25em;
         max-width: 100%;
     }
 
     code {
-        padding: 0 0.2em;
+        padding: 0 0.25em;
         display: inline-block;
         font-family: $font-mono;
         background-color: $color-main-bg-alt;
         border-radius: 3px;
+    }
+
+    table {
+        display: block;
+        overflow: auto;
+        max-width: 100%;
+        border: 1px dashed $color-main-border;
+        border-spacing: 0.5em;
+        border-collapse: separate;
+
+        td {
+            min-width: 10em;
+        }
+    }
+
+    iframe {
+        overflow: auto;
+        max-width: 100%;
     }
 }
 
