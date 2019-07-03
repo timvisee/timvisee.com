@@ -4,9 +4,10 @@ variables:
 
 stages:
   - build
-  - deploy
+  # - deploy
 
 build:
+  stage: build
   script:
     - curl -L https://github.com/getzola/zola/releases/download/$ZOLA_VERSION/zola-$ZOLA_VERSION-x86_64-unknown-linux-gnu.tar.gz > zola.tar.gz
     - tar -xzf zola.tar.gz
