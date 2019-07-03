@@ -1,3 +1,5 @@
 <p>
-    <img src="{{ resize_image(path=path, width=702, op="fit_width") }}" />
+    <a href="./{{ path | split(pat="/") | last }} " alt="View full-size image">
+        <img src="{{ resize_image(path=path, width=702, op="fit_width") }}" />
+    </a>
 </p>
