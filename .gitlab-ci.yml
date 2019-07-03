@@ -16,10 +16,16 @@ build:
     paths:
       - public
 
-# TODO: job to move deployment files
-# deploy:
-#   script: []
-#   dependencies:
-#   - build
-#   only:
-#   - deploy
+deploy:
+  image: alpine:latest
+  script:
+    - apk add openssh sshpass
+    - sshpass -p '$DEPLOY_SSH_PASS' ssh $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST "rm -rf /var/customers/webs/timvisee/timvisee.com/*"
+    - sshpass -p '$DEPLOY_SSH_PASS' scp public/* $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST:
+  dependencies:
+  - build
+  environment:
+    name: production
+    url: https://timvisee.com/
+  only:
+  - deploy
