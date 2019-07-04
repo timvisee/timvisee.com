@@ -3,7 +3,7 @@ title = "Homepage"
 template = "landing.html"
 +++
 
-Welcome to my personal homepage.
+Welcome to my personal website.
 
 This website shows what I'm currently working on, and what I've worked on in the
 past. See an overview on the [Projects](@/projects.md) page. I usually prefer to
@@ -21,7 +21,7 @@ Learn more about me [here](@/about.md).
 
 ---
 
-_The old website is available through [old.timvisee.com][old]._
+_The old website is still available at [old.timvisee.com][old]._
 
 [github]: https://github.com/timvisee
 [gitlab]: https://gitlab.com/timvisee

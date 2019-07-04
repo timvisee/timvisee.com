@@ -58,11 +58,11 @@ All of it is available on my Git profiles:
 - [GitLab][gitlab]
 - [sr.ht][sr.ht]
 
-As any developer, I use StackOverflow and alike for development and IT related
+As any developer, I use Stack Overflow and alike for development and IT related
 questions and answers:
 
-- [StackOverflow][stackoverflow]
-- [StackExchange][stackexchange]
+- [Stack Overflow][stackoverflow]
+- [Stack Exchange][stackexchange]
 
 I do my news reading and social activity through the following websites:
 

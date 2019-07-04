@@ -8,7 +8,7 @@ zenn_hide_header_meta = true
 Here are some channels you can contact me through.
 
 I speak English and Dutch, though I prefer English contacting me in any of these
-languages is fine. Your best best is usually to send an email message.
+languages is fine. Your best bet is usually to send an email message.
 
 |              |                                         |
 | :----------- | :-------------------------------------- |
