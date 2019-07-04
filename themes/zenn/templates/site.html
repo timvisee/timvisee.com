@@ -61,13 +61,13 @@
                     {% if section.title %}
                         <header>
                             <h1>
-                                {% include "anchor-link.html" %}
                                 {{ section.title }}
                                 {% if paginator %}
                                     {% if paginator.current_index > 1 %}
                                         &nbsp;&middot;&nbsp; Page {{ paginator.current_index }}
                                     {% endif %}
                                 {% endif %}
+                                {% include "anchor-link.html" %}
                             </h1>
 
                             {% if not section.extra.zenn_hide_header_meta %}
@@ -78,8 +78,8 @@
                     {% if page.title %}
                         <header>
                             <h1>
-                                {% include "anchor-link.html" %}
                                 {{ page.title }}
+                                {% include "anchor-link.html" %}
                             </h1>
 
                             {% if not page.extra.zenn_hide_header_meta %}
