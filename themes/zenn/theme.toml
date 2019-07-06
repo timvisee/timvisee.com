@@ -1,5 +1,5 @@
 name = "zenn"
-description = "A robust, elegant dark theme"
+description = "A dark theme for timvisee.com"
 license = "GPL-3.0"
 homepage = "https://gitlab.com/timvisee/timvisee.com"
 min_version = "0.8.0"

@@ -3,7 +3,7 @@ title = "Fresh & shiny website, hurray!"
 description = "A fresh and shiny new website, hurray!"
 
 [taxonomies]
-categories = ["release"]
+categories = ["release", "blog"]
 tags = ["website"]
 
 [extra]
