@@ -47,7 +47,7 @@ The terminals on Windows still feel mediocre, it just isn't there yet.
 
 ### The problems
 Throughout the past year, I've tried using a **lot** of different terminals
-after giving up on the terminal include with `bash` on Windows.
+after giving up on the terminal included with `bash` on Windows.
 Some of them include: ConEmu, hyper, Cmder, Terminus &amp; PuTTY, with various
 troublesome configuration attempts. I was never able to achieve the same
 experience as I've had on Linux or macOS, have always encountered weird
@@ -230,7 +230,7 @@ Your terminal is now ready to use to its full potential. Happy hacking!
 Okay, we're not quite done yet.
 
 As you might have noticed, these last few steps are required after each login,
-which is quite cumbersome. The X server must be started, and you need to set
+which is cumbersome. The X server must be started, and you need to set
 the `DISPLAY` variable for each `bash` shell you open from Windows. Though the
 following steps are not required, it is highly recommended you follow them.
 
@@ -282,21 +282,14 @@ shortcut, and hit 'Properties'. Set the 'Run' option to 'Minimized':
 
 ## Tips &amp; Tricks
 Here are some tips, tricks, and notices you might find useful.
-This starts with a simple checklist for all steps that must be taken:
-
-- [enable WSL, install Ubuntu](#enable-wsl)
-- [install XFCE terminal](#install-terminal)
-- [install X server](#install-x)
-- for each login: [start VcXsrv](#start-vcxsrv)
-- for each `bash` shell: [configure X server address](#configure-x-server-address)
-- for each `bash` shell: [start the terminal](#start-the-terminal)
 
 You can extend the command used for the shortcut to automatically open a specific
-Linux program or to start an `ssh`/[`mosh`][mosh] session. You can create
-multiple different shortcuts as well. Here's an example to immediately start a
-`mosh` session I commonly use:
+Linux program or to start an `ssh` session. You can create multiple different
+shortcuts as well. Here's an example to immediately start a `ssh` session I
+commonly use:
+
 ```bash
-bash -c 'export DISPLAY=:0; xfce4-terminal -e "bash -c \"LC_ALL=en_US.UTF-8 mosh root@work.lan\""'
+bash -c 'export DISPLAY=:0; xfce4-terminal -e "bash -c \"ssh root@work.lan\""'
 ```
 
 You can set the `DISPLAY` environment variable by default, by appending the `export
@@ -310,6 +303,15 @@ have probably configured an incorrect X server address or did not configure it
 at all. Review the [Configure X server address](#configure-x-server-address)
 section.
 
+Here's a simple final checklist for all the steps to get a Linux terminal
+working:
+- [enable WSL, install Ubuntu](#enable-wsl)
+- [install XFCE terminal](#install-terminal)
+- [install X server](#install-x)
+- for each login: [start VcXsrv](#start-vcxsrv)
+- for each `bash` shell: [configure X server address](#configure-x-server-address)
+- for each `bash` shell: [start the terminal](#start-the-terminal)
+
 ## Final thoughts
 This solution isn't ideal. It takes effort to get up and running, and opening
 a new terminal isn't as easy as with other terminals. But for me, this is a
@@ -320,8 +322,8 @@ works like a charm, and it feels super _comfy_. That is important.
 
 Honestly, I find it kind of interesting, that almost every terminal on a Linux
 or macOS based system works flawlessly for any tooling with no configuration.
-However, on Windows, I don't see have this quality. And that for something that
-seems so simple: rendering monospaced text on a screen.
+However, on Windows, I don't see this quality, for something that seems so
+simple: rendering monospaced text on a screen.
 
 Let's hope the terminal situation on Windows improves. A lot has been getting
 better lately since WSL was introduced, and many more people started experiencing
@@ -334,7 +336,6 @@ As always: _Hope this helps!_ <sub>&nbsp;&nbsp;:wq</sub>
 
 [ansi]: https://en.wikipedia.org/wiki/ANSI_escape_code
 [dotfiles]: https://github.com/timvisee/dotfiles
-[mosh]: https://mosh.org/
 [vcxsrv]: https://sourceforge.net/projects/vcxsrv/
 [wsl-install-ubuntu]: https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice
 [wsl-install]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
