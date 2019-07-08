@@ -328,6 +328,8 @@ simple: rendering monospaced text on a screen.
 Let's hope the terminal situation on Windows improves. A lot has been getting
 better lately since WSL was introduced, and many more people started experiencing
 these itches than before since Linux on Windows became a viable thing.
+I wonder what the [upcoming][windows-terminal] Windows terminal will bring to
+the table.
 
 I won't be going back to Windows anytime soon myself, but at least this provides
 a terminal I'm happy with when I _need_ to use a Windows machine.
@@ -337,6 +339,7 @@ As always: _Hope this helps!_ <sub>&nbsp;&nbsp;:wq</sub>
 [ansi]: https://en.wikipedia.org/wiki/ANSI_escape_code
 [dotfiles]: https://github.com/timvisee/dotfiles
 [vcxsrv]: https://sourceforge.net/projects/vcxsrv/
+[windows-terminal]: https://devblogs.microsoft.com/commandline/introducing-windows-terminal/
 [wsl-install-ubuntu]: https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice
 [wsl-install]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [wsl]: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux
