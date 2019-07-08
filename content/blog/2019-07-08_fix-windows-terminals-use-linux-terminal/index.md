@@ -1,6 +1,6 @@
 +++
 title = "Fix Windows 10 terminals, use a Linux terminal"
-description = "Fix Windows 10 terminals by using a Linux terminal through WSL"
+description = "I feel handicapped in Windows terminals, here is why, and how I fixed it."
 
 [taxonomies]
 categories = ["guide", "blog"]
