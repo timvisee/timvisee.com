@@ -11,7 +11,7 @@ I live in Holland 🇳🇱, and am currently in my twenties.
 My everyday passion is to develop awesome high-quality software to make life
 just that much better.
 
-See the [Me around the web](@/about.md#me-around-the-web) section below for a
+See the [Me on the web](@/about.md#me-on-the-web) section below for a
 more-complete overview, especially my Git profiles.
 
 Here is my usual developer sales pitch, as posted on my [LinkedIn][linkedin]
@@ -48,7 +48,7 @@ also for humans.
 - Windows
 - _and much more_
 
-## Me around the web
+## Me on the web
 I prefer to make software I work on open-source, because I find it important to
 allow anybody to modify, contribute, improve, inspect and verify it.
 I also contribute to various other open projects as well.
