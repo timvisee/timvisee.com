@@ -82,6 +82,13 @@ content {
         overflow: auto;
         max-width: 100%;
     }
+
+    blockquote {
+        border-left: 4px solid $color-main-bg-alt;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1em;
+    }
 }
 
 /**
