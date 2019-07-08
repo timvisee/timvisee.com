@@ -9,3 +9,11 @@
         {{ post_macros::page_in_list(page=page) }}
     {% endfor %}
 {% endblock body %}
+
+{% block page_footer %}
+    <footer class="muted">
+        <p>
+            <a href="./rss.xml" title="RSS feed for this tag">RSS</a>
+        </p>
+    </footer>
+{% endblock page_footer %}
