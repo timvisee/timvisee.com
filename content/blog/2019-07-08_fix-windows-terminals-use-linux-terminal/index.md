@@ -18,7 +18,7 @@ As a seasoned developer, I _live_ in the terminal on Linux machines.
 Using a custom shell, `vim` as text/code editor, `git` through its CLI,
 [`dotfiles`][dotfiles] to sync settings across devices.
 Everything is customized to my likings and styled with a nice color scheme.
-All of it in a seasoned dark, text-based window on my screen.
+All of it in a dark, text-based window on my screen.
 
 Once you get used to your command-line tools, it's a serious joy to
 work with. It's a way to interface with your machine in a super-efficient and
