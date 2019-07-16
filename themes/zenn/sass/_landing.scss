@@ -7,7 +7,7 @@ header#banner .greeting {
     font-family: $font-read;
     font-size: 2em;
     line-height: 2;
-    text-shadow: 0 0 0.75em $color-main-border;
+    text-shadow: 0 0 0.75em $landing-color-shadow;
 
     &.top {
         margin: 4em auto 0 auto;

@@ -25,7 +25,8 @@
 
         {% block css %}
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i|Fira+Mono&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+            <link id="style-dark" rel="stylesheet" href="{{ get_url(path="site_dark.css", trailing_slash=false) | safe }}">
+            <link id="style-light" disabled rel="stylesheet" href="{{ get_url(path="site_light.css", trailing_slash=false) | safe }}">
 
             {% if page.extra.zenn_applause %}
                 <link rel="stylesheet" href="{{ get_url(path="vendor/applause-button/applause-button.css", trailing_slash=false) | safe }}">
@@ -33,6 +34,8 @@
         {% endblock css %}
 
         {% block js %}
+            <script src="{{ get_url(path="js/theme.js", trailing_slash=false) | safe }}"></script>
+
             {% if page.extra.zenn_applause %}
                 <script src="{{ get_url(path="vendor/applause-button/applause-button.js", trailing_slash=false) | safe }}"></script>
             {% endif %}
@@ -58,6 +61,10 @@
         {% block main %}
             <main>
                 <content>
+                    <a href="#" class="theme-toggle" onclick="theme_toggle(); return false;" title="Toggle light/dark mode">
+                        {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe }}
+                    </a>
+
                     {% if section.title %}
                         <header>
                             <h1>

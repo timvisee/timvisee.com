@@ -43,6 +43,8 @@ content {
         border: 1px solid $color-main-border;
         box-shadow: 0 0 10px 5px rgba($color-main-border, 0.4);
         border-radius: 4px;
+        transition: background-color 0.2s ease,
+            border 0.2s ease;
     }
 
     pre {
@@ -63,6 +65,8 @@ content {
         font-family: $font-mono;
         background-color: $color-main-bg-alt;
         border-radius: 3px;
+        transition: background-color 0.2s ease,
+            color 0.2s ease;
     }
 
     table {
@@ -88,7 +92,17 @@ content {
         margin-left: 0;
         margin-right: 0;
         padding-left: 1em;
+        transition: border 0.2s ease;
     }
+}
+
+/**
+ * Theme toggle button.
+ */
+.theme-toggle {
+    font-size: 1.1rem;
+    line-height: 2.2em;
+    float: right;
 }
 
 /**
@@ -97,6 +111,7 @@ content {
 
 .muted {
     color: $color-text-muted;
+    transition: color 0.2s ease;
 }
 
 .meta {
@@ -121,7 +136,8 @@ content {
     line-height: 1;
     margin: 0 0.2em 0.2em 0;
     transition: box-shadow 0.2s ease,
-        background-color 0.2s ease;
+        background-color 0.2s ease,
+        border 0.2s ease;
 }
 
 a.tag {
