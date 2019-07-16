@@ -54,6 +54,7 @@ main {
     #{headings(1,6)} {
         font-family: $font-main;
         color: $color-header;
+        transition: color 0.2s ease-in-out;
 
         a {
             color: $color-header;
