@@ -49,8 +49,8 @@ function name_case($name) {
     // A list of properly cased parts
     $CASED = [
       "O'", "l'", "d'", 'St.', 'Mc', 'the', 'van', 'het', 'ten', 'den', 'von',
-      'und', 'der', 'de', 'da', 'of', 'and', 'III', 'IV', 'VI', 'VII', 'VIII',
-      'IX',
+      'und', 'der', 'de', 'da', 'of', 'and', 'the', 'III', 'IV', 'VI', 'VII',
+      'VIII', 'IX',
     ];
 
     // Trim whitespace sequences to one space, append space to properly chunk
@@ -91,7 +91,7 @@ function name_case($name) {
 ```
 
 <details>
-<summary>Tap here to expand better version for use with Laravel.</summary>
+<summary>Tap here to expand a better version for use with Laravel.</summary>
 
 > This variant is more concise and uses a function approach using
 > [Laravel collections][laravel-collections]:
@@ -114,8 +114,8 @@ function name_case($name) {
 >     // A list of properly cased parts
 >     $CASED = collect([
 >         "O'", "l'", "d'", 'St.', 'Mc', 'the', 'van', 'het', 'ten', 'den', 'von',
->         'und', 'der', 'de', 'da', 'of', 'and', 'III', 'IV', 'VI', 'VII', 'VIII',
->         'IX',
+>         'und', 'der', 'de', 'da', 'of', 'and', 'the', 'III', 'IV', 'VI', 'VII',
+>         'VIII', 'IX',
 >     ]);
 >
 >     // Trim whitespace sequences to one space, append space to properly chunk
@@ -185,12 +185,17 @@ Brilliant!
 
 <br />
 
-> Note: Normalizing using a function like this makes it impossible for some to
-> enter their name as formatted on their ID. Knowing the audience you serve,
-> this is a risk you can accept. It enhances the overall naming situation.
+Normalizing using a function like this makes it impossible for some to enter
+their name as formatted on their ID. Knowing the audience you serve, this is a
+risk you may be able to accept. It enhances the overall naming situation in some
+of my specialized applications, but it might not be perfect for you.
 
-I'll update this post with improvements on this snippet I make in the future
-for interesting edge cases.
+---
+
+> Identifying people by a number in the future would save a lot of hassle.
+> _Naming someone [&pi;][pi] is interesting though. /s_
+
+{{ fit_image(path="blog/2019-07-17_snippet-correctly-capitalize-names-in-php/beagle-boys.png") }}
 
 Feel free to use and share.
 
@@ -199,3 +204,4 @@ _Special thanks to Armand Niculescu, for the [snippet][original] this was inspir
 [laravel-collections]: https://laravel.com/docs/collections
 [name-falsehoods]: https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
 [original]: https://www.media-division.com/correct-name-capitalization-in-php/
+[pi]: https://en.wikipedia.org/wiki/Pi
