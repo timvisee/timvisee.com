@@ -192,8 +192,8 @@ of my specialized applications, but it might not be perfect for you.
 
 ---
 
-> Identifying people by a number in the future would save a lot of hassle.
-> _Naming someone [&pi;][pi] is interesting though. /s_
+> Using numbers to identify people would be a more rational choice, except
+> when you're using Pi. \s
 
 {{ fit_image(path="blog/2019-07-17_snippet-correctly-capitalize-names-in-php/beagle-boys.png") }}
 
@@ -204,4 +204,3 @@ _Special thanks to Armand Niculescu, for the [snippet][original] this was inspir
 [laravel-collections]: https://laravel.com/docs/collections
 [name-falsehoods]: https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
 [original]: https://www.media-division.com/correct-name-capitalization-in-php/
-[pi]: https://en.wikipedia.org/wiki/Pi
