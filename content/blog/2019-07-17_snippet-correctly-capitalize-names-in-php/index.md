@@ -1,7 +1,6 @@
 +++
 title = "Snippet: Correctly capitalize names in PHP"
 description = "How to correctly capitalize and normalize names in PHP with this simple snippet"
-draft = true
 
 [taxonomies]
 categories = ["snippet", "blog"]
