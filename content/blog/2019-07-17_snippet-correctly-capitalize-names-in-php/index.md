@@ -50,9 +50,9 @@ challenges like this and decided to improve, here is my take on it:
 function name_case($name) {
     // A list of properly cased parts
     $CASED = [
-      "O'", "l'", "d'", 'St.', 'Mc', 'the', 'van', 'het', 'ten', 'den', 'von',
-      'und', 'der', 'de', 'da', 'of', 'and', 'the', 'III', 'IV', 'VI', 'VII',
-      'VIII', 'IX',
+      "O'", "l'", "d'", 'St.', 'Mc', 'the', 'van', 'het', 'in', "'t", 'ten',
+      'den', 'von', 'und', 'der', 'de', 'da', 'of', 'and', 'the', 'III', 'IV',
+      'VI', 'VII', 'VIII', 'IX',
     ];
 
     // Trim whitespace sequences to one space, append space to properly chunk
@@ -115,9 +115,9 @@ function name_case($name) {
 > function name_case($name) {
 >     // A list of properly cased parts
 >     $CASED = collect([
->         "O'", "l'", "d'", 'St.', 'Mc', 'the', 'van', 'het', 'ten', 'den', 'von',
->         'und', 'der', 'de', 'da', 'of', 'and', 'the', 'III', 'IV', 'VI', 'VII',
->         'VIII', 'IX',
+>         "O'", "l'", "d'", 'St.', 'Mc', 'the', 'van', 'het', 'in', "'t", 'ten',
+>         'den', 'von', 'und', 'der', 'de', 'da', 'of', 'and', 'the', 'III', 'IV',
+>         'VI', 'VII', 'VIII', 'IX',
 >     ]);
 >
 >     // Trim whitespace sequences to one space, append space to properly chunk
