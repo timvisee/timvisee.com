@@ -187,8 +187,9 @@ Brilliant!
 
 Normalizing using a function like this makes it impossible for some to enter
 their name as formatted on their ID. Knowing the audience you serve, this is a
-risk you may be able to accept. It enhances the overall naming situation in some
-of my specialized applications, but it might not be perfect for you.
+risk you may be able to accept but it will never be perfect. You could always
+use this to suggest formatting improvements to the user, allowing them to choose
+what's right.
 
 ---
 
