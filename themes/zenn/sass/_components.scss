@@ -37,7 +37,10 @@ header#banner .logo {
  */
 
 content {
-    pre, img {
+    pre {
+        padding: 0.5em;
+        overflow: auto;
+        font-family: $font-mono;
         box-sizing: border-box;
         background-color: $color-main-bg-alt;
         border: 1px solid $color-main-border;
@@ -48,13 +51,8 @@ content {
             border 0.2s ease;
     }
 
-    pre {
-        padding: 0.5em;
-        overflow: auto;
-        font-family: $font-mono;
-    }
-
     img {
+        filter: drop-shadow(0 0 10px rgba($color-main-border, 0.70));
         overflow: scroll;
         padding: 0.25em;
         max-width: 100%;
