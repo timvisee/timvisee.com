@@ -68,7 +68,7 @@ function name_case($name) {
         });
     $parts = array_map(function($part) use($CASED) {
             // Extract to name and separator part
-            list($name, $separator) = $name;
+            list($name, $separator) = $part;
 
             // Use specified case for separator if set
             $cased = current(array_filter($CASED, function($i) use($separator) {
@@ -195,8 +195,7 @@ what's right.
 
 ---
 
-> Using numbers to identify people would be a more rational choice, except
-> when you're using Pi. \s
+Using numbers to identify people would be a more rational choice, except when you're called Pi. /s
 
 {{ fit_image(path="blog/2019-07-17_snippet-correctly-capitalize-names-in-php/beagle-boys.png") }}
 
