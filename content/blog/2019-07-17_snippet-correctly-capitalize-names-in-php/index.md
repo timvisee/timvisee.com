@@ -13,20 +13,22 @@ zenn_applause = true
 
 When building websites with any kind of user registration, it's fascinating
 what people enter in name fields. no casing, Random CASING, a dozen spaces
-&nbsp;&nbsp;&nbsp;between&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;words, or nospacingatall. Seeing this always irritates me, I'd like
-things to nice and be consistent.
+&nbsp;&nbsp;&nbsp;between&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;words, or
+nospacingatall. Seeing this always irritates me, I'd fancy things to nice and
+be consistent.
 
-It appears that properly normalizing name capitalization is an _unsolvable_ problem.
-There is **no** consistency with regard to casing, or for any kind of name formatting for
-that matter. See [_Falsehoods programmers believe about names_][name-falsehoods].
+It appears that correctly normalizing name capitalization is an _unsolvable_
+puzzle. There is **no** consistency in name casing, or for any kind of name
+formatting for that matter.
+See [_Falsehoods programmers believe about names_][name-falsehoods].
 
 > _I always wonder how big social networks handle this._
 
-Okay, so this isn't solveable. But at least I could try to make it _better_.
-I came across [this][original] awesome PHP snippet for name capitalization a while
+Okay, so this isn't solvable. But at least I could try to make it _better_.
+I came across [this][original] wonderful PHP snippet for name capitalization a while
 back, but it had a few shortages. It didn't correctly case with just a person's
-last name for instance (needed when storing first/last names separate).  I decided to
-improve, here is my take on it:
+last name for instance (needed when storing first/last names separate). I love
+challenges like this and decided to improve, here is my take on it:
 
 <!-- more -->
 
@@ -156,7 +158,7 @@ function name_case($name) {
 
 <br />
 
-Of course, this function fulfills the truth table given with the original
+Of course, this function fulfills the truth table presented with the original
 snippet:
 
 | Input | Becomes |
@@ -173,7 +175,8 @@ snippet:
 | hENRIC vIII	| Henric VIII |
 | VAsco da GAma	| Vasco da Gama |
 
-And successfully passes various new cases as well:
+It neatly passes additional previously problematic situations as well.
+Brilliant!
 
 | Input | Original snippet | This snippet |
 | :------- | :--- | :----- |
@@ -184,15 +187,15 @@ And successfully passes various new cases as well:
 <br />
 
 > Note: Normalizing using a function like this makes it impossible for some to
-> enter their name as formatted on their ID. Knowing the audience I serve,
-> this is a risk I accept. It improves the overall naming situation.
+> enter their name as formatted on their ID. Knowing the audience you serve,
+> this is a risk you can accept. It enhances the overall naming situation.
 
-I'll update this post for any improvements I make on this snippet in the future
+I'll update this post with improvements on this snippet I make in the future
 for interesting edge cases.
 
 Feel free to use and share.
 
-_Thanks Armand Niculescu, for the [snippet][original] this was inspired by!_
+_Special thanks to Armand Niculescu, for the [snippet][original] this was inspired by!_
 
 [laravel-collections]: https://laravel.com/docs/collections
 [name-falsehoods]: https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
