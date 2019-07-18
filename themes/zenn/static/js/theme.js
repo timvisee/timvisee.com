@@ -4,8 +4,14 @@
  * @param toggled Truthy value to show toggled, normal otherwise.
  */
 function theme_set(toggled) {
-    document.getElementById('style-dark').disabled = toggled;
-    document.getElementById('style-light').disabled = !toggled;
+    if(!toggled) {
+        document.getElementById('style-dark').disabled = false;
+        document.getElementById('style-light').disabled = true;
+    } else {
+        document.getElementById('style-light').disabled = false;
+        document.getElementById('style-dark').disabled = true;
+    }
+
     localStorage.setItem('theme-toggled', toggled ? '1' : '');
 }
 
@@ -18,3 +24,8 @@ function theme_toggle() {
 
 // Apply selected theme, stored in localStorage item
 theme_set(localStorage.getItem('theme-toggled'));
+
+// CSS transitions are blocked on load, unblock when ready
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.body.classList.remove('notransition');
+});

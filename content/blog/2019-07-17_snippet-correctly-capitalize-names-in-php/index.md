@@ -37,16 +37,16 @@ challenges like this and decided to improve, here is my take on it:
 <?php
 
 /**
-  * Normalize the given (partial) name of a person.
-  *
-  * - re-capitalize, take last name inserts into account
-  * - remove excess white spaces
-  *
-  * Snippet from: https://timvisee.com/blog/snippet-correctly-capitalize-names-in-php
-  *
-  * @param string $name The input name.
-  * @return string The normalized name.
-  */
+ * Normalize the given (partial) name of a person.
+ *
+ * - re-capitalize, take last name inserts into account
+ * - remove excess white spaces
+ *
+ * Snippet from: https://timvisee.com/blog/snippet-correctly-capitalize-names-in-php
+ *
+ * @param string $name The input name.
+ * @return string The normalized name.
+ */
 function name_case($name) {
     // A list of properly cased parts
     $CASED = [
@@ -102,16 +102,16 @@ function name_case($name) {
 > <?php
 >
 > /**
->   * Normalize the given (partial) name of a person.
->   *
->   * - re-capitalize, take last name inserts into account
->   * - remove excess white spaces
->   *
->   * Snippet from: https://timvisee.com/blog/snippet-correctly-capitalize-names-in-php
->   *
->   * @param string $name The input name.
->   * @return string The normalized name.
->   */
+>  * Normalize the given (partial) name of a person.
+>  *
+>  * - re-capitalize, take last name inserts into account
+>  * - remove excess white spaces
+>  *
+>  * Snippet from: https://timvisee.com/blog/snippet-correctly-capitalize-names-in-php
+>  *
+>  * @param string $name The input name.
+>  * @return string The normalized name.
+>  */
 > function name_case($name) {
 >     // A list of properly cased parts
 >     $CASED = collect([
