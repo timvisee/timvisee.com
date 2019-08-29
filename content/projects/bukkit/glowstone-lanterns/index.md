@@ -8,6 +8,7 @@ tags = ["bukkit"]
 categories = ["project"]
 
 [extra]
+comments = true
 zenn_applause = true
 +++
 

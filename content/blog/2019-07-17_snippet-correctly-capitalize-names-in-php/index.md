@@ -7,6 +7,7 @@ categories = ["snippet", "blog"]
 tags = ["php", "snippet"]
 
 [extra]
+comments = true
 zenn_applause = true
 +++
 

@@ -22,6 +22,10 @@
                 <applause-button color="#a6a28c" url="{{ page.permalink | safe }}"></applause-button>
             </div>
         {% endif %}
+
+        {% if page.extra.comments %}
+            <script async src="https://comments.app/js/widget.js?2" data-comments-app-website="1EacxS9Q" data-limit="5"></script>
+        {% endif %}
     </article>
 {% endblock body %}
 

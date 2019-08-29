@@ -7,6 +7,7 @@ categories = ["guide", "blog"]
 tags = ["windows", "terminal", "linux"]
 
 [extra]
+comments = true
 zenn_applause = true
 +++
 
