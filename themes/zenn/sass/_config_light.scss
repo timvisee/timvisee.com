@@ -1,5 +1,7 @@
 @import "_config";
 
+$dark: false;
+
 // Colors
 $color-text: #282828;
 $color-text-muted: lighten($color-text, 35%);

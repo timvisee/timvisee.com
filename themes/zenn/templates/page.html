@@ -24,7 +24,9 @@
         {% endif %}
 
         {% if page.extra.comments %}
-            <script async src="https://comments.app/js/widget.js?2" data-comments-app-website="1EacxS9Q" data-limit="5"></script>
+            <div class="comments-container">
+                <script async src="https://comments.app/js/widget.js?2" data-comments-app-website="1EacxS9Q" data-limit="5"></script>
+            </div>
         {% endif %}
     </article>
 {% endblock body %}
