@@ -79,6 +79,11 @@ Here are some other noteworthy profiles of mine:
 
 To send me a message, please check out the [Contact](@/contact.md) page.
 
+## Donate or Sponsor
+To support my current and future work, you can sponsor me.
+
+See the [Donate](@/donate.md) page for more information.
+
 ## Other things I like
 Some other random things I like besides my usual development activity that I
 didn't list above are:

@@ -14,7 +14,7 @@ my [git profiles][profiles] for a more complete overview of my projects._
 - [ffsend](https://github.com/timvisee/ffsend) <span class="muted">_(GitHub, project page is WIP):_</span>  
     _Easily &amp; securely share files from the command line. Fully featured Firefox Send client._
 
-- [BARbapAPPa](https://github.com/timvisee/barbapappa) <span class="muted">_(GitHub, project page is WIP):_</span>  
+- [Barbapappa](https://github.com/timvisee/barbapappa) <span class="muted">_(GitHub, project page is WIP):_</span>  
     _Bar management application to manage transactions and inventory._
 
 - [pixelpwnr](https://github.com/timvisee/pixelpwnr) <span class="muted">_(GitHub, project page is WIP):_</span>  
