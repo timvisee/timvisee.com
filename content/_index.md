@@ -19,6 +19,8 @@ of [categories](/categories) and [tags](/tags) to scope on a more specific topic
 
 Learn more about me [here](@/about.md).
 
+Interested in donating for my work? See [Donate or Sponsor](@/donate.md).
+
 ---
 
 _The old website is still available at [old.timvisee.com][old]._
