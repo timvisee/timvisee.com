@@ -21,18 +21,25 @@ As I'm still a student, I must set aside most of my free time to work on a job.
 I hope to be able to work full-time on open-source projects in the future. You
 could help kick-start this goal and begin to make this a reality.
 
-Below I've provided a few official channels you could use to sponsor me.
-
 Any amount is helpful, and everything is welcome.
 
 A **big** thanks to all awesome supporters!
 
 ~ Tim
 
-### One-time donation
-- [Ko-fi](https://ko-fi.com/timvisee)<span class="muted">: buy me a coffee</span>
-- [PayPal](https://paypal.me/timvisee)<span class="muted">: support via a PayPal payment</span>
-- [bunq.me](https://bunq.me/timvisee/0/Sponsor)<span class="muted">: support via an iDeal or SOFORT payment</span>
+## Sponsor
+I provide various official channels you can use to sponsor me, both for one-time
+and recurring donations.
+
+Currently I highly recommend to sponsor me through
+[GitHub](https://github.com/users/timvisee/sponsorship). They'll double your
+donation in the first year. I'll effectively receive 200% of your donated amount.
 
 ### Recurring sponsoring
-- [Patreon](https://patreon.com/timvisee)<span class="muted">: support with a monthly donation</span>
+- [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">: your donation is doubled by GitHub</span>
+- [Patreon](https://patreon.com/timvisee)
+
+### One-time donation
+- [Ko-fi](https://ko-fi.com/timvisee)<span class="muted">: buy me a coffee</span>
+- [PayPal](https://paypal.me/timvisee)
+- [bunq.me](https://bunq.me/timvisee/0/Sponsor)<span class="muted">: support via an iDeal or SOFORT payment</span>

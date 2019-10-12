@@ -14,12 +14,10 @@ I intend to use this website as simple blog platform to share cool code
 snippets, project releases, simple tutorials, useful findings and to share my
 experience with various topics I'm interested in.
 
-Check out the [Blog](@/blog/_index.md) section, or see the sidebar for a list
-of [categories](/categories) and [tags](/tags) to scope on a more specific topic.
-
-Learn more about me [here](@/about.md).
-
-Interested in donating for my work? See [Donate or Sponsor](@/donate.md).
+_Quick links:_
+- [Blog](@/blog/_index.md) <span class="muted">([categories](/categories), [tags](/tags))</span>
+- [Donate or Sponsor](@/donate.md)
+- [About](@/about.md)
 
 ---
 

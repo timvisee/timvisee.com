@@ -90,7 +90,7 @@ didn't list above are:
 
 - Music, to listen to, usually while at work
   - Deep house, House, Electronic, Techno and _related_
-- DIY (Do it Yourself) projects of various sorts, just to be creative
+- DIY (Do it Yourself) projects of various sorts, I like to be creative
 - Gaming, [oh yes][steam-games]
 - Scouting and other activities, outside, in-nature, such as camping or hiking
 
