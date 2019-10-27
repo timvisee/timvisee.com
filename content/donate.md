@@ -21,7 +21,7 @@ As I'm still a student, I must set aside most of my free time to work on a job.
 I hope to be able to work full-time on open-source projects in the future. You
 could help kick-start this goal and begin to make this a reality.
 
-Any amount is helpful, and everything is welcome.
+Any amount is helpful, and everything is appreciated.
 
 A **big** thanks to all awesome supporters!
 

@@ -51,7 +51,7 @@ content {
             border 0.2s ease;
     }
 
-    img {
+    img, video {
         filter: drop-shadow(0 0 10px rgba($color-main-border, 0.70));
         overflow: scroll;
         padding: 0.25em;
