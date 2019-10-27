@@ -169,11 +169,7 @@ I've recorded a simple video showing off the proof of concept.
 - On the right, the `keys.txt` file is shown in which stolen keys are collected.
 - In the end, I export Bob's key through the website as normal and compare it to the key we stole. They match!
 
-<video controls>
-  <source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.webm" type="video/webm">
-  <source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.mp4" type="video/mp4">
-  Your browser does not support HTML5 video :(
-</video>
+<video controls><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.webm" type="video/webm"><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.mp4" type="video/mp4">Your browser does not support HTML5 video :(</video>
 
 All in all, it took me about 2 hours to figure all this out.
 Let's start fixing this.
