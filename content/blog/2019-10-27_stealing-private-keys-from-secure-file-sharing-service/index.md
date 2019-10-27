@@ -64,7 +64,7 @@ message will appear as soon as someone opens any of your request links.
 
 ![XSS alert screenshot on request page](./xss-alert.png)
 
-This means we can execute our own code on a targets machine.  That's some nasty
+This means we can execute our own code on a targets machine. That's some nasty
 stuff! The question is, what significant things can we do with this issue?
 
 ## Local private keys
@@ -107,10 +107,10 @@ sure. Let's send this key to a remote server for the attacker to collect, and
 profit, oh yes!
 
 For this, I started an attempt on making [POST][http-methods] requests with the
-private key data to a remote domain I own. Here I hit the first a first
-road-block. The name field only allows input up to 255 characters. Native
-JavaScript is quite verbose with making a request, so some serious
-[golfing][codegolf] would be required.
+private key data to a remote domain I own. Here I hit the first roadblock. The
+name field only allows input up to 255 characters. Native JavaScript is quite
+verbose with making a request, so some serious [golfing][codegolf] would be
+required.
 
 Soon I found out [jQuery][jquery] was included in the application, which allows
 making super simple and short [Ajax][ajax] requests. Brilliant!
