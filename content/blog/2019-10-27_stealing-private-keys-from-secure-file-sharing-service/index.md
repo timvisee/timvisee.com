@@ -15,11 +15,8 @@ _Note: in agreement with the company, I decided not to name them to prevent
 damaging their brand image. The company fixed the issue within an hour after
 notifying them, big kudos for that._
 
-> Here's a story on a _secure_ file transfer company, that got hacked in 2 hours, by a nerd with a computer.
-
-On the 24th of October, an article was posted on [Tweakers][tweakers]
-(a Dutch tech website) showing off a newly released service to securely request
-files from someone through the web.
+Some days ago an article was posted on a Dutch tech website, showing off a newly
+released service to securely request files from someone through the web.
 
 As always, I'm super interested in the cryptographic implementation of such
 services to ensure they're secure, even if for example, the company servers
@@ -169,7 +166,8 @@ I've recorded a simple video showing off the proof of concept.
 
 <video controls><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.webm" type="video/webm"><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.mp4" type="video/mp4">Your browser does not support HTML5 video :(</video>
 
-Let's start fixing this.
+All in all, it took about 2 hours to figure all this out. Let's start fixing
+this.
 
 ## Fixed in an hour
 After I built the PoC, I immediately contacted the company privately to notify
