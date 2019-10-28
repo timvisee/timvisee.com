@@ -115,6 +115,12 @@ making super simple and short [Ajax][ajax] requests. Brilliant!
 This didn't work out in the end though because of some set [CORS][cors] headers,
 being a nice method for protecting against these kinds of things.
 
+_Edit: Someone
+[mentioned](https://www.reddit.com/r/netsec/comments/dnwudw/stealing_private_keys_from_a_secure_file_sharing/f5jg0x5/)
+that this didn't work due to a misconfiguration on my server instead. I did set
+the `Access-Control-Allow-Origin` header to `*` but that didn't fix it. I
+then blindly assumed this was due to a CORS header on the company end._
+
 Fun fact, this doesn't work against non-[Ajax][ajax] requests. Opting for a
 [GET][http-methods] request with the data suffixed to the URL was perfectly fine, so I
 choose to use [`iframes`][iframe]. I suffixed the data to the end of the URL
@@ -233,6 +239,5 @@ with [`ffsend`][ffsend] (which is a command line client for it that I built).
 [indexeddb]: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
 [jquery]: https://jquery.com/
 [private-key]: https://info.ssl.com/faq-what-is-a-private-key/
-[tweakers]: https://tweakers.net/
 [window-location]: https://developer.mozilla.org/en-US/docs/Web/API/Window/location
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
