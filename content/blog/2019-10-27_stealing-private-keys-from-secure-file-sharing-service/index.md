@@ -59,7 +59,7 @@ message will appear as soon as someone opens any of your request links.
 <script>alert('Hi there!');</script>
 ```
 
-![XSS alert screenshot on request page](./xss-alert.png)
+{{ fit_image(path="blog/2019-10-27_stealing-private-keys-from-secure-file-sharing-service/xss-alert.png") }}
 
 This means we can execute our own code on a targets machine. That's some nasty
 stuff! The question is, what significant things can we do with this issue?
@@ -93,7 +93,7 @@ dbReq.onsuccess = () => {
 Embedding this in our name will make the file request pages show the receiving
 user's private key in a JavaScript alert. Whoops.
 
-![XSS alert with private key screenshot on request page](./xss-rsa.png)
+{{ fit_image(path="blog/2019-10-27_stealing-private-keys-from-secure-file-sharing-service/xss-rsa.png") }}
 
 The amazing thing is that the request URL isn't modified to achieve this. It
 does not look suspicious. The malicious snippet is stored in the database.
@@ -170,7 +170,11 @@ I've recorded a simple video showing off the proof of concept.
 - On the right, the `keys.txt` file is shown in which stolen keys are collected.
 - In the end, I export Bob's key through the website as normal and compare it to the key we stole. They match!
 
-<video controls><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.webm" type="video/webm"><source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.mp4" type="video/mp4">Your browser does not support HTML5 video :(</video>
+<video controls>
+  <source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.webm" type="video/webm">
+  <source src="https://uploads.timvisee.com/p/stealing-private-keys-from-secure-file-sharing-service-poc-video.mp4" type="video/mp4">
+  <p>Your browser does not support HTML5 video :(</p>
+</video>
 
 All in all, it took about 2 hours to figure all this out. Let's start fixing
 this.
