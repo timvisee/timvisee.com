@@ -206,7 +206,7 @@ be secure, purely on what they're claiming on their website. This shows to be
 true again and again.
 
 I always recommend choosing a solution that:
-- Has been around for a while for a while
+- Has been around for a while
 - That is open-source
 - That has been battle-tested in the real world
 - That has had public security audits by multiple parties
