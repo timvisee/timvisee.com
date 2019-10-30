@@ -14,38 +14,37 @@
         <meta name="application-name" content="{{ config.title }}" />
         <meta name="author" content="{{ config.extra.author }}" />
 
-        {% if page.title %}
+        {% if page.title -%}
             <meta name="title" content="{{ page.title }}" />
-        {% elif section.title %}
+        {%- elif section.title -%}
             <meta name="title" content="{{ section.title }}" />
-        {% else %}
+        {%- else -%}
             <meta name="title" content="{{ config.title }}" />
-        {% endif %}
+        {%- endif %}
 
-        {% if page.description %}
+        {% if page.description -%}
             <meta name="description" content="{{ page.description }}" />
-        {% elif section.description %}
+        {%- elif section.description -%}
             <meta name="description" content="{{ section.description }}" />
-        {% else %}
+        {%- else -%}
             <meta name="description" content="{{ config.description }}" />
-        {% endif %}
+        {%- endif %}
 
-        {% set keywords = [] %}
-        {% if page.taxonomies.tags %}
+        {% set keywords = [] -%}
+        {%- if page.taxonomies.tags -%}
             {% set_global keywords = page.taxonomies.tags %}
-        {% endif %}
-        {% if keywords | length == 0 %}
-            {% set tags = get_taxonomy(kind="tags") %}
-            {% if tags.items | length > 0 %}
+        {%- endif -%}
+        {%- if keywords | length == 0 -%}
+            {%- set tags = get_taxonomy(kind="tags") -%}
+            {%- if tags.items | length > 0 -%}
                 {%- for tag in tags.items -%}
-                    {% set_global keywords = keywords | concat(with=tag.name) %}
+                    {%- set_global keywords = keywords | concat(with=tag.name) -%}
                 {%- endfor -%}
-            {% endif %}
-        {% endif %}
-        {% if keywords | length > 0 %}
+            {%- endif -%}
+        {%- endif -%}
+        {%- if keywords | length > 0 -%}
             <meta name="keywords" content="{{ keywords | join(sep=",") }}"/>
-        {% endif %}
-
+        {%- endif %}
 
         <title>
             {%- block title -%}
@@ -59,84 +58,84 @@
             {%- endblock title -%}
         </title>
 
-        {% block css %}
+        {% block css -%}
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Zilla+Slab:400,700|Merriweather:400,400i,700,700i|Fira+Mono&display=swap" rel="stylesheet">
             <link id="style-dark" rel="stylesheet" href="{{ get_url(path="site_dark.css", trailing_slash=false) | safe }}">
             <link id="style-light" disabled rel="stylesheet" href="{{ get_url(path="site_light.css", trailing_slash=false) | safe }}">
 
-            {% if page.extra.zenn_applause %}
+            {%- if page.extra.zenn_applause -%}
                 <link rel="stylesheet" href="{{ get_url(path="vendor/applause-button/applause-button.css", trailing_slash=false) | safe }}">
-            {% endif %}
-        {% endblock css %}
+            {%- endif -%}
+        {%- endblock css %}
 
-        {% block js %}
+        {% block js -%}
             <script src="{{ get_url(path="js/theme.js", trailing_slash=false) | safe }}"></script>
 
-            {% if page.extra.zenn_applause %}
+            {%- if page.extra.zenn_applause -%}
                 <script src="{{ get_url(path="vendor/applause-button/applause-button.js", trailing_slash=false) | safe }}"></script>
-            {% endif %}
-        {% endblock js %}
+            {%- endif -%}
+        {%- endblock js %}
 
-        {% if config.generate_rss %}
+        {% if config.generate_rss -%}
             <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
-        {% endif %}
+        {%- endif %}
 
-        {% block extra_head %}
+        {%- block extra_head %}
         {% endblock extra_head %}
     </head>
 
     <body class="notransition">
-        {% if config.extra.zenn_title %}
+        {% if config.extra.zenn_title -%}
             {% block header %}
                 <header id="banner">
                     <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
                 </header>
             {% endblock header %}
-        {% endif %}
+        {%- endif -%}
 
         {% block main %}
             <main>
                 <content>
                     <a href="#" class="theme-toggle" onclick="theme_toggle(); return false;" title="Toggle light/dark mode">
-                        {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe }}
+                        {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe -}}
                     </a>
 
-                    {% if section.title %}
+                    {% if section.title -%}
                         <header>
                             <h1>
                                 {{ section.title }}
-                                {% if paginator %}
+                                {%- if paginator -%}
                                     {% if paginator.current_index > 1 %}
                                         &nbsp;&middot;&nbsp; Page {{ paginator.current_index }}
                                     {% endif %}
-                                {% endif %}
-                                {% include "anchor-link.html" %}
+                                {%- endif -%}
+                                {%- include "anchor-link.html" -%}
                             </h1>
 
-                            {% if not section.extra.zenn_hide_header_meta %}
-                                {% block header_meta %}{% endblock header_meta %}
-                            {% endif %}
+                            {%- if not section.extra.zenn_hide_header_meta -%}
+                                {%- block header_meta -%}{%- endblock header_meta -%}
+                            {%- endif %}
                         </header>
-                    {% endif %}
-                    {% if page.title %}
+                    {%- endif %}
+                    {% if page.title -%}
                         <header>
                             <h1>
                                 {{ page.title }}
-                                {% include "anchor-link.html" %}
+                                {%- include "anchor-link.html" -%}
                             </h1>
 
-                            {% if not page.extra.zenn_hide_header_meta %}
-                                {% block header_meta %}{% endblock header_meta %}
-                            {% endif %}
+                            {%- if not page.extra.zenn_hide_header_meta -%}
+                                {%- block header_meta -%}{%- endblock header_meta -%}
+                            {%- endif %}
                         </header>
-                    {% endif %}
+                    {%- endif %}
 
-                    {% block body %}{% endblock body %}
+                    {% block body -%}{%- endblock body %}
 
                     {% block page_footer %}{% endblock page_footer %}
                 </content>
                 <sidebar>
-                    {% if config.extra.zenn_menu %}
+                    {% if config.extra.zenn_menu -%}
                         <section>
                             <ul>
                                 <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -152,10 +151,10 @@
                                 </nav>
                             </ul>
                         </section>
-                    {% endif %}
+                    {%- endif %}
 
                     {# Table of contents #}
-                    {% if toc %}
+                    {% if toc -%}
                         <section>
                             <h1>Contents</h1>
                             <ul>
@@ -176,11 +175,11 @@
                                 {% endfor %}
                             </ul>
                         </section>
-                    {% endif %}
+                    {%- endif %}
 
                     {# Categories #}
                     {% set categories = get_taxonomy(kind="categories") %}
-                    {% if categories.items | length > 0 %}
+                    {% if categories.items | length > 0 -%}
                         <section>
                             <h1><a href="/categories">Categories</a></h1>
                             <ul>
@@ -197,11 +196,11 @@
                                 </nav>
                             </ul>
                         </section>
-                    {% endif %}
+                    {%- endif %}
 
                     {# Tags #}
-                    {% set tags = get_taxonomy(kind="tags") %}
-                    {% if tags.items | length > 0 %}
+                    {% set tags = get_taxonomy(kind="tags") -%}
+                    {% if tags.items | length > 0 -%}
                         <section>
                             <h1><a href="/tags">Tags</a></h1>
                             <div class="tags">
@@ -213,7 +212,7 @@
                                 {% endfor %}
                             </div>
                         </section>
-                    {% endif %}
+                    {%- endif %}
 
                     <p class="muted">
                         Copyright &copy; {{ config.title }} {{ now() | date(format="%Y") }}
