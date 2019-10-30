@@ -11,6 +11,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="/favicon.png" />
 
+        <meta name="application-name" content="{{ config.title }}" />
+        <meta name="author" content="{{ config.extra.author }}" />
+
+        {% if page.title %}
+            <meta name="title" content="{{ page.title }}" />
+        {% elif section.title %}
+            <meta name="title" content="{{ section.title }}" />
+        {% else %}
+            <meta name="title" content="{{ config.title }}" />
+        {% endif %}
+
+        {% if page.description %}
+            <meta name="description" content="{{ page.description }}" />
+        {% elif section.description %}
+            <meta name="description" content="{{ section.description }}" />
+        {% else %}
+            <meta name="description" content="{{ config.description }}" />
+        {% endif %}
+
+        {% set tags = get_taxonomy(kind="tags") %}
+        {% set keywords = [] %}
+        {% if tags.items | length > 0 %}
+            {%- for tag in tags.items -%}
+                {% set_global keywords = keywords | concat(with=tag.name) %}
+            {%- endfor -%}
+        {% endif %}
+        {% if keywords | length > 0 %}
+            <meta name="keywords" content="{{ keywords | join(sep=",") }}"/>
+        {% endif %}
+
         <title>
             {%- block title -%}
                 {%- if page.title -%}

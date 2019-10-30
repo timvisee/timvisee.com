@@ -1,7 +1,7 @@
 base_url = "https://timvisee.com"
 
 title = "Tim Visée"
-description = "My personal blog"
+description = "Personal portfolio and blog of Tim Visée"
 
 theme = "zenn"
 default_language = "en"
