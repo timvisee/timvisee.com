@@ -30,16 +30,22 @@
             <meta name="description" content="{{ config.description }}" />
         {% endif %}
 
-        {% set tags = get_taxonomy(kind="tags") %}
         {% set keywords = [] %}
-        {% if tags.items | length > 0 %}
-            {%- for tag in tags.items -%}
-                {% set_global keywords = keywords | concat(with=tag.name) %}
-            {%- endfor -%}
+        {% if page.taxonomies.tags %}
+            {% set_global keywords = page.taxonomies.tags %}
+        {% endif %}
+        {% if keywords | length == 0 %}
+            {% set tags = get_taxonomy(kind="tags") %}
+            {% if tags.items | length > 0 %}
+                {%- for tag in tags.items -%}
+                    {% set_global keywords = keywords | concat(with=tag.name) %}
+                {%- endfor -%}
+            {% endif %}
         {% endif %}
         {% if keywords | length > 0 %}
             <meta name="keywords" content="{{ keywords | join(sep=",") }}"/>
         {% endif %}
+
 
         <title>
             {%- block title -%}
