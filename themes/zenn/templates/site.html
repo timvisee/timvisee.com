@@ -12,15 +12,15 @@
         <link rel="icon" type="image/png" href="/favicon.png" />
 
         <title>
-            {% block title %}
-                {% if page.title %}
-                    {{ page.title }} &middot;
-                {% endif %}
-                {% if section.title %}
-                    {{ section.title }} &middot;
-                {% endif %}
+            {%- block title -%}
+                {%- if page.title -%}
+                    {{ page.title }}{{ " · " }}
+                {%- endif -%}
+                {%- if section.title -%}
+                    {{ section.title }}{{ " · " }}
+                {%- endif -%}
                 {{ config.title }}
-            {% endblock title %}
+            {%- endblock title -%}
         </title>
 
         {% block css %}
