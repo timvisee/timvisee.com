@@ -24,6 +24,7 @@ deploy:
     - "sshpass -p $DEPLOY_SSH_PASS ssh -oStrictHostKeyChecking=no $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST 'rm -rf /var/customers/webs/timvisee/timvisee.com/old; mkdir -p /var/customers/webs/timvisee/timvisee.com/new'"
     - "sshpass -p $DEPLOY_SSH_PASS scp -oStrictHostKeyChecking=no -r public/* $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST:/var/customers/webs/timvisee/timvisee.com/new/"
     - "sshpass -p $DEPLOY_SSH_PASS ssh -oStrictHostKeyChecking=no $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST 'mv /var/customers/webs/timvisee/timvisee.com/live /var/customers/webs/timvisee/timvisee.com/old; mv /var/customers/webs/timvisee/timvisee.com/new /var/customers/webs/timvisee/timvisee.com/live; rm -rf /var/customers/webs/timvisee/timvisee.com/old'"
+    - "echo Site is now deployed and live at https://timvisee.com/"
   dependencies:
   - build
   environment:
