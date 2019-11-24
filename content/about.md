@@ -99,7 +99,7 @@ didn't list above are:
 [sr.ht]: https://git.sr.ht/~timvisee
 [stackoverflow]: https://stackoverflow.com/users/1000145
 [stackexchange]: https://stackexchange.com/users/980236?tab=accounts
-[reddit]: https://reddit.com/r/timvisee
+[reddit]: https://reddit.com/u/timvisee
 [hackernews]: https://news.ycombinator.com/user?id=timvisee
 [lobsters]: https://lobste.rs/u/timvisee/
 [mastodon]: https://mastodon.social/@timvisee
