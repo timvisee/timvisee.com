@@ -6,15 +6,12 @@ description = "Projects index"
 zenn_hide_header_meta = true
 +++
 
-_This page is incomplete, many more projects will be added over time. Check out
-my [git profiles][profiles] for a more complete overview of my projects._
-
 #### Current main projects
 
-- [ffsend](https://github.com/timvisee/ffsend) <span class="muted">_(GitHub, project page is WIP):_</span>  
+- [ffsend](@/projects/ffsend.md)  
     _Easily &amp; securely share files from the command line. Fully featured Firefox Send client._
 
-- [Barbapappa](https://github.com/timvisee/barbapappa) <span class="muted">_(GitHub, project page is WIP):_</span>  
+- [Barbapappa](@/projects/barbapappa.md)  
     _Bar management application to manage transactions and inventory._
 
 - [pixelpwnr](https://github.com/timvisee/pixelpwnr) <span class="muted">_(GitHub, project page is WIP):_</span>  
@@ -23,5 +20,8 @@ my [git profiles][profiles] for a more complete overview of my projects._
 #### Old projects &amp; categories:
 
 - [Bukkit projects](@/projects/bukkit.md):  _CraftBukkit plugins_
+
+_This page is incomplete, many more projects will be added over time. Check out
+my [git profiles][profiles] for a more complete overview of my projects._
 
 [profiles]: @/about.md#me-on-the-web
