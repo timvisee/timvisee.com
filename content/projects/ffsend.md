@@ -1,6 +1,7 @@
 +++
 title = "ffsend"
 description = "ffsend - Easily & securely share files from the command line. Fully featured Firefox Send client."
+date = 2018-05-21
 
 [taxonomies]
 tags = ["cli", "file-sharing", "file-upload", "security"]

@@ -1,6 +1,7 @@
 +++
 title = "Barbapappa"
 description = "Barbapappa. Bar management application to manage transactions and inventory."
+date = 2019-11-15
 
 [taxonomies]
 tags = ["bar", "management", "webapp"]
