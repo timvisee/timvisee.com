@@ -19,9 +19,9 @@ Some days ago an article was posted on a Dutch tech website, showing off a newly
 released service to securely request files from someone through the web.
 
 As always, I'm super interested in the cryptographic implementation of such
-services to ensure they're secure, even if for example, the company servers
+services to ensure they're secure. Even if for example, the company servers
 would be compromised. Sadly, their website didn't go deep into the technical
-details other than some simple facts that local cryptography is used with a
+details. It only noted some simple facts that local cryptography is used with a
 private key using RSA and AES to provide end-to-end encryption. The application
 is not open-source which would allow easy auditing, and no white paper is
 available.
@@ -136,9 +136,9 @@ $('body').append(
 );
 ```
 
-> Redirecting the user to the attacker's page using
-> [`window.location.href`][window-location] would work as well, but that looks
-> super suspicious.
+_Redirecting the user to the attacker's page using
+[`window.location.href`][window-location] would work as well, but that looks
+super suspicious._
 
 Hurray! We're now remotely collecting someone's private key!
 
@@ -214,7 +214,7 @@ I always recommend choosing a solution that:
   research and reviews
 - That is hosted by a _trustful_ party
 
-> Do I recommend to look for something else than this service?
+_Do I recommend to look for something else than this service?_
 
 Not necessarily. Other than this implementation issue, they seem to have
 set-up things quite well for what I can probe from the outside.
@@ -227,7 +227,7 @@ fits the informal requirements I listed above, you're may be better off from a
 security standpoint.
 
 To securely send someone a file, I personally recommend [Firefox Send][firefox-send]
-with [`ffsend`][ffsend] (which is a command line client for it that I built).
+with [`ffsend`][ffsend] (which is a command line client for it that I built, shameless plug).
 
 [ajax]: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX
 [codegolf]: https://en.wikipedia.org/wiki/Code_golf
