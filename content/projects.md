@@ -14,7 +14,7 @@ zenn_hide_header_meta = true
 - [Barbapappa](@/projects/barbapappa.md)  
     _Bar management application to manage transactions and inventory._
 
-- [pixelpwnr](https://github.com/timvisee/pixelpwnr) <span class="muted">_(GitHub, project page is WIP):_</span>  
+- [pixelpwnr](@/projects/pixelpwnr.md)  
     _Insanely fast pixelflut client for images and animations written in Rust._
 
 #### Other projects &amp; categories:

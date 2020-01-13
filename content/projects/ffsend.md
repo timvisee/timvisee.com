@@ -38,7 +38,7 @@ All files are always encrypted on the client, and secrets are never shared with 
 - [Build](https://github.com/timvisee/ffsend/#build)
 - [Security](https://github.com/timvisee/ffsend/#security)
 
-View more on the project pages over at:
+_View more on the project pages over at:_
 
 - [GitHub][github]
 - [GitLab][gitlab]
