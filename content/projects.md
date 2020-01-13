@@ -6,7 +6,7 @@ description = "Projects index"
 zenn_hide_header_meta = true
 +++
 
-#### Current main projects
+#### Project highlights
 
 - [ffsend](@/projects/ffsend.md)  
     _Easily &amp; securely share files from the command line. Fully featured Firefox Send client._
@@ -17,7 +17,7 @@ zenn_hide_header_meta = true
 - [pixelpwnr](https://github.com/timvisee/pixelpwnr) <span class="muted">_(GitHub, project page is WIP):_</span>  
     _Insanely fast pixelflut client for images and animations written in Rust._
 
-#### Old projects &amp; categories:
+#### Other projects &amp; categories:
 
 - [Bukkit projects](@/projects/bukkit.md):  _CraftBukkit plugins_
 

@@ -31,10 +31,10 @@ decided to put it to the test. Let's see what I could break.
 
 Spoiler alert: it didn't turn out so well...
 
+<!-- more -->
+
 _This article goes into the technical details on how this was possible, you may
 want to skip to the PoC [video](#video) instead._
-
-<!-- more -->
 
 ## XSS
 After making an account, I started testing with some basic well-known techniques.

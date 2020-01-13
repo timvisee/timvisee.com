@@ -29,7 +29,7 @@ git clone https://gitlab.com/timivsee/timvisee.com
 cd timvisee.com
 
 # Build and serve a local instance
-zola serve
+zola serve --open
 
 # Open: 127.0.0.1:1111
 # Edit files in ./content, view live changes your browser
