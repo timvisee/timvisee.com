@@ -4,7 +4,7 @@ description = "ffsend - Easily & securely share files from the command line. Ful
 date = 2018-05-21
 
 [taxonomies]
-tags = ["cli", "file-sharing", "file-upload", "security"]
+tags = ["cli", "file-sharing", "file-upload", "rust", "security"]
 categories = ["project"]
 
 [extra]
