@@ -49,13 +49,13 @@ also for humans.
 - _and much more_
 
 ## Me on the web
-I prefer to make software I work on open-source, because I find it important to
-allow anybody to modify, contribute, improve, inspect and verify it.
-I also contribute to various other open projects as well.
-All of it is available on my git profiles:
+I prefer to make software free and open-source, because I believe it's
+important to allow anybody to inspect, modify, improve, contribute and verify
+it without restrictions. I also contribute to various other open projects as
+well. All of it is available on my git profiles:
 
-- [GitHub][github]
-- [GitLab][gitlab]
+- [GitHub][github] <span class="muted">([projects](https://github.com/timvisee?tab=repositories))</span>
+- [GitLab][gitlab] <span class="muted">([projects](https://gitlab.com/users/timvisee/projects))</span>
 - [sr.ht][sr.ht]
 
 As any developer, I use Stack Overflow and alike for development and IT related

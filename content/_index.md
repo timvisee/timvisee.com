@@ -7,8 +7,8 @@ Welcome to my personal website.
 
 This website shows what projects I work on.
 See an overview on the [Projects](@/projects.md) page.
-I prefer to open-source projects, therefore most are available on my
-[GitHub][github] and [GitLab][gitlab] profiles.
+I prefer to make projects free and open-source, therefore most are available on
+my [GitHub][github] and [GitLab][gitlab] profiles.
 
 I also use this website for basic blogging to share cool code snippets, project
 releases, simple tutorials, useful findings and to share my experience with
