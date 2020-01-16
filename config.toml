@@ -27,6 +27,7 @@ zenn_menu = [
     {url = "$BASE_URL/projects/", name = "Projects"},
     {url = "$BASE_URL/blog/", name = "Blog"},
     {url = "$BASE_URL/about/", name = "About"},
+    {url = "$BASE_URL/donate/", name = "Donate"},
     {url = "$BASE_URL/contact/", name = "Contact"},
 ]
 zenn_source = "https://gitlab.com/timvisee/timvisee.com/"
