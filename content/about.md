@@ -58,7 +58,7 @@ well. All of it is available on my git profiles:
 - [GitLab][gitlab] <span class="muted">([projects](https://gitlab.com/users/timvisee/projects))</span>
 - [sr.ht][sr.ht]
 
-As any developer, I use Stack Overflow and alike for development and IT related
+Like any developer, I use Stack Overflow and alike for development and IT related
 questions and answers:
 
 - [Stack Overflow][stackoverflow]
