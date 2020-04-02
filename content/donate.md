@@ -37,6 +37,7 @@ donation in the first year. I'll effectively receive 200% of your donated amount
 
 ### Recurring sponsoring
 - [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">: your donation is doubled by GitHub</span>
+- [Liberapay](https://liberapay.com/timvisee/)
 - [Patreon](https://patreon.com/timvisee)
 
 ### One-time donation
