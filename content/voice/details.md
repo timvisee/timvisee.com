@@ -63,4 +63,4 @@ section. To do this, right click on this section and click `Add`.
 Please enjoy your time on our server.
 
 [downloads]: https://github.com/mumble-voip/mumble/releases
-[connect]: mumble://voice.timvisee.com:64738?title=timvisee.com%20-%20Mumble&version=1.2.0
+[connect]: mumble://voice.timvisee.com:64738?title=timvisee.com%20-%20Mumble&version=1.3.0
