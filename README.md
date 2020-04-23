@@ -7,7 +7,8 @@
 The source code for my personal website.
 View it live at [timvisee.com][site].
 
-[![Homepage screenshot](./screenshot.png)][site]
+[![Homepage screenshot dark](./screenshot-dark.png)][site]
+[![Homepage screenshot light](./screenshot-light.png)][site]
 
 ## Content
 The majority of the content is formatted in Markdown, located in the
