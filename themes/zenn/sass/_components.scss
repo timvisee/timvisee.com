@@ -21,6 +21,7 @@ header#banner {
         letter-spacing: 0.075em;
         line-height: 1;
         text-transform: uppercase;
+        border-radius: 0;
 
         &:hover {
             border-color: $logo-color-hover !important;
@@ -112,7 +113,7 @@ content {
     .comments-container {
         padding: 10px;
         background-color: #fff;
-        border-radius: 5px;
+        border-radius: 6px;
         transition: box-shadow 0.2s ease;
 
         @if $dark == true {

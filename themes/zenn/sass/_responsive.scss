@@ -36,11 +36,16 @@
         }
     }
 
-    header#headertron .greeting .links {
-        justify-content: space-evenly;
+    header#headertron {
+        font-size: 0.7rem;
+        margin: 2em 0;
 
-        a {
-            margin: 0;
+        .greeting .links {
+            justify-content: space-evenly;
+
+            a {
+                margin: 0;
+            }
         }
     }
 }
@@ -54,11 +59,6 @@
     header#banner,
     header#headertron {
         padding: 0 1em 0 1em;
-    }
-
-    header#headertron {
-        font-size: 0.7rem;
-        margin: 2em 0;
     }
 }
 
