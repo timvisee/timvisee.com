@@ -38,10 +38,9 @@
     }
 
     header#headertron {
-        font-size: 0.7rem;
-        margin: 2em 0;
+        font-size: 1.6em;
 
-        .greeting .links {
+        .links {
             justify-content: space-evenly;
 
             a {
@@ -62,10 +61,14 @@
     header#headertron {
         padding: 0 1em 0 1em;
     }
+
+    header#headertron {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: $responsive-tiny) {
-    header#headertron .greeting .links {
+    header#headertron .links {
         flex-direction: column;
     }
 }

@@ -79,6 +79,10 @@ hr {
     border-top: 1px dashed $color-main-border;
 }
 
+.color-header {
+    color: $color-header;
+}
+
 // Block all CSS transitions inside elements having this class
 // Used on page load, to prevent weird CSS transition-on-load behaviour
 .notransition * {
