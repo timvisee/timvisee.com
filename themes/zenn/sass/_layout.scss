@@ -1,12 +1,11 @@
-body > header#banner {
-    margin: 1em 0;
-    padding: 0 2.5em 0 2.5em;
+header#banner {
 }
 
-body > header#banner {
+header#banner {
+    margin: 1em 0;
+    padding: 0 2.5em 0 2.5em;
     display: grid;
     column-gap: 1em;
-
     grid-template-columns: min-content auto min-content;
     grid-template-areas:
         "logo nav actions";
