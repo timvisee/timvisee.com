@@ -1,10 +1,71 @@
 body > header {
-    text-align: center;
     margin: 1em 0;
+    padding: 0 2.5em 0 2.5em;
+}
+
+body > header {
+    display: grid;
+    column-gap: 1em;
+
+    grid-template-columns: min-content auto min-content;
+    grid-template-areas:
+        "logo nav actions";
+
+    a.logo {
+        grid-area: logo;
+        place-self: center;
+    }
+
+    section.navbar {
+        grid-area: nav;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline;
+                line-height: 2;
+                width: 100%;
+
+                a {
+                    display: inline-block;
+                    padding: 0 1em;
+                    font-family: $font-main;
+
+                    &.active {
+                        background-color: rgba($color-link, 0.1);
+                    }
+                    &:active {
+                        background-color: rgba($color-link-hover, 0.2);
+                    }
+                }
+            }
+
+            li.sub > a {
+                padding-left: 3rem;
+            }
+        }
+    }
+
+    section.actions {
+        grid-area: actions;
+        justify-self: end;
+        align-self: center;
+        display: flex;
+
+        a {
+            margin-left: 1em;
+        }
+
+        a.navbar-toggle {
+            display: none;
+        }
+    }
 }
 
 main {
-    margin: 0 1em 3em 1em;
+    margin: 0 0 3em 0;
     display: flex;
     color: $color-text;
     transition: color 0.2s ease;
@@ -12,8 +73,7 @@ main {
 
 content {
     font-family: $font-read;
-    padding: 2.5em;
-    background: $color-main-bg;
+    padding: 0.5em 2.5em 2.5em 2.5em;
     flex: 1;
     overflow-x: auto;
     overflow-y: visible;

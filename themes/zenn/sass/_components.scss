@@ -1,34 +1,50 @@
 /**
  * Logo banner.
  */
-header#banner .logo {
-    display: inline-block;
-    margin: 0.5em 0;
-    padding: 1rem 1.75rem;
-    overflow: visible;
-    white-space: nowrap;
-    text-decoration: none;
-    user-select: none;
-    transition: border-color 0.2s ease-in-out,
-        color 0.2s ease-in-out,
-        background-color 0.2s ease-in-out;
-    color: $logo-color;
-    border: $logo-color solid 5px;
-    font-family: $font-logo;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.075em;
-    line-height: 1;
-    text-transform: uppercase;
+header#banner {
+    .logo {
+        display: inline-block;
+        margin: 0.5em 0;
+        padding: 0.5em 1em;
+        overflow: visible;
+        white-space: nowrap;
+        text-decoration: none;
+        user-select: none;
+        transition: border-color 0.2s ease-in-out,
+            color 0.2s ease-in-out,
+            background-color 0.2s ease-in-out;
+        color: $logo-color;
+        border: $logo-color solid 0.2em;
+        font-family: $font-logo;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.075em;
+        line-height: 1;
+        text-transform: uppercase;
 
-    &:hover {
-        border-color: $logo-color-hover !important;
-        color: $logo-color-hover !important;
+        &:hover {
+            border-color: $logo-color-hover !important;
+            color: $logo-color-hover !important;
+        }
+        &:active {
+            border-color: $logo-color-hover !important;
+            color: $logo-color-hover !important;
+            background-color: rgba($logo-color-hover, 0.2) !important;
+        }
     }
-    &:active {
-        border-color: $logo-color-hover !important;
-        color: $logo-color-hover !important;
-        background-color: rgba($logo-color-hover, 0.2) !important;
+
+    section.actions {
+        a.theme-toggle,
+        a.navbar-toggle {
+            padding: 0.35em;
+            width: 1.5em;
+            height: 1.5em;
+
+            svg {
+                max-width: none !important;
+                max-height: none !important;
+            }
+        }
     }
 }
 
@@ -103,15 +119,6 @@ content {
             box-shadow: inset 0 0 10px rgba($color-main-bg, 0.7), 0 0 10px rgba($color-main-border, 0.7);
         }
     }
-}
-
-/**
- * Theme toggle button.
- */
-.theme-toggle {
-    font-size: 1.1rem;
-    line-height: 2.2em;
-    float: right;
 }
 
 /**

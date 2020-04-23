@@ -99,6 +99,33 @@
             {% block header %}
                 <header id="banner">
                     <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
+
+                    {% if config.extra.zenn_menu -%}
+                        <section id="navbar" class="navbar">
+                            <ul>
+                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                                    {% for item in config.extra.zenn_menu %}
+                                        <li>
+                                            <a itemprop="url"
+                                                    class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                                                    href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+                                                <span itemprop="name">{{ item.name }}</span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </nav>
+                            </ul>
+                        </section>
+                    {%- endif %}
+
+                    <section class="actions">
+                        <a href="#" class="theme-toggle" onclick="theme_toggle(); return false;" title="Toggle light/dark mode">
+                            {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe -}}
+                        </a>
+                        <a href="#" class="navbar-toggle" onclick="navbar_toggle(); return false;" title="Show/hide navbar">
+                            {{ load_data(path="static/icons/glyphicons-halflings-227-menu.svg") | safe -}}
+                        </a>
+                    </section>
                 </header>
             {% endblock header %}
         {%- endif -%}
@@ -106,10 +133,6 @@
         {% block main %}
             <main>
                 <content>
-                    <a href="#" class="theme-toggle" onclick="theme_toggle(); return false;" title="Toggle light/dark mode">
-                        {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe -}}
-                    </a>
-
                     {% if section.title -%}
                         <header>
                             <h1>

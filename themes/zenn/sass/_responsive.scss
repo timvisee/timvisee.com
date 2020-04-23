@@ -9,30 +9,43 @@
 
     sidebar {
         width: auto;
+        border-left: none;
+        border-top: 1px dashed $color-main-border;
+    }
+
+    header#banner {
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content auto;
+        grid-template-areas:
+            "logo actions"
+            "nav nav";
+
+        // Use vertical navbar under header
+        section.navbar {
+            display: none;
+            &.visible {
+                display: block;
+            }
+
+            ul li a {
+                display: block;
+            }
+        }
+
+        section.actions .navbar-toggle {
+            display: block;
+        }
     }
 }
 
 @media (max-width: $responsive-mini) {
-    header#banner {
-        font-size: 0.7rem;
-        margin: 0.5em 0;
-
-        p.greeting.top {
-            margin-top: 2.5em;
-        }
-        a {
-            font-size: 1.3rem;
-        }
-    }
-
-    header#banner .logo {
-        padding: 0.7rem 1.25rem;
-        font-size: 1.5rem;
-        border-width: 4px;
-    }
-
     content {
-        padding: 1.5em 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    body > header {
+        padding: 0 1em 0 1em;
     }
 }
 

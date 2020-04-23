@@ -29,3 +29,7 @@ theme_set(localStorage.getItem('theme-toggled'));
 document.addEventListener("DOMContentLoaded", function(event) {
     document.body.classList.remove('notransition');
 });
+
+function navbar_toggle() {
+    document.getElementById('navbar').classList.toggle('visible');
+}

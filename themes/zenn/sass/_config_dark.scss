@@ -18,6 +18,7 @@ $color-link: #02c39a;
 $color-link-hover: lighten($color-link, 15%);
 
 // Top logo and landing page
-$logo-color: #ddd;
+// $logo-color: #ddd;
+$logo-color: $color-text;
 $logo-color-hover: $color-link-hover;
 $landing-color-shadow: $color-main-border;
