@@ -8,11 +8,7 @@ body {
     margin: 0 auto;
     font-family: $font-base;
 
-    background-color: #212931;
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-color: $color-main-bg;
 }
 
 a {

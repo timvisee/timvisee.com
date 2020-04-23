@@ -7,10 +7,7 @@ main {
     margin: 0 1em 3em 1em;
     display: flex;
     color: $color-text;
-    border: 1px solid $color-main-border;
-    box-shadow: 0 0 10px 5px $color-main-shadow;
-    transition: color 0.2s ease,
-        border-color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 content {
@@ -73,10 +70,8 @@ sidebar {
     width: 20em;
     padding: 0.5em 1.5em 1.5em 1.5em;
     box-sizing: border-box;
-    background: $color-main-bg-alt;
-    box-shadow: 0 0 10px 5px $color-main-shadow;
-    transition: background-color 0.2s ease,
-        box-shadow 0.2s ease;
+    border-left: 1px dashed $color-main-border;
+    transition: border 0.2s ease;
 
     h1 {
         font-size: 1.4em;
