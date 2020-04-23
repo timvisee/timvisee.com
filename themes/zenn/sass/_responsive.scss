@@ -36,6 +36,14 @@
             display: block !important;
         }
     }
+
+    header#headertron .greeting .links {
+        justify-content: space-evenly;
+
+        a {
+            margin: 0;
+        }
+    }
 }
 
 @media (max-width: $responsive-mini) {
@@ -48,10 +56,15 @@
     header#headertron {
         padding: 0 1em 0 1em;
     }
+
+    header#headertron {
+        font-size: 0.7rem;
+        margin: 2em 0;
+    }
 }
 
 @media (max-width: $responsive-tiny) {
-    header#banner .links {
+    header#headertron .greeting .links {
         flex-direction: column;
     }
 }
