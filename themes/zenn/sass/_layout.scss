@@ -17,6 +17,7 @@ header#banner {
 
     section.navbar {
         grid-area: nav;
+        margin-left: 1em;
 
         ul {
             list-style: none;
@@ -56,6 +57,10 @@ header#banner {
 
         a {
             margin-left: 1em;
+        }
+
+        a svg {
+            fill: $logo-color;
         }
 
         a.navbar-toggle {
@@ -106,7 +111,6 @@ content ul {
 
 article {
     padding: 1em 0 2em 0;
-    border-bottom: 1px dashed $color-main-border;
     transition: border 0.2s ease;
 
     // Hack to fix <pre> overflow
@@ -140,7 +144,7 @@ sidebar {
 }
 
 sidebar > section {
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
 
     ul {
         list-style-type: none;

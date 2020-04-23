@@ -21,6 +21,7 @@
 
         // Use vertical navbar under header
         section.navbar {
+            margin-left: 0;
             display: none;
             &.visible {
                 display: block;
