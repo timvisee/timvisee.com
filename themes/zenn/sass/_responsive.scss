@@ -52,7 +52,8 @@
 }
 
 @media (max-width: $responsive-mini) {
-    content {
+    content,
+    sidebar {
         padding-left: 1em;
         padding-right: 1em;
     }
