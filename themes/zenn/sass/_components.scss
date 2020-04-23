@@ -137,6 +137,7 @@ content {
 }
 
 .tag {
+    background-color: $color-main-bg-alt;
     display: inline-block;
     border: 1px solid $color-main-border;
     border-radius: 3px;
@@ -159,14 +160,6 @@ a.tag {
     &:active {
         background-color: rgba($color-link-hover, 0.2);
     }
-}
-
-content .tag {
-    background-color: $color-main-bg-alt;
-}
-
-sidebar .tag {
-    background-color: $color-main-bg;
 }
 
 /**

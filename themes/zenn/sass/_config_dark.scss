@@ -6,11 +6,15 @@ $dark: true;
 $color-text: #a6a28c;
 $color-text-muted: darken($color-text, 25%);
 $color-main-bg: #20201d;
-$color-main-bg-alt: darken($color-main-bg, 4%);
-$color-main-border: darken($color-main-bg, 8%);
+$color-main-bg-alt: darken($color-main-bg, 2%);
+$color-main-border: darken($color-main-bg, 5%);
 $color-main-shadow: rgba($color-main-border, 0.4);
-$color-header: #ff6f33;
-$color-link: #ae9513;
+// $color-header: #ff6f33;
+$color-header: #fb4625;
+// $color-link: #ae9513;
+// $color-link: #5f87d7;
+// $color-link: $color-header;
+$color-link: #02c39a;
 $color-link-hover: lighten($color-link, 15%);
 
 // Top logo and landing page

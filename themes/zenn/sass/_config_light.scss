@@ -11,9 +11,16 @@ $color-main-border: darken($color-main-bg, 50%);
 $color-main-shadow: rgba(darken(#20201d, 8%), 0.1);
 $color-header: #1d4761;
 $color-link: #77660b;
+// $color-link: lighten(#77660b, 10%);
+// $color-link: $color-header;
 $color-link-hover: darken($color-link, 10%);
 
+// // Top logo and landing page
+// $logo-color: mix($color-main-bg, $color-main-bg-alt);
+// $logo-color-hover: lighten($color-link, 15%);
+// $landing-color-shadow: darken(#20201d, 8%);
+
 // Top logo and landing page
-$logo-color: mix($color-main-bg, $color-main-bg-alt);
-$logo-color-hover: lighten($color-link, 15%);
-$landing-color-shadow: darken(#20201d, 8%);
+$logo-color: $color-header;
+$logo-color-hover: $color-link-hover;
+$landing-color-shadow: $color-main-border;

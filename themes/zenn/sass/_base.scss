@@ -54,6 +54,10 @@ main {
         a {
             color: $color-header;
 
+            &:hover {
+                color: rgba($color-header, 0.7);
+            }
+
             &:focus {
                 background-color: rgba($color-header, 0.1);
             }
