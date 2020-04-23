@@ -39,20 +39,7 @@
                 {% endif %}
                 {% if page.taxonomies.tags %}
                     and tagged
-                    {% for tag in page.taxonomies.tags %}
-                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
-                        {#
-                        {% if page.taxonomies.tags | length > 1 %}
-                            {% if loop.index != page.taxonomies.tags | length %}
-                                {% if loop.index == page.taxonomies.tags | length - 1 %}
-                                    &amp;
-                                {% else %}
-                                    ,
-                                {% endif %}
-                            {% endif %}
-                        {% endif %}
-                        #}
-                    {% endfor %}
+                    {% for tag in page.taxonomies.tags %}<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>{% endfor %}
                 {% endif %}
             {% endif %}
         </p>
