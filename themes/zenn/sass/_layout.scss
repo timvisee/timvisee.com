@@ -1,9 +1,9 @@
-body > header {
+body > header#banner {
     margin: 1em 0;
     padding: 0 2.5em 0 2.5em;
 }
 
-body > header {
+body > header#banner {
     display: grid;
     column-gap: 1em;
 

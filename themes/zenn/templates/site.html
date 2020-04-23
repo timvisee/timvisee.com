@@ -130,6 +130,8 @@
             {% endblock header %}
         {%- endif -%}
 
+        {% block headertron %}{% endblock headertron %}
+
         {% block main %}
             <main>
                 <content>
@@ -168,24 +170,6 @@
                     {% block page_footer %}{% endblock page_footer %}
                 </content>
                 <sidebar>
-                    {% if config.extra.zenn_menu -%}
-                        <section>
-                            <ul>
-                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                    {% for item in config.extra.zenn_menu %}
-                                        <li>
-                                            <a itemprop="url"
-                                                    class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                                                    href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
-                                                <span itemprop="name">{{ item.name }}</span>
-                                            </a>
-                                        </li>
-                                    {% endfor %}
-                                </nav>
-                            </ul>
-                        </section>
-                    {%- endif %}
-
                     {# Table of contents #}
                     {% if toc -%}
                         <section>

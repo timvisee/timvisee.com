@@ -1,16 +1,15 @@
 {% extends "site.html" %}
 {% import "post_macros.html" as post_macros %}
 
-{% block header %}
-    <header id="banner">
-        <div class="greeting top"><i>Hey, I'm</i></div>
-        <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
-        <div class="greeting bottom">
-            &bullet;<br>
+{% block headertron %}
+    <header id="headertron">
+        <div class="greeting">
+            <i>Hey, I'm {{ config.extra.zenn_title }}</i>
+            <div class="delimiter"></div>
             <i>I am a developer</i><br>
             <i>I consume coffee</i><br>
             <i>I build & break software</i><br>
-            &bullet;<br>
+            <div class="delimiter"></div>
             <div class="links">
                 <a href="{{ get_url(path="@/projects.md") | safe }}">Projects</a>
                 <a href="{{ get_url(path="@/blog/_index.md") | safe }}">Blog</a>
@@ -19,7 +18,7 @@
             </div>
         </div>
     </header>
-{% endblock header %}
+{% endblock headertron %}
 
 {% block body %}
     {{ section.content | safe }}
