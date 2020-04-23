@@ -22,6 +22,6 @@ zenn_hide_header_meta = true
 - [Bukkit projects](@/projects/bukkit.md):  _CraftBukkit plugins_
 
 _This page is incomplete, many more projects will be added over time. Check out
-my [git profiles][profiles] for a more complete overview of my projects._
+my [GitHub profile][github] for a more complete overview of my projects._
 
-[profiles]: @/about.md#me-on-the-web
+[github]: https://github.com/timvisee/
