@@ -38,13 +38,6 @@ time:
 - The Dungeon Maze plugin does have some commands to easily generate a new Dungeon Maze world.
 - And a lot more...
 
-## Planned Features
-- A lot of new structures should be added! In the future there's probably also
-  going to be a future available to add custom structures, made by yourself.
-- Config files to setup things for each world, like how much spawners a certain
-  floor will contain, or what items could be found in a chest.
-- And a lot more...
-
 ## Download
 - [Dungeon Maze v0.1.5.2][download-dropbox] _(dropbox.com, direct link)_
 - [Dungeon Maze v0.1.5.2][download-mediafire] _(mediafire.com, direct link)_
@@ -129,5 +122,5 @@ you can also contact me; Dungeon Maze page on [dev.bukkit.org][dev.bukkit.org].
 [tutorial-first-world]: http://dev.bukkit.org/server-mods/dungeon-maze/pages/how-to-create-your-first-dungeon-maze-world/
 [tutorial-multiverse]: http://dev.bukkit.org/server-mods/dungeon-maze/pages/how-to-use-dungeon-maze-with-multiverse/
 [changelog]: https://old.timvisee.com/projects/bukkit/dungeon-maze/changelog
-[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
+[donate]: @/donate.md
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/dungeon-maze/
