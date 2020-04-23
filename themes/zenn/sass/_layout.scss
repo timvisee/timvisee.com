@@ -87,8 +87,6 @@ content {
 
 content > header {
     margin: 0;
-    padding-bottom: 1em;
-    border-bottom: 1px dashed $color-main-border;
     transition: border 0.2s ease;
 
     #{headings(1,6)} {
@@ -106,7 +104,7 @@ content ul {
 }
 
 article {
-    padding: 2em 0;
+    padding: 1em 0 2em 0;
     border-bottom: 1px dashed $color-main-border;
     transition: border 0.2s ease;
 
@@ -121,7 +119,7 @@ article {
 }
 
 article.single {
-    padding: 0.5em 0;
+    padding: 0;
 }
 
 sidebar {
@@ -129,7 +127,6 @@ sidebar {
     width: 20em;
     padding: 0.5em 1.5em 1.5em 1.5em;
     box-sizing: border-box;
-    border-left: 1px dashed $color-main-border;
     transition: border 0.2s ease;
 
     h1 {
