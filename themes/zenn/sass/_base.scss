@@ -60,15 +60,11 @@ main {
             &:hover {
                 color: rgba($color-header, 0.7);
             }
-
             &:focus {
                 background-color: rgba($color-header, 0.1);
             }
             &:active {
                 background-color: rgba($color-header, 0.2);
-            }
-            &:focus:hover {
-                background-color: rgba($color-link-hover, 0.1);
             }
         }
     }
