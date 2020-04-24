@@ -8,12 +8,14 @@
         <i>I am a developer</i><br>
         <i>I consume coffee</i><br>
         <i>I build & break software</i><br>
-        <div class="delimiter"></div>
-        <div class="links">
-            <a href="{{ get_url(path="@/projects.md") | safe }}">Projects</a>
-            <a href="{{ get_url(path="@/blog/_index.md") | safe }}">Blog</a>
-            <a href="{{ get_url(path="@/about.md#me-on-the-web") | safe }}">Me on the web</a>
-            <a href="{{ get_url(path="@/about.md") | safe }}">About</a>
+        <div class="nav">
+            <div class="delimiter"></div>
+            <div class="links">
+                <a href="{{ get_url(path="@/projects.md") | safe }}">Projects</a>
+                <a href="{{ get_url(path="@/blog/_index.md") | safe }}">Blog</a>
+                <a href="{{ get_url(path="@/about.md#me-on-the-web") | safe }}">Me on the web</a>
+                <a href="{{ get_url(path="@/about.md") | safe }}">About</a>
+            </div>
         </div>
     </header>
 {% endblock headertron %}

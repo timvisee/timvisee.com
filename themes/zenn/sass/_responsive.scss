@@ -40,6 +40,10 @@
     header#headertron {
         font-size: 1.6em;
 
+        .nav {
+            display: block;
+        }
+
         .links {
             justify-content: space-evenly;
 
@@ -70,5 +74,11 @@
 @media (max-width: $responsive-tiny) {
     header#headertron .links {
         flex-direction: column;
+    }
+}
+
+@media (min-width: $responsive-big) {
+    header#headertron {
+        font-size: 3em;
     }
 }
