@@ -12,10 +12,10 @@ My everyday passion is to develop awesome high-quality software to make life
 just that much better.
 
 See the [Me on the web](@/about.md#me-on-the-web) section below for a
-more-complete overview, especially my git profiles.
+comprehensive overview of my online profiles.
 
 Here is my usual developer sales pitch, as posted on my [LinkedIn][linkedin]
-profile:
+page:
 
 ## Sales pitch
 - Open-source & free software enthusiast
