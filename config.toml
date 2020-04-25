@@ -10,7 +10,7 @@ compile_sass = true
 highlight_code = true
 highlight_theme = "1337" # or: boron
 generate_rss = true
-build_search_index = true
+build_search_index = false
 check_external_links = false
 
 taxonomies = [

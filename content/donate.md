@@ -8,8 +8,6 @@ on awesome open projects."""
 zenn_hide_header_meta = true
 +++
 
-Hey there!
-
 Awesome to see that you may be willing to sponsor my [work](@/projects.md).
 
 By sponsoring me, you'll help me pay the bills. This allows me to allocate more
@@ -26,14 +24,6 @@ Any amount is helpful, and everything is appreciated.
 A **big** thanks to all awesome supporters!
 
 ~ Tim
-
-## Sponsor
-I provide various official channels you can use to sponsor me, both for one-time
-and recurring donations.
-
-Currently I highly recommend to sponsor me through
-[GitHub](https://github.com/users/timvisee/sponsorship). They'll double your
-donation in the first year. I'll effectively receive 200% of your donated amount.
 
 ### Recurring sponsoring
 - [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">: your donation is doubled by GitHub</span>
