@@ -17,6 +17,9 @@ zenn_hide_header_meta = true
 - [pixelpwnr](@/projects/pixelpwnr.md)  
     _Insanely fast pixelflut client for images and animations written in Rust._
 
+- [raytrace-rs](@/projects/raytrace-rs.md)  
+    _A ray tracer in Rust._
+
 #### Libraries
 
 - [ffsend-api](@/projects/ffsend-api.md): _Firefox Send client crate_
