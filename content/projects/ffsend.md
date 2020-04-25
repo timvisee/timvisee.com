@@ -43,6 +43,10 @@ _View more on the project pages over at:_
 - [GitHub][github]
 - [GitLab][gitlab]
 
+_Also see these related projects:_
+
+- [`ffsend-api`](@/projects/ffsend-api.md) <span class="muted">(Send library implementation for Rust)</span>
+
 [github]: https://github.com/timvisee/ffsend
 [gitlab]: https://gitlab.com/timvisee/ffsend
 [usage-demo-asciinema]: https://asciinema.org/a/182225
