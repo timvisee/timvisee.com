@@ -171,12 +171,12 @@
                 </content>
                 <sidebar>
                     {# Table of contents #}
-                    {% if toc -%}
+                    {% if page.toc -%}
                         <section>
                             <h1>Contents</h1>
                             <ul>
                                 <li><a href="{{ current_url }}#">{{ page.title }}</a></li>
-                                {% for h1 in toc %}
+                                {% for h1 in page.toc %}
                                     <li>
                                         <a href="{{ h1.permalink | safe }}">{{ loop.index }}. {{ h1.title }}</a>
                                         {% if h1.children %}
