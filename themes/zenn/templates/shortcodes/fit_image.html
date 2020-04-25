@@ -1,11 +1,6 @@
 <p>
     {% set filename = path | split(pat="/") | last %}
     <a href="./{{ filename }}" alt="View full-size image">
-        {% set meta = get_image_metadata(path=path) %}
-        {% if meta.width > 750 %}
-            <img src="{{ resize_image(path=path, width=750, op="fit_width") }}" />
-        {% else %}
-            <img src="{{ page.permalink }}/{{ filename }}" />
-        {% endif %}
+        <img src="{{ resize_image(path=path, width=750, op="fit_width") }}" />
     </a>
 </p>
