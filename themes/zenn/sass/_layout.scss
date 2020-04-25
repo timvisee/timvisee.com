@@ -156,6 +156,9 @@ sidebar > section {
                 padding: 0 0.5rem;
                 font-family: $font-main;
                 border-radius: 6px;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
 
                 &.active {
                     background-color: rgba($color-link, 0.1);
