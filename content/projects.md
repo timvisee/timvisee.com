@@ -27,6 +27,7 @@ zenn_hide_header_meta = true
 #### Other projects:
 
 - [pixelpwnr-server](@/projects/pixelpwnr-server.md):  _pixelflut server_
+- [Pokoebox](@/projects/pokoebox.md):  _portable speaker media center_
 
 #### Other categories:
 
