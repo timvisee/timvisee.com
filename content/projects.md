@@ -21,6 +21,7 @@ zenn_hide_header_meta = true
 
 - [ffsend-api](@/projects/ffsend-api.md): _Firefox Send client crate_
 - [pixelpwnr-render](@/projects/pixelpwnr-render.md): _pixelflut renderer crate_
+- [version-compare](@/projects/version-compare.md): _version comparison crate_
 
 #### Other projects:
 
