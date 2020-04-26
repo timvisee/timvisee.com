@@ -15,14 +15,9 @@ If you're new to Mumble, you can download/configure Mumble and connect to our
 server, walk through the steps below to connect. 
 
 ## 1. Download Mumble
-Download the latest version from the [official page][downloads]. Versions from
-other sources might not work properly.
+Download the latest version from their official website.
 
-| Platform | Instruction                                                     |
-|---------:|:----------------------------------------------------------------|
-| Windows  | Download and install the [`mumble-*.msi`][downloads] installer. |
-| macOS    | Download the [`Mumble-*.dmg`][downloads] package.               |
-| Linux    | Download the [`mumble-*.tar.gz`][downloads] package.            |
+[» Download Mumble][download]
 
 ## 2. Configure Audio
 Start Mumble once installed, and configure your audio with the wizard that pops
@@ -62,5 +57,5 @@ section. To do this, right click on this section and click `Add`.
 
 Please enjoy your time on our server.
 
-[downloads]: https://github.com/mumble-voip/mumble/releases
+[download]: https://www.mumble.info/downloads/
 [connect]: mumble://voice.timvisee.com:64738?title=timvisee.com%20-%20Mumble&version=1.3.0
