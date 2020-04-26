@@ -11,7 +11,13 @@ Please contact me through one of the following channels. I speak English and Dut
 
 **Telegram:** [`@timvisee`][telegram]
 
-_This email address will change once in a while._
+**Mastodon:** [`timvisee@mastodon.social`][mastodon]
 
+**Keybase:** [`@timvisee`][keybase]
+
+_These details will change once in a while._
+
+[keybase]: https://keybase.io/timvisee
 [mailto]: mailto:3a4fb3964f@sinenomine.email
+[mastodon]: https://mastodon.social/@timvisee
 [telegram]: https://t.me/timvisee
