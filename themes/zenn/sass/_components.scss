@@ -60,8 +60,6 @@ content {
         font-family: $font-mono;
         box-sizing: border-box;
         background-color: $color-main-bg-alt;
-        border: 1px solid $color-main-border;
-        box-shadow: 0 0 10px 5px rgba($color-main-border, 0.4);
         border-radius: 4px;
         transition: background-color 0.2s ease,
             box-shadow 0.2s ease,
@@ -136,21 +134,16 @@ content {
 .tag {
     background-color: $color-main-bg-alt;
     display: inline-block;
-    border: 1px solid $color-main-border;
     border-radius: 3px;
     font-family: $font-main;
     padding: 0.2em 0.4em;
     line-height: 1;
     margin: 0 0.2em 0.2em 0;
     transition: box-shadow 0.2s ease,
-        background-color 0.2s ease,
-        border 0.2s ease;
+        background-color 0.2s ease;
 }
 
 a.tag {
-    &:hover, &:active, &:focus {
-        box-shadow: 0 0 10px 5px rgba($color-main-border, 0.3);
-    }
     &:focus {
         background-color: rgba($color-link, 0.1);
     }
