@@ -73,7 +73,7 @@ ls ~/nonexistant # exit code: 2
 
 This will function similarly to almost any program.
 
-### Chaining commands
+## Chaining commands
 Let's go over some examples to show how these control operators can be used.
 
 Imagine you want to [source][bash-source] the `~/.profile` file, but only if it
