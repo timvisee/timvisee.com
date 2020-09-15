@@ -6,7 +6,6 @@ description = "Personal portfolio and blog of Tim Visée"
 theme = "zenn"
 default_language = "en"
 
-compile_sass = true
 highlight_code = true
 highlight_theme = "1337" # or: boron
 generate_rss = true
