@@ -59,11 +59,16 @@ content {
         overflow: auto;
         font-family: $font-mono;
         box-sizing: border-box;
-        background-color: $color-main-bg-alt;
+        background-color: $color-code-bg !important;
         border-radius: 4px;
         transition: background-color 0.2s ease,
             box-shadow 0.2s ease,
             border 0.2s ease;
+
+        // Hack to keep code blocks dark, also in light mode
+        code {
+            background-color: $color-code-bg !important;
+        }
     }
 
     img, video {
@@ -76,7 +81,7 @@ content {
         padding: 0 0.25em;
         display: inline-block;
         font-family: $font-mono;
-        // background-color: $color-main-bg-alt;
+        background-color: $color-main-bg-alt;
         border-radius: 4px;
         transition: background-color 0.2s ease,
             color 0.2s ease;
