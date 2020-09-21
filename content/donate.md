@@ -26,6 +26,9 @@ A **big** thanks to all awesome supporters!
 ~ Tim
 
 ### Recurring sponsoring
+
+<iframe src="https://github.com/sponsors/timvisee/card" title="Sponsor timvisee" height="110" width="600" style="border: 0;"></iframe>
+
 - [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">: your donation is doubled by GitHub</span>
 - [Liberapay](https://liberapay.com/timvisee/)
 - [Patreon](https://patreon.com/timvisee)
