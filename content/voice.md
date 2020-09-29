@@ -6,7 +6,7 @@ description = "Mumble hosted by timvisee.com"
 zenn_hide_header_meta = true
 +++
 
-[» Download Mumble][downloads]
+[» Download Mumble][download]
 
 [» Quick connect][connect]
 
@@ -19,5 +19,5 @@ zenn_hide_header_meta = true
 | Port     | `64738`               |
 | Username | _Choose yourself_     |
 
-[downloads]: https://github.com/mumble-voip/mumble/releases
+[download]: https://www.mumble.info/downloads/
 [connect]: mumble://voice.timvisee.com:64738?title=timvisee.com%20-%20Mumble&version=1.3.0
