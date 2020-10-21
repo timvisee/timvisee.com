@@ -39,7 +39,7 @@ zola serve --open
 The latest [`deploy`][branch-deploy] branch is automatically deployed live at [timvisee.com][site].
 
 ## License
-This project is released under the GNU GPL-3.0 license.
+This project is released under the GNU AGPL-3.0 license.
 Check out the [LICENSE][license] file for more information.
 
 Feel free to use parts of this project, such as the custom [zenn][zenn] theme,
