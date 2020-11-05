@@ -5,12 +5,12 @@ $dark: true;
 // Colors
 $color-text: #a6a28c;
 $color-text-muted: darken($color-text, 25%);
-$color-main-bg: #20201d;
+$color-main-bg: #141516;
 $color-main-bg-alt: darken($color-main-bg, 2%);
 $color-main-border: darken($color-main-bg, 5%);
 $color-main-shadow: rgba($color-main-border, 0.4);
 $color-header: #fb4625;
-$color-link: #02c39a;
+$color-link: #5184f9;
 $color-link-hover: lighten($color-link, 15%);
 $color-code-bg: $color-main-bg-alt;
 
