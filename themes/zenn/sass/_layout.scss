@@ -117,6 +117,17 @@ article {
 
     p {
         text-align: justify;
+
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    #{headings(1,6)} {
+        a {
+            text-decoration: none;
+        }
     }
 }
 
