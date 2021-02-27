@@ -17,10 +17,33 @@
             {{ page.content | safe }}
         </div>
 
+        {# Comments header #}
+        {% if page.extra.comments %}
+            <h2 id="comments">Comments</h2>
+        {% endif %}
+
+        {# Applause button #}
         {% if page.extra.zenn_applause %}
             <div class="applause-wrapper">
                 <applause-button color="#a6a28c" url="{{ page.permalink | safe }}"></applause-button>
             </div>
+        {% endif %}
+
+        {# Comments #}
+        {% if page.extra.comments %}
+            <p>
+                Comments on
+                {% for page in page.extra.comments %}
+                    <a href="{{ page.url | safe }}" target="_blank">{{ page.name }}</a>
+                    {%- if not loop.last -%}
+                        {% if loop.index == page.extra.comments | length - 1%}
+                            &amp;
+                        {% else -%}
+                            ,
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </p>
         {% endif %}
     </article>
 {% endblock body %}

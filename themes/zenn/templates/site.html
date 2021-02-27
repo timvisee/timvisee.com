@@ -190,6 +190,11 @@
                                         {% endif %}
                                     </li>
                                 {% endfor %}
+
+                                {# Comments link #}
+                                {% if page.extra.comments %}
+                                    <li><a href="#comments" title="Comments">Comments</a></li>
+                                {% endif %}
                             </ul>
                         </section>
                     {%- endif %}
