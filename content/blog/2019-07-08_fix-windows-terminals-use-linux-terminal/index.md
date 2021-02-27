@@ -7,8 +7,12 @@ categories = ["guide", "blog"]
 tags = ["windows", "terminal", "linux"]
 
 [extra]
-comments = true
 zenn_applause = true
+comments = [
+    {url = "https://news.ycombinator.com/item?id=20383725", name = "Hacker News"},
+    {url = "https://www.reddit.com/r/bashonubuntuonwindows/comments/can286/fix_windows_10_terminals_use_a_linux_terminal/", name = "Reddit"},
+    {url = "https://lobste.rs/s/byz48p/fix_windows_10_terminals_use_linux", name = "Lobsters"},
+]
 +++
 
 > _I feel handicapped in Windows terminals, here is why, and how I fixed it._

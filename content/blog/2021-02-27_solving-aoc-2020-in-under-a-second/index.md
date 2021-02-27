@@ -8,11 +8,6 @@ tags = ["rust", "performance", "aoc"]
 
 [extra]
 zenn_applause = true
-comments = [
-    {url = "https://news.ycombinator.org/", name = "Hackernews"},
-    {url = "https://reddit.com/", name = "Reddit"},
-    {url = "https://lobste.rs/", name = "Lobsters"},
-]
 +++
 
 ```

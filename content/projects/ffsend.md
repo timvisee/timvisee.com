@@ -8,7 +8,6 @@ tags = ["cli", "file-sharing", "file-upload", "rust", "security"]
 categories = ["project"]
 
 [extra]
-comments = true
 zenn_applause = true
 zenn_hide_header_meta = true
 +++

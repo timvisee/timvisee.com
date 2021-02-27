@@ -7,8 +7,12 @@ categories = ["blog"]
 tags = ["hack", "web", "xss", "javascript"]
 
 [extra]
-comments = true
 zenn_applause = true
+comments = [
+    {url = "https://news.ycombinator.com/item?id=21371201", name = "Hacker News"},
+    {url = "https://www.reddit.com/r/netsec/comments/dnwudw/stealing_private_keys_from_a_secure_file_sharing/", name = "Reddit"},
+    {url = "https://lobste.rs/s/i9wflu/stealing_private_keys_from_secure_file", name = "Lobsters"},
+]
 +++
 
 _Note: in agreement with the company, I decided not to name them to prevent

@@ -10,7 +10,6 @@ categories = ["blog"]
 tags = ["bash", "shell"]
 
 [extra]
-comments = true
 zenn_applause = true
 +++
 

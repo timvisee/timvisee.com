@@ -7,7 +7,6 @@ categories = ["release", "blog"]
 tags = ["website"]
 
 [extra]
-comments = true
 zenn_applause = true
 +++
 

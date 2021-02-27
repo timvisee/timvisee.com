@@ -7,8 +7,11 @@ categories = ["snippet", "blog"]
 tags = ["php", "snippet"]
 
 [extra]
-comments = true
 zenn_applause = true
+comments = [
+    {url = "https://www.reddit.com/r/laravel/comments/cefz8o/poc_snippet_to_correctly_capitalize_names_in_php/", name = "Reddit"},
+    {url = "https://lobste.rs/s/klpksc/poc_snippet_correctly_capitalize_names", name = "Lobsters"},
+]
 +++
 
 When building websites with any kind of user registration, it's fascinating
