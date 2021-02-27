@@ -8,6 +8,11 @@ tags = ["rust", "performance", "aoc"]
 
 [extra]
 zenn_applause = true
+comments = [
+    {url = "https://news.ycombinator.com/item?id=26286781", name = "Hacker News"},
+    {url = "https://www.reddit.com/r/adventofcode/comments/lttus6/2020_rust_solving_advent_of_code_2020_in_under_a/", name = "Reddit"},
+    {url = "https://lobste.rs/s/rlx7ff/solving_advent_code_2020_under_second", name = "Lobsters"},
+]
 +++
 
 ```
@@ -704,10 +709,9 @@ See the [source code][source] for more interesting stuff.
 
 ## Closing words
 
-Some have probably come up with some faster solutions than me. This year I have
-not seen anyone solving all of the puzzles within 1 second though. When I
-compare my solutions with others in the Advent of Code
-[megathread][aoc-megathread] on Reddit, I seem to have done very well.
+Some have probably come up with some faster solutions than me. When I compare my
+solutions with others in the Advent of Code [megathread][aoc-megathread] on
+Reddit, I seem to have done very well though.
 
 Setting this goal made this year's Advent of Code very interesting to me. It
 constantly required me to think about what the most efficient approach could be.
