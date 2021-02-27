@@ -12,6 +12,7 @@ comments = [
     {url = "https://news.ycombinator.com/item?id=26286781", name = "Hacker News"},
     {url = "https://www.reddit.com/r/adventofcode/comments/lttus6/2020_rust_solving_advent_of_code_2020_in_under_a/", name = "Reddit"},
     {url = "https://lobste.rs/s/rlx7ff/solving_advent_code_2020_under_second", name = "Lobsters"},
+    {url = "https://mastodon.social/@timvisee/105804623902554005", name = "Mastodon"},
 ]
 +++
 
@@ -620,7 +621,7 @@ neighbors with their occurrence count to process the rules accordingly. Using
 this method I skip looping over a huge amount of useless tiles and asserting the
 rules becomes simple, similar to what I've done on [day
 13](#day-11-seating-system). Doing just 100 iterations as the puzzle specifies
-takes `43.2ms`, pretty expensive I think. With `687ms` total runtime so far I'm
+takes `43.2ms`, pretty expensive I think. With `656ms` total runtime so far I'm
 still well under my 1-second target though.
 
 ## Day 25: Combo Breaker
@@ -657,7 +658,7 @@ Now it was time to measure the total runtime.
 I've set up a simple [runner] for this to run and measure [all][runner-jobs] my
 solutions in sequence.
 
-My final solutions complete in just `714ms`! That's from day 1 to day 25, 49
+My final solutions complete in just `699ms`! That's from day 1 to day 25, 49
 solutions in total, one after the other (!). Well under my 1-second
 target. A fantastic achievement! Time to buy a cake.
 
