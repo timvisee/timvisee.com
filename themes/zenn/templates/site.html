@@ -70,19 +70,19 @@
         </title>
 
         {% block css -%}
-            <link id="style-dark" rel="stylesheet" href="{{ get_url(path="site_dark.css", trailing_slash=false) | safe }}">
-            <link id="style-light" disabled rel="stylesheet" href="{{ get_url(path="site_light.css", trailing_slash=false) | safe }}">
+            <link id="style-dark" rel="stylesheet" href="{{ get_url(path="site_dark.css", trailing_slash=false) | safe }}?i={{ config.extra.random }}">
+            <link id="style-light" disabled rel="stylesheet" href="{{ get_url(path="site_light.css", trailing_slash=false) | safe }}?i={{ config.extra.random }}">
 
             {%- if page.extra.zenn_applause -%}
-                <link rel="stylesheet" href="{{ get_url(path="vendor/applause-button/applause-button.css", trailing_slash=false) | safe }}">
+                <link rel="stylesheet" href="{{ get_url(path="vendor/applause-button/applause-button.css", trailing_slash=false) | safe }}?i={{ config.extra.random }}">
             {%- endif -%}
         {%- endblock css %}
 
         {% block js -%}
-            <script src="{{ get_url(path="js/theme.js", trailing_slash=false) | safe }}"></script>
+            <script src="{{ get_url(path="js/theme.js", trailing_slash=false) | safe }}?i={{ config.extra.random }}"></script>
 
             {%- if page.extra.zenn_applause -%}
-                <script src="{{ get_url(path="vendor/applause-button/applause-button.js", trailing_slash=false) | safe }}"></script>
+                <script src="{{ get_url(path="vendor/applause-button/applause-button.js", trailing_slash=false) | safe }}?i={{ config.extra.random }}"></script>
             {%- endif -%}
         {%- endblock js %}
 
