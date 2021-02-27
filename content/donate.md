@@ -8,7 +8,7 @@ on awesome open projects."""
 zenn_hide_header_meta = true
 +++
 
-Awesome to see that you may be willing to sponsor my [work](@/projects.md).
+Awesome to see that you are willing to sponsor my [work](@/projects.md).
 
 By sponsoring me, you'll help me pay the bills. This allows me to allocate more
 time to work on amazing open projects, for everyone. This is what I truly
@@ -27,9 +27,7 @@ A **big** thanks to all awesome supporters!
 
 ### Recurring sponsoring
 
-<iframe src="https://github.com/sponsors/timvisee/card" title="Sponsor timvisee" height="134" width="600" style="border: 0;"></iframe>
-
-- [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">: your donation is doubled by GitHub</span>
+- [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">
 - [Liberapay](https://liberapay.com/timvisee/)
 - [Patreon](https://patreon.com/timvisee)
 
@@ -37,3 +35,7 @@ A **big** thanks to all awesome supporters!
 - [Ko-fi](https://ko-fi.com/timvisee)<span class="muted">: buy me a coffee</span>
 - [PayPal](https://paypal.me/timvisee)
 - [bunq.me](https://bunq.me/timvisee/0/Sponsor)<span class="muted">: support via an iDeal or SOFORT payment</span>
+
+### Cryptocurrency donation
+- Bitcoin: `3B1mBcqobSrgDFMhoQDtcVoWHRuwTjwMLZ`
+- Etherium: `0x956E4443A050bC5626c272D86AA0Ee213509E22c`
