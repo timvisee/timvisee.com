@@ -11,6 +11,9 @@ zenn_hide_header_meta = true
 - [ffsend](@/projects/ffsend.md)  
     _Easily &amp; securely share files from the command line. Fully featured Firefox Send client._
 
+- [prs](@/projects/prs.md)  
+    _Secure, fast &amp; convenient password manager CLI using GPG and git to sync._
+
 - [Barbapappa](@/projects/barbapappa.md)  
     _Bar management application to manage transactions and inventory._
 
