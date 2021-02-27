@@ -8,7 +8,10 @@ default_language = "en"
 
 highlight_code = true
 highlight_theme = "1337"
-generate_rss = true
+
+generate_feed = true
+feed_filename = "rss.xml"
+
 build_search_index = false
 check_external_links = false
 
