@@ -1,22 +1,81 @@
-body > header {
-    text-align: center;
+header#banner {
     margin: 1em 0;
+    padding: 0 2.5em 0 2.5em;
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: min-content auto min-content;
+    grid-template-areas:
+        "logo nav actions";
+
+    a.logo {
+        grid-area: logo;
+        place-self: center;
+    }
+
+    section.navbar {
+        grid-area: nav;
+        margin-left: 1em;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline;
+                line-height: 2;
+                width: 100%;
+
+                a {
+                    display: inline-block;
+                    padding: 0 1em;
+                    margin: 0;
+                    font-family: $font-main;
+
+                    &.active {
+                        background-color: rgba($color-link, 0.1);
+                    }
+                    &:active {
+                        background-color: rgba($color-link-hover, 0.2);
+                    }
+                }
+            }
+
+            li.sub > a {
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    section.actions {
+        grid-area: actions;
+        justify-self: end;
+        align-self: center;
+        display: flex;
+
+        a {
+            margin-left: 1em;
+        }
+
+        a svg {
+            fill: $logo-color;
+        }
+
+        a.navbar-toggle {
+            display: none;
+        }
+    }
 }
 
 main {
-    margin: 0 1em 3em 1em;
+    margin: 0 0 3em 0;
     display: flex;
     color: $color-text;
-    border: 1px solid $color-main-border;
-    box-shadow: 0 0 10px 5px $color-main-shadow;
-    transition: color 0.2s ease,
-        border-color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 content {
     font-family: $font-read;
-    padding: 2.5em 3em;
-    background: $color-main-bg;
+    padding: 0.5em 2.5em 0 2.5em;
     flex: 1;
     overflow-x: auto;
     overflow-y: visible;
@@ -31,8 +90,6 @@ content {
 
 content > header {
     margin: 0;
-    padding-bottom: 1em;
-    border-bottom: 1px dashed $color-main-border;
     transition: border 0.2s ease;
 
     #{headings(1,6)} {
@@ -50,8 +107,7 @@ content ul {
 }
 
 article {
-    padding: 2em 0;
-    border-bottom: 1px dashed $color-main-border;
+    padding: 1em 0 2em 0;
     transition: border 0.2s ease;
 
     // Hack to fix <pre> overflow
@@ -61,11 +117,22 @@ article {
 
     p {
         text-align: justify;
+
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    #{headings(1,6)} {
+        a {
+            text-decoration: none;
+        }
     }
 }
 
 article.single {
-    padding: 0.5em 0;
+    padding: 0;
 }
 
 sidebar {
@@ -73,10 +140,7 @@ sidebar {
     width: 20em;
     padding: 0.5em 1.5em 1.5em 1.5em;
     box-sizing: border-box;
-    background: $color-main-bg-alt;
-    box-shadow: 0 0 10px 5px $color-main-shadow;
-    transition: background-color 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: border 0.2s ease;
 
     h1 {
         font-size: 1.4em;
@@ -88,7 +152,7 @@ sidebar {
 }
 
 sidebar > section {
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
 
     ul {
         list-style-type: none;
@@ -100,8 +164,12 @@ sidebar > section {
 
             a {
                 display: block;
-                padding: 0 1.5rem;
+                padding: 0 0.5rem;
                 font-family: $font-main;
+                border-radius: 6px;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
 
                 &.active {
                     background-color: rgba($color-link, 0.1);
@@ -113,12 +181,12 @@ sidebar > section {
         }
 
         li.sub > a {
-            padding-left: 3rem;
+            padding-left: 1.5rem;
         }
     }
 }
 sidebar > section > ul {
-    margin: 0 -1.5rem;
+    margin: 0 -0.3rem;
     padding-left: 0;
 }
 

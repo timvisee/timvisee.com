@@ -17,7 +17,7 @@ what people enter in name fields. no casing, Random CASING, a dozen spaces
 nospacingatall. Seeing this always irritates me, I'd fancy things to nice and
 be consistent.
 
-{{ fit_image(path="blog/2019-07-17_snippet-correctly-capitalize-names-in-php/banner.png") }}
+{{ fit_image(path="blog/2019-07-17_snippet-correctly-capitalize-names-in-php/banner.png", url="/blog/snippet-correctly-capitalize-names-in-php/banner.png") }}
 
 It appears that correctly normalizing name capitalization is an _unsolvable_
 puzzle. There is **no** consistency in name casing, or for any kind of name

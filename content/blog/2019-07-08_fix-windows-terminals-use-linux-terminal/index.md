@@ -13,7 +13,7 @@ zenn_applause = true
 
 > _I feel handicapped in Windows terminals, here is why, and how I fixed it._
 
-{{ fit_image(path="blog/2019-07-08_fix-windows-terminals-use-linux-terminal/overview.png") }}
+{{ fit_image(path="blog/2019-07-08_fix-windows-terminals-use-linux-terminal/overview.png", url="/blog/fix-windows-terminals-use-linux-terminal/overview.png") }}
 
 As a seasoned developer, I _live_ in the terminal on Linux machines.
 Using a custom shell, `vim` as text/code editor, `git` through its CLI,

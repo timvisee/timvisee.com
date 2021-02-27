@@ -7,13 +7,8 @@ body {
     max-width: 1150px;
     margin: 0 auto;
     font-family: $font-base;
-
-    background-color: #212931;
-    background-image: url("/images/background.jpg");
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-color: $color-main-bg;
+    transition: background-color 0.2s ease;
 }
 
 a {
@@ -22,6 +17,10 @@ a {
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     text-decoration: none;
     outline: 0;
+    margin: 0 -0.15em;
+    padding: 0 0.15em;
+    border-radius: 6px;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
         color: $color-link-hover;
@@ -59,14 +58,14 @@ main {
         a {
             color: $color-header;
 
+            &:hover {
+                color: rgba($color-header, 0.7);
+            }
             &:focus {
                 background-color: rgba($color-header, 0.1);
             }
             &:active {
                 background-color: rgba($color-header, 0.2);
-            }
-            &:focus:hover {
-                background-color: rgba($color-link-hover, 0.1);
             }
         }
     }
@@ -79,6 +78,10 @@ p {
 hr {
     border: 0;
     border-top: 1px dashed $color-main-border;
+}
+
+.color-header {
+    color: $color-header;
 }
 
 // Block all CSS transitions inside elements having this class

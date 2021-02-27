@@ -1,34 +1,51 @@
 /**
  * Logo banner.
  */
-header#banner .logo {
-    display: inline-block;
-    margin: 0.5em 0;
-    padding: 1rem 1.75rem;
-    overflow: visible;
-    white-space: nowrap;
-    text-decoration: none;
-    user-select: none;
-    transition: border-color 0.2s ease-in-out,
-        color 0.2s ease-in-out,
-        background-color 0.2s ease-in-out;
-    color: $logo-color;
-    border: $logo-color solid 5px;
-    font-family: $font-logo;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.075em;
-    line-height: 1;
-    text-transform: uppercase;
+header#banner {
+    .logo {
+        display: inline-block;
+        margin: 0.5em 0;
+        padding: 0.5em 1em;
+        overflow: visible;
+        white-space: nowrap;
+        text-decoration: none;
+        user-select: none;
+        transition: border-color 0.2s ease-in-out,
+            color 0.2s ease-in-out,
+            background-color 0.2s ease-in-out;
+        color: $logo-color;
+        border: $logo-color solid 0.2em;
+        font-family: $font-logo;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.075em;
+        line-height: 1;
+        text-transform: uppercase;
+        border-radius: 0;
 
-    &:hover {
-        border-color: $logo-color-hover !important;
-        color: $logo-color-hover !important;
+        &:hover {
+            border-color: $logo-color-hover !important;
+            color: $logo-color-hover !important;
+        }
+        &:active {
+            border-color: $logo-color-hover !important;
+            color: $logo-color-hover !important;
+            background-color: rgba($logo-color-hover, 0.2) !important;
+        }
     }
-    &:active {
-        border-color: $logo-color-hover !important;
-        color: $logo-color-hover !important;
-        background-color: rgba($logo-color-hover, 0.2) !important;
+
+    section.actions {
+        a.theme-toggle,
+        a.navbar-toggle {
+            padding: 0.35em;
+            width: 1.5em;
+            height: 1.5em;
+
+            svg {
+                max-width: 1.5em !important;
+                max-height: 1.5em !important;
+            }
+        }
     }
 }
 
@@ -42,13 +59,16 @@ content {
         overflow: auto;
         font-family: $font-mono;
         box-sizing: border-box;
-        background-color: $color-main-bg-alt;
-        border: 1px solid $color-main-border;
-        box-shadow: 0 0 10px 5px rgba($color-main-border, 0.4);
+        background-color: $color-code-bg !important;
         border-radius: 4px;
         transition: background-color 0.2s ease,
             box-shadow 0.2s ease,
             border 0.2s ease;
+
+        // Hack to keep code blocks dark, also in light mode
+        code {
+            background-color: $color-code-bg !important;
+        }
     }
 
     img, video {
@@ -92,26 +112,6 @@ content {
         padding-left: 1em;
         transition: border 0.2s ease;
     }
-
-    .comments-container {
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        transition: box-shadow 0.2s ease;
-
-        @if $dark == true {
-            box-shadow: inset 0 0 10px rgba($color-main-bg, 0.7), 0 0 10px rgba($color-main-border, 0.7);
-        }
-    }
-}
-
-/**
- * Theme toggle button.
- */
-.theme-toggle {
-    font-size: 1.1rem;
-    line-height: 2.2em;
-    float: right;
 }
 
 /**
@@ -137,36 +137,24 @@ content {
 }
 
 .tag {
+    background-color: $color-main-bg-alt;
     display: inline-block;
-    border: 1px solid $color-main-border;
     border-radius: 3px;
     font-family: $font-main;
     padding: 0.2em 0.4em;
     line-height: 1;
     margin: 0 0.2em 0.2em 0;
     transition: box-shadow 0.2s ease,
-        background-color 0.2s ease,
-        border 0.2s ease;
+        background-color 0.2s ease;
 }
 
 a.tag {
-    &:hover, &:active, &:focus {
-        box-shadow: 0 0 10px 5px rgba($color-main-border, 0.3);
-    }
     &:focus {
         background-color: rgba($color-link, 0.1);
     }
     &:active {
         background-color: rgba($color-link-hover, 0.2);
     }
-}
-
-content .tag {
-    background-color: $color-main-bg-alt;
-}
-
-sidebar .tag {
-    background-color: $color-main-bg;
 }
 
 /**

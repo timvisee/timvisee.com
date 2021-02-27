@@ -22,12 +22,6 @@
                 <applause-button color="#a6a28c" url="{{ page.permalink | safe }}"></applause-button>
             </div>
         {% endif %}
-
-        {% if page.extra.comments %}
-            <div class="comments-container">
-                <script async src="https://comments.app/js/widget.js?2" data-comments-app-website="1EacxS9Q" data-limit="5"></script>
-            </div>
-        {% endif %}
     </article>
 {% endblock body %}
 
@@ -45,20 +39,7 @@
                 {% endif %}
                 {% if page.taxonomies.tags %}
                     and tagged
-                    {% for tag in page.taxonomies.tags %}
-                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
-                        {#
-                        {% if page.taxonomies.tags | length > 1 %}
-                            {% if loop.index != page.taxonomies.tags | length %}
-                                {% if loop.index == page.taxonomies.tags | length - 1 %}
-                                    &amp;
-                                {% else %}
-                                    ,
-                                {% endif %}
-                            {% endif %}
-                        {% endif %}
-                        #}
-                    {% endfor %}
+                    {% for tag in page.taxonomies.tags %}<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>{% endfor %}
                 {% endif %}
             {% endif %}
         </p>

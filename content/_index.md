@@ -3,10 +3,10 @@ title = "Homepage"
 template = "landing.html"
 +++
 
-Welcome to my personal website.
+Welcome to my personal website!
 
 This website shows what projects I work on.
-See an overview on the [Projects](@/projects.md) page.
+You can find an overview on the [Projects](@/projects.md) page.
 I prefer to make projects free and open-source, therefore most are available on
 my [GitHub][github] and [GitLab][gitlab] profiles.
 

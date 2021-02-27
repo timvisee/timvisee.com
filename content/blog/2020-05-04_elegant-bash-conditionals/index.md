@@ -56,8 +56,8 @@ When a program exists a numeric status code is returned.
 A value of `0` means the program succeeded, any other value means it failed.
 
 The exit code is normally hidden.
-You may inspect it from the last run command by reading the `?`
-variable by invoking:
+The status of the last run command is stored in the `?` variable.
+You may inspect it by invoking:
 
 ```bash
 echo $?

@@ -17,7 +17,7 @@ eyesore. Many software engineers prefer to use a dark theme with lower
 contrast colors in their code editors, and many tools started shipping dark
 visuals as default in the last few years.
 
-{{ fit_image(path="blog/2019-07-16_dark-mode-toggle-on-static-website/screenshot.png") }}
+{{ fit_image(path="blog/2019-07-16_dark-mode-toggle-on-static-website/screenshot.png", url="/blog/dark-mode-toggle-on-static-website/screenshot.png") }}
 
 I fall into that group as well and have been using these themes for so long
 that I can't even recall when I joined the dark side. I started to like these

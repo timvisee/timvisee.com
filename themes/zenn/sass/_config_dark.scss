@@ -5,15 +5,16 @@ $dark: true;
 // Colors
 $color-text: #a6a28c;
 $color-text-muted: darken($color-text, 25%);
-$color-main-bg: #20201d;
-$color-main-bg-alt: darken($color-main-bg, 4%);
-$color-main-border: darken($color-main-bg, 8%);
+$color-main-bg: #141516;
+$color-main-bg-alt: darken($color-main-bg, 2%);
+$color-main-border: darken($color-main-bg, 5%);
 $color-main-shadow: rgba($color-main-border, 0.4);
-$color-header: #ff6f33;
-$color-link: #ae9513;
+// $color-header: #fb4625;
+$color-header: #FF6F33;
+$color-link: #6699cc;
 $color-link-hover: lighten($color-link, 15%);
+$color-code-bg: $color-main-bg-alt;
 
 // Top logo and landing page
-$logo-color: #ddd;
+$logo-color: $color-text;
 $logo-color-hover: $color-link-hover;
-$landing-color-shadow: $color-main-border;

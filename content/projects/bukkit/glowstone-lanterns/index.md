@@ -49,10 +49,6 @@ In the video underneath you can see how the plugin works: _(outdated video)_
 - Put lanterns on when it rains
 - And a lot more!
 
-## Planned Features
-- Custom chat messages
-- In-game prebuilt lanterns creator
-
 ## Download
 - [Glowstone Lanterns v1.0.1][download-dropbox] _(dropbox.com, direct link)_
 - [Glowstone Lanterns v1.0.1][download-mediafire] _(mediafire.com, direct link)_
@@ -129,5 +125,5 @@ you can also contact me; Glowstone Lanterns page on
 [download-mediafire]: https://old.timvisee.com/download/76
 [download-older]: https://old.timvisee.com/projects/bukkit/glowstone-lanterns/downloads
 [changelog]: https://old.timvisee.com/projects/bukkit/glowstone-lanterns/changelog
-[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
+[donate]: @/donate.md
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/glowstone-lanterns/

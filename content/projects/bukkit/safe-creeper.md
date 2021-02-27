@@ -47,11 +47,6 @@ configurable and have multi world support.
 - Set if creepers will be powerd when they hit by lightning
 - And a lot more...
 
-## Planned Features
-- Protected regions (WorldGuard) support
-- An optional simpeler config file
-- And a lot more...
-
 ## Download
 - [Safe Creeper v1.5.2.5][download-bukkit] _(dev.bukkit.org, direct link)_
 - [Safe Creeper v1.5.2.5][download-dropbox] _(dropbox.com, direct link)_
@@ -129,5 +124,5 @@ you can also contact me; Safe Creeper page on [dev.bukkit.org][dev.bukkit.org].
 [download-mediafire]: https://old.timvisee.com/download/192
 [download-older]: https://old.timvisee.com/projects/bukkit/safe-creeper/downloads
 [changelog]: https://old.timvisee.com/projects/bukkit/safe-creeper/changelog
-[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
+[donate]: @/donate.md
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/safe-creeper/

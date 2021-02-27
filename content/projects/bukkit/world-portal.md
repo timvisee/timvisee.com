@@ -150,5 +150,5 @@ you can also contact me; World Portal page on [dev.bukkit.org][dev.bukkit.org].
 [download-mediafire]: https://old.timvisee.com/download/70
 [download-older]: https://old.timvisee.com/projects/bukkit/world-portal/downloads
 [changelog]: https://old.timvisee.com/projects/bukkit/world-portal/changelog
-[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QH2EGBRH9T6R2
+[donate]: @/donate.md
 [dev.bukkit.org]: https://dev.bukkit.org/server-mods/world-portal/

@@ -99,17 +99,42 @@
             {% block header %}
                 <header id="banner">
                     <a href="/" class="logo">{{ config.extra.zenn_title }}</a>
+
+                    {% if config.extra.zenn_menu -%}
+                        <section id="navbar" class="navbar">
+                            <ul>
+                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                                    {% for item in config.extra.zenn_menu %}
+                                        <li>
+                                            <a itemprop="url"
+                                                    class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                                                    href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+                                                <span itemprop="name">{{ item.name }}</span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </nav>
+                            </ul>
+                        </section>
+                    {%- endif %}
+
+                    <section class="actions">
+                        <a href="#" class="theme-toggle" onclick="theme_toggle(); return false;" title="Toggle light/dark mode">
+                            {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe -}}
+                        </a>
+                        <a href="#" class="navbar-toggle" onclick="navbar_toggle(); return false;" title="Show/hide navbar">
+                            {{ load_data(path="static/icons/glyphicons-halflings-227-menu.svg") | safe -}}
+                        </a>
+                    </section>
                 </header>
             {% endblock header %}
         {%- endif -%}
 
+        {% block headertron %}{% endblock headertron %}
+
         {% block main %}
             <main>
                 <content>
-                    <a href="#" class="theme-toggle" onclick="theme_toggle(); return false;" title="Toggle light/dark mode">
-                        {{ load_data(path="static/icons/glyphicons-halflings-51-contrast.svg") | safe -}}
-                    </a>
-
                     {% if section.title -%}
                         <header>
                             <h1>
@@ -145,38 +170,20 @@
                     {% block page_footer %}{% endblock page_footer %}
                 </content>
                 <sidebar>
-                    {% if config.extra.zenn_menu -%}
-                        <section>
-                            <ul>
-                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                    {% for item in config.extra.zenn_menu %}
-                                        <li>
-                                            <a itemprop="url"
-                                                    class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                                                    href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
-                                                <span itemprop="name">{{ item.name }}</span>
-                                            </a>
-                                        </li>
-                                    {% endfor %}
-                                </nav>
-                            </ul>
-                        </section>
-                    {%- endif %}
-
                     {# Table of contents #}
-                    {% if toc -%}
+                    {% if page.toc -%}
                         <section>
-                            <h1>Contents</h1>
+                            <h1>On this page</h1>
                             <ul>
-                                <li><a href="{{ current_url }}#">{{ page.title }}</a></li>
-                                {% for h1 in toc %}
+                                <li><a href="{{ current_url }}#" title="{{ page.title }}">{{ page.title }}</a></li>
+                                {% for h1 in page.toc %}
                                     <li>
-                                        <a href="{{ h1.permalink | safe }}">{{ loop.index }}. {{ h1.title }}</a>
+                                        <a href="{{ h1.permalink | safe }}" title="{{ h1.title }}">{{ loop.index }}. {{ h1.title }}</a>
                                         {% if h1.children %}
                                             {# <ul> #}
                                             {% for h2 in h1.children %}
                                                 <li class="sub">
-                                                    <a href="{{h2.permalink | safe}}">{{ loop.index }}. {{ h2.title }}</a>
+                                                    <a href="{{h2.permalink | safe}}" title="{{ h1.title }}">{{ loop.index }}. {{ h2.title }}</a>
                                                 </li>
                                             {% endfor %}
                                             {# </ul> #}
@@ -225,7 +232,7 @@
                     {%- endif %}
 
                     <p class="muted">
-                        Copyright &copy; {{ config.title }} {{ now() | date(format="%Y") }}
+                        Copyright &copy; {{ config.title }} 2011-{{ now() | date(format="%Y") }}
                         {% if config.extra.zenn_source %}
                             <br /><a href="{{ config.extra.zenn_source }}" target="_blank">Source</a>
                         {% endif %}

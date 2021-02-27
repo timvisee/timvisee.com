@@ -9,35 +9,76 @@
 
     sidebar {
         width: auto;
+        margin-top: 2em;
+    }
+
+    header#banner {
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content auto;
+        grid-template-areas:
+            "logo actions"
+            "nav nav";
+
+        // Use vertical navbar under header
+        section.navbar {
+            margin-left: 0;
+            display: none;
+            &.visible {
+                display: block;
+            }
+
+            ul li a {
+                display: block;
+            }
+        }
+
+        section.actions .navbar-toggle {
+            display: block !important;
+        }
+    }
+
+    header#headertron {
+        font-size: 1.6em;
+
+        .nav {
+            display: block;
+        }
+
+        .links {
+            justify-content: space-evenly;
+
+            a {
+                margin: 0;
+            }
+        }
     }
 }
 
 @media (max-width: $responsive-mini) {
-    header#banner {
-        font-size: 0.7rem;
-        margin: 0.5em 0;
-
-        p.greeting.top {
-            margin-top: 2.5em;
-        }
-        a {
-            font-size: 1.3rem;
-        }
+    content,
+    sidebar {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
-    header#banner .logo {
-        padding: 0.7rem 1.25rem;
-        font-size: 1.5rem;
-        border-width: 4px;
+    header#banner,
+    header#headertron {
+        padding: 0 1em 0 1em;
     }
 
-    content {
-        padding: 1.5em 1em;
+    header#headertron {
+        font-size: 1.2em;
     }
 }
 
 @media (max-width: $responsive-tiny) {
-    header#banner .links {
+    header#headertron .links {
         flex-direction: column;
+    }
+}
+
+@media (min-width: $responsive-big) {
+    header#headertron {
+        font-size: 3em;
     }
 }

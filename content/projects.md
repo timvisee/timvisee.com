@@ -6,7 +6,7 @@ description = "Projects index"
 zenn_hide_header_meta = true
 +++
 
-#### Project highlights
+#### Highlights
 
 - [ffsend](@/projects/ffsend.md)  
     _Easily &amp; securely share files from the command line. Fully featured Firefox Send client._
@@ -17,11 +17,30 @@ zenn_hide_header_meta = true
 - [pixelpwnr](@/projects/pixelpwnr.md)  
     _Insanely fast pixelflut client for images and animations written in Rust._
 
-#### Other projects &amp; categories:
+- [raytrace-rs](@/projects/raytrace-rs.md)  
+    _A ray tracer in Rust._
+
+#### Libraries
+
+- [ffsend-api](@/projects/ffsend-api.md): _Firefox Send client crate_
+- [pixelpwnr-render](@/projects/pixelpwnr-render.md): _pixelflut renderer crate_
+- [qr2term](@/projects/qr2term.md): _terminal QR code crate_
+- [version-compare](@/projects/version-compare.md): _version comparison crate_
+
+#### Other projects:
+
+- [Dworek](@/projects/dworek.md): _augmented production/trading game_
+- [Pokoebox](@/projects/pokoebox.md): _portable speaker media center_
+- [VoxelTex Engine](@/projects/voxeltex-engine.md): _3D OpenGL game engine_
+- [pixelpwnr-server](@/projects/pixelpwnr-server.md): _pixelflut server_
+
+#### Other categories:
 
 - [Bukkit projects](@/projects/bukkit.md):  _CraftBukkit plugins_
 
-_This page is incomplete, many more projects will be added over time. Check out
-my [git profiles][profiles] for a more complete overview of my projects._
+<br>
 
-[profiles]: @/about.md#me-on-the-web
+_This list is not complete, many more projects will be added over time. Check out
+my [GitHub profile][github] for a more complete overview of my projects._
+
+[github]: https://github.com/timvisee/
