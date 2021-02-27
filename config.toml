@@ -6,9 +6,6 @@ description = "Personal portfolio and blog of Tim Visée"
 theme = "zenn"
 default_language = "en"
 
-highlight_code = true
-highlight_theme = "1337"
-
 generate_feed = true
 feed_filename = "rss.xml"
 
@@ -19,6 +16,17 @@ taxonomies = [
     {name = "categories", paginate_by = 5, feed = true},
     {name = "tags", paginate_by = 5, feed = true},
 ]
+
+[markdown]
+highlight_code = true
+highlight_theme = "1337"
+
+render_emoji = false
+smart_punctuation = false
+
+external_links_target_blank = true
+external_links_no_follow = false
+external_links_no_referrer = false
 
 [extra]
 author = "Tim Visée"
