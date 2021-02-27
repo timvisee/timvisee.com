@@ -77,7 +77,6 @@ Here are some other noteworthy profiles of mine:
 
 - [LinkedIn][linkedin]
 - [Steam][steam]
-- [Keybase][keybase]
 
 To send me a message, please check out the [Contact](@/contact.md) page.
 
@@ -108,4 +107,3 @@ didn't list above are:
 [linkedin]: https://linkedin.com/in/timvisee
 [steam]: https://steamcommunity.com/id/timvisee
 [steam-games]: https://steamcommunity.com/id/timvisee/games/?tab=all
-[keybase]: https://keybase.io/timvisee
