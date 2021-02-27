@@ -1,9 +1,6 @@
 +++
 title = "Solving Advent of Code 2020 in under a second"
-description = "I solved all Advent of Code puzzles combined in less than one second. In this article I describe some optimizations I used."
-
-# TODO: remove to release
-draft = true
+description = "I solved all Advent of Code puzzles in less than one second total. In this article I describe some optimizations I used."
 
 [taxonomies]
 categories = ["blog"]
@@ -675,7 +672,7 @@ target. A fantastic achievement! Time to buy a cake.
 
 Here's a chart with all results plotted ([details][timings]):
 
-{{ fit_image(path="blog/2021-01-20_solving-aoc-2020-in-under-a-second/graph.png") }}
+{{ fit_image(path="blog/2021-02-27_solving-aoc-2020-in-under-a-second/graph.png") }}
 
 Out of interest I also ran all solutions in [parallel][runner-par] on my
 somewhat old 4-core Intel i5 CPU, which completes everything in a whopping
