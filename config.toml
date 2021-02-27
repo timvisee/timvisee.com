@@ -16,8 +16,8 @@ build_search_index = false
 check_external_links = false
 
 taxonomies = [
-    {name = "categories", paginate_by = 5, rss = true},
-    {name = "tags", paginate_by = 5, rss = true},
+    {name = "categories", paginate_by = 5, feed = true},
+    {name = "tags", paginate_by = 5, feed = true},
 ]
 
 [extra]
