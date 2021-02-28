@@ -43,14 +43,12 @@ send the `SIGUSR1` signal to the host process, it creates a fresh socket file
 for you.
 
 For this, you need to find the PID of the running tmux server. Find it through
-your task manager, or invoke the following command to list all running tmux
-programs. The first line is probably your server, the first number on that line
-is the PID you'll need:
+your task manager, or invoke the following command to find the PID of the oldest
+running tmux process:
 
 ```bash
-ps kstart_time -ef | grep tmux
-# timvisee    5612    2344  0 may11 ?        Ss    16:22 tmux new
-# timvisee  913216  911044  0 21:22 pts/5    S+     0:00 grep tmux
+pgrep --oldest tmux
+# 5612
 ```
 
 For me it was `5612`, so I invoke the following and attach it again (be sure to
