@@ -7,6 +7,7 @@ categories = ["blog"]
 tags = ["hack", "web", "xss", "javascript"]
 
 [extra]
+toc = true
 zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=21371201", name = "Hacker News"},

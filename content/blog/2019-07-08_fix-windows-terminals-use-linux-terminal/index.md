@@ -7,6 +7,7 @@ categories = ["guide", "blog"]
 tags = ["windows", "terminal", "linux"]
 
 [extra]
+toc = true
 zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=20383725", name = "Hacker News"},

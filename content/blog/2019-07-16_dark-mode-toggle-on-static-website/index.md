@@ -7,6 +7,7 @@ categories = ["guide", "blog"]
 tags = ["web", "css", "javascript", "theme", "website"]
 
 [extra]
+toc = true
 zenn_applause = true
 +++
 

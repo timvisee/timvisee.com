@@ -7,6 +7,7 @@ categories = ["blog"]
 tags = ["rust", "performance", "aoc"]
 
 [extra]
+toc = true
 zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=26286781", name = "Hacker News"},
