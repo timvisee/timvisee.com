@@ -170,35 +170,6 @@
                     {% block page_footer %}{% endblock page_footer %}
                 </content>
                 <sidebar>
-                    {# Table of contents #}
-                    {% if page.toc -%}
-                        <section>
-                            <h1>On this page</h1>
-                            <ul>
-                                <li><a href="{{ current_url }}#" title="{{ page.title }}">{{ page.title }}</a></li>
-                                {% for h1 in page.toc %}
-                                    <li>
-                                        <a href="{{ h1.permalink | safe }}" title="{{ h1.title }}">{{ loop.index }}. {{ h1.title }}</a>
-                                        {% if h1.children %}
-                                            {# <ul> #}
-                                            {% for h2 in h1.children %}
-                                                <li class="sub">
-                                                    <a href="{{h2.permalink | safe}}" title="{{ h1.title }}">{{ loop.index }}. {{ h2.title }}</a>
-                                                </li>
-                                            {% endfor %}
-                                            {# </ul> #}
-                                        {% endif %}
-                                    </li>
-                                {% endfor %}
-
-                                {# Comments link #}
-                                {% if page.extra.comments %}
-                                    <li><a href="#comments" title="Comments">Comments</a></li>
-                                {% endif %}
-                            </ul>
-                        </section>
-                    {%- endif %}
-
                     {# Categories #}
                     {% set categories = get_taxonomy(kind="categories") %}
                     {% if categories.items | length > 0 -%}

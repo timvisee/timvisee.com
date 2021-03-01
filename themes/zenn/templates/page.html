@@ -13,6 +13,45 @@
         </header>
         #}
 
+        {# Table of contents #}
+        {% if page.extra.toc -%}
+            <div id="toc-container">
+                <h4>Table of contents</h4>
+                <select id="toc-select">
+                    {# Post title #}
+                    <option value="{{ current_url }}#">{{ page.title }}</option>
+                    <option disabled>──────────</option>
+
+                    {# Post headers, with children #}
+                    {% for h1 in page.toc %}
+                        <option value="{{ h1.permalink | safe }}">{{ loop.index }}. {{ h1.title }}</option>
+                        {% if h1.children %}
+                            {% for h2 in h1.children %}
+                                <option value="{{h2.permalink |
+                                safe}}">&nbsp;&nbsp;&nbsp;&nbsp;{{ loop.index }}. {{ h2.title }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {# Comments link #}
+                    {% if page.extra.comments %}
+                        <option disabled>──────────</option>
+                        <option value="{{ current_url }}#comments">Comments</option>
+                    {% endif %}
+                </select>
+
+                <script>
+                    let select = document.getElementById("toc-select");
+                    select.addEventListener('change', function(event) {
+                        let target = event.target.value;
+                        if(target != null && target != undefined && target != '') {
+                            window.location.href = target;
+                        }
+                    });
+                </script>
+            </div>
+        {%- endif %}
+
         <div itemprop="articleBody">
             {{ page.content | safe }}
         </div>
