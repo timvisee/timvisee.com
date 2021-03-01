@@ -46,4 +46,4 @@ zenn_source = "https://gitlab.com/timvisee/timvisee.com/"
 
 # Random string, used in URLs to force update resources
 # Change this value when stylesheets or scripts are updated
-random = "2021-02-28"
+random = "2021-03-01"
