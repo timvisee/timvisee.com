@@ -17,6 +17,8 @@ taxonomies = [
     {name = "tags", paginate_by = 5, feed = true},
 ]
 
+ignored_content = ["*.xcf"]
+
 [markdown]
 highlight_code = true
 highlight_theme = "1337"

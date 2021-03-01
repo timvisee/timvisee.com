@@ -14,6 +14,8 @@ comments = true
 zenn_applause = true
 +++
 
+{{ fit_image(path="blog/2020-05-05_list-export-your-subreddits/header.png", url="/blog/list-export-your-subreddits/header.png") }}
+
 The last few years I've been wanting to export the list of subreddits I joined.
 It's fun to share with friends having a similar interest,
 as I've collected many gems throughout the years.
@@ -60,7 +62,7 @@ javascript.void()
 ```
 
 Your complete list of subreddits is located in the sidebar on [that][list] page.
-The script plucks the list of reddits from the list and puts it in an array.
+The script plucks your list of reddits from this sidebar and puts it in an array.
 Then the array is imploded in a string to show on the page.
 Super simple.
 
