@@ -8,9 +8,6 @@ tags = ["reddit", "snippet"]
 
 [extra]
 zenn_applause = true
-comments = [
-    {url = "https://www.reddit.com/r/help/comments/lv85c2/how_do_i_export_the_list_of_subreddits_i_am/", name = "Reddit"},
-]
 +++
 
 {{ fit_image(path="blog/2021-03-01_list-export-your-subreddits/header.png", url="/blog/list-export-your-subreddits/header.png") }}
