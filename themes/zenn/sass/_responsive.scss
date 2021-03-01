@@ -1,15 +1,6 @@
 @media (max-width: $responsive-small) {
     main {
-        flex-direction: column;
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
         margin: 0;
-    }
-
-    sidebar {
-        width: auto;
-        margin-top: 2em;
     }
 
     header#banner {
@@ -56,9 +47,19 @@
 
 @media (max-width: $responsive-mini) {
     content,
-    sidebar {
+    body > footer {
         padding-left: 1em;
         padding-right: 1em;
+
+        ul {
+            display: block;
+            margin-left: 0;
+        }
+    }
+
+    body > footer ul {
+        display: block;
+        margin-left: 0;
     }
 
     header#banner,

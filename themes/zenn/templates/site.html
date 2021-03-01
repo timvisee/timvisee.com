@@ -169,52 +169,20 @@
 
                     {% block page_footer %}{% endblock page_footer %}
                 </content>
-                <sidebar>
-                    {# Categories #}
-                    {% set categories = get_taxonomy(kind="categories") %}
-                    {% if categories.items | length > 0 -%}
-                        <section>
-                            <h1><a href="/categories">Categories</a></h1>
-                            <ul>
-                                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                    {% for category in categories.items %}
-                                        <li>
-                                            <a itemprop="url"
-                                                    class="{% if category.permalink | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                                                    href="{{ category.permalink | safe }}">
-                                                <span itemprop="name">{{ category.name | title }}</span>
-                                            </a>
-                                        </li>
-                                    {% endfor %}
-                                </nav>
-                            </ul>
-                        </section>
-                    {%- endif %}
-
-                    {# Tags #}
-                    {% set tags = get_taxonomy(kind="tags") -%}
-                    {% if tags.items | length > 0 -%}
-                        <section>
-                            <h1><a href="/tags">Tags</a></h1>
-                            <div class="tags">
-                                {% for tag in tags.items %}
-                                    <a href="{{ tag.permalink | safe }}"
-                                            class="tag {% if tag.permalink | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}">
-                                        {{ tag.name }}
-                                    </a>
-                                {% endfor %}
-                            </div>
-                        </section>
-                    {%- endif %}
-
-                    <p class="muted">
-                        Copyright &copy; {{ config.title }} 2011-{{ now() | date(format="%Y") }}
-                        {% if config.extra.zenn_source %}
-                            <br /><a href="{{ config.extra.zenn_source }}" target="_blank">Source</a>
-                        {% endif %}
-                    </p>
-                </sidebar>
             </main>
+
+            <footer class="muted">
+                Copyright &copy; {{ config.title }} 2011-{{ now() | date(format="%Y") }}.
+
+                <ul>
+                    <li><a href="/tags" title="Browse tags">Tags</a></li>
+                    <li><a href="/categories" title="Browse categories">Categories</a></li>
+                    {% if config.extra.zenn_source %}
+                        <li><a href="{{ config.extra.zenn_source }}" target="_blank">Source</a></li>
+                    {% endif %}
+                </ul>
+            </footer>
+
         {% endblock main %}
     </body>
 
