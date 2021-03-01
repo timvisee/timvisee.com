@@ -2,19 +2,15 @@
 title = "List & export your subreddits"
 description = "A script to help you make a list and export all subreddits you joined."
 
-# TODO: remove to release
-draft = true
-
 [taxonomies]
 categories = ["guide", "blog"]
 tags = ["reddit", "snippet"]
 
 [extra]
-comments = true
 zenn_applause = true
 +++
 
-{{ fit_image(path="blog/2020-05-05_list-export-your-subreddits/header.png", url="/blog/list-export-your-subreddits/header.png") }}
+{{ fit_image(path="blog/2021-03-01_list-export-your-subreddits/header.png", url="/blog/list-export-your-subreddits/header.png") }}
 
 The last few years I've been wanting to export the list of subreddits I joined.
 It's fun to share with friends having a similar interest,
@@ -26,7 +22,7 @@ It exports your subreddits to a plain text list.
 <!-- more -->
 
 ## How to export
-1.  Visit [reddit.com/subreddits/mine][list] in a desktop browser,
+1.  Visit [old.reddit.com/subreddits/mine][list] in a desktop browser,
     make sure you're logged in.
 2.  On that page, [open][developer-tools] your browser developer tools (Keybind: _Ctrl+Shift+I_).
 3.  In the developer tools panel, open the **Console** tab.
@@ -69,6 +65,6 @@ Super simple.
 </details>
 
 [developer-tools]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools#How_to_open_the_devtools_in_your_browser
-[list]: https://reddit.com/subreddits/mine
+[list]: https://old.reddit.com/subreddits/mine
 [mine]: https://gist.github.com/timvisee/5af8d219d0a88740cdac2351f2f77247
 [reddit]: https://reddit.com/
