@@ -77,6 +77,7 @@ Here are some other noteworthy profiles of mine:
 
 - [LinkedIn][linkedin]
 - [Steam][steam]
+- [Mixcloud][mixcloud]
 
 To send me a message, please check out the [Contact](@/contact.md) page.
 
@@ -97,13 +98,14 @@ didn't list above are:
 
 [github]: https://github.com/timvisee
 [gitlab]: https://gitlab.com/timvisee
-[sr.ht]: https://git.sr.ht/~timvisee
-[stackoverflow]: https://stackoverflow.com/users/1000145
-[stackexchange]: https://stackexchange.com/users/980236?tab=accounts
-[reddit]: https://reddit.com/u/timvisee
 [hackernews]: https://news.ycombinator.com/user?id=timvisee
+[linkedin]: https://linkedin.com/in/timvisee
 [lobsters]: https://lobste.rs/u/timvisee/
 [mastodon]: https://mastodon.social/@timvisee
-[linkedin]: https://linkedin.com/in/timvisee
-[steam]: https://steamcommunity.com/id/timvisee
+[mixcloud]: https://www.mixcloud.com/timvisee/
+[reddit]: https://reddit.com/u/timvisee
+[sr.ht]: https://git.sr.ht/~timvisee
+[stackexchange]: https://stackexchange.com/users/980236?tab=accounts
+[stackoverflow]: https://stackoverflow.com/users/1000145
 [steam-games]: https://steamcommunity.com/id/timvisee/games/?tab=all
+[steam]: https://steamcommunity.com/id/timvisee
