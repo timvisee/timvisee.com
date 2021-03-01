@@ -9,8 +9,8 @@
         <ul>
             {% for term in terms %}
                 <li>
-                    <a href="{{ term.permalink | safe }}" class="tag">{{ term.name }}</a>:
-                    {{ term.pages | length }} article{{ term.pages | length | pluralize }}
+                    <a href="{{ term.permalink | safe }}" class="tag">{{ term.name }}</a><span class="muted">:
+                    {{ term.pages | length }} article{{ term.pages | length | pluralize }}</span>
                 </li>
             {% endfor %}
         </ul>
