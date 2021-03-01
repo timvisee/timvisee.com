@@ -1,5 +1,4 @@
 {% extends "site.html" %}
-{% import "post_macros.html" as post_macros %}
 
 {% block headertron %}
     <header id="headertron">
@@ -19,7 +18,3 @@
         </div>
     </header>
 {% endblock headertron %}
-
-{% block body %}
-    {{ section.content | safe }}
-{% endblock body %}
