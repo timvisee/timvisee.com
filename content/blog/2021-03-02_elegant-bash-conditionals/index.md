@@ -102,10 +102,10 @@ the file, so we use the `&&` operator.
 To require invoking user to be root, we can do the following:
 
 ```bash
-[ $USER != "root" ] && echo You must be root && exit 1
+[ $EUID -ne 0 ] && echo You must be root && exit 1
 ```
 
-The `echo` command _always_ exists with `0`, so this propagates to `exit` if the
+The `echo` command exists with `0`, so this propagates to `exit` if the
 first expression is truthful.
 
 <br>
@@ -148,6 +148,15 @@ It returns the exit code `0` if the expression was truthful.
 
 You can chain multiple `[ expr ] && [ expr ]` expressions together, they are
 commands after all.
+
+Bash also has `[[`, which is
+[different](https://stackoverflow.com/q/13542832/1000145) from `[`.
+
+You can execute blocks of commands by wrapping it with `{ expr }`. For example:
+
+```bash
+[ $EUID -ne 0 ] && { echo You must be root;  exit 1 }
+```
 
 The `true` and `false` commands do nothing more than returning `0` or `1`.
 
