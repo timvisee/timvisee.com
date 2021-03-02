@@ -2,9 +2,6 @@
 title = "Elegant bash conditionals"
 description = "How to write better bash scripts by replacing if-statements with something much more elegant"
 
-# TODO: remove to release
-draft = true
-
 [taxonomies]
 categories = ["blog"]
 tags = ["bash", "shell"]
@@ -68,7 +65,7 @@ directory doesn't exist or if an error occurred.
 
 ```bash
 ls ~/            # exit code: 0
-ls ~/nonexistant # exit code: 2
+ls ~/nonexistent # exit code: 2
 ```
 
 This will function similarly to almost any program.
@@ -108,7 +105,7 @@ first expression is truthful.
 <br>
 
 If we'd like to print our profile file contents with a success message,
-or an error message on read failure, we can do the following:
+or an error message on reading failure, we can do the following:
 
 ```bash
 cat ~/.profile && echo This is your profile || echo Failed to read profile
@@ -158,7 +155,7 @@ or`, but now [supports][fish-and-and] `&&` and `||` as well in modern versions.
 ## Closing thoughts
 These command sequences with control operators are an elegant alternative for
 simple if-statements. I think they look much better and are more expressive
-looking at the conditional logic.
+looking at conditional logic.
 
 But, don't overuse them. For bigger statements or advanced branching, you should
 fall back to if-statements.
