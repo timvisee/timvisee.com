@@ -9,6 +9,12 @@ tags = ["bash", "shell"]
 [extra]
 toc = true
 zenn_applause = true
+comments = [
+    {url = "https://news.ycombinator.com/item?id=26314489", name = "Hacker News"},
+    {url = "https://www.reddit.com/r/linux/comments/lw0ofg/elegant_bash_conditionals/", name = "Reddit"},
+    {url = "https://lobste.rs/s/nao13f/elegant_bash_conditionals", name = "Lobsters"},
+    {url = "https://mastodon.social/@timvisee/105820152436436465", name = "Mastodon"},
+]
 +++
 
 The if-statement is a very basic thing, not just in bash, but in all of programming.
