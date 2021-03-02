@@ -158,7 +158,7 @@ it is empty, so you won't even need conditionals.
 Most other shells support similar operators. [fish][fish] uses `; and` and `;
 or`, but now [supports][fish-and-and] `&&` and `||` as well in modern versions.
 
-`$_` (or `Alt+.`) is your last used argument (thanks [@Diti](https://lobste.rs/u/Diti)). For example:
+`$_` (or `Alt+.`) is your last used argument (thanks [@Diti](https://lobste.rs/s/nao13f/elegant_bash_conditionals#c_brp038)). For example:
 
 ```bash
 test -f FILE && source $_ || echo "FILE does not exist" >&2
