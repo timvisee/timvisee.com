@@ -49,8 +49,8 @@ Some of these are conditional and allow logical branching based on the success
 state of the last run command.
 
 We will just focus on these two logical operators:
-- `&&`: run the following command if previous succeeded
-- `||`: run the following command if previous failed
+- `&&`: the AND operator, run the following command only if previous succeeded
+- `||`: the OR operator, run the following command only if previous failed
 
 ## Exit codes
 You might wonder how bash considers whether a command succeeded.
