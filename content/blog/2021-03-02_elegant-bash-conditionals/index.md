@@ -55,7 +55,7 @@ We will just focus on these two logical operators:
 ## Exit codes
 You might wonder how bash considers whether a command succeeded.
 This is where [exit codes][exit-status] come in.
-When a program exists a numeric status code is returned.
+When a program exits a numeric status code is returned.
 A value of `0` means the program succeeded, any other value means it failed.
 
 The exit code is normally hidden.
