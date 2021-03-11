@@ -19,12 +19,12 @@ zenn_hide_header_meta = true
 
 [crate-version-badge]: https://img.shields.io/crates/v/version-compare.svg
 [crate-download-badge]: https://img.shields.io/crates/d/version-compare.svg
+[crate-license-badge]: https://img.shields.io/crates/l/version-compare.svg
 [crate-link]: https://crates.io/crates/version-compare
 [docs]: https://docs.rs/version-compare
 [docs-badge]: https://docs.rs/version-compare/badge.svg
-[travis-master-badge]:   https://travis-ci.org/timvisee/version-compare.svg?branch=master
-[travis-last-badge]:     https://travis-ci.org/timvisee/version-compare.svg
-[travis-link]:           https://travis-ci.org/timvisee/version-compare
+[travis-master-badge]: https://travis-ci.org/timvisee/version-compare.svg?branch=master
+[travis-link]: https://travis-ci.org/timvisee/version-compare
 
 > A Rust library to easily compare version numbers in any format, and test them
 > against various comparison operators.
