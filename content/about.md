@@ -72,6 +72,7 @@ I do my news reading and social activity through the following websites:
 - [Hacker News][hackernews]
 - [Lobsters][lobsters]
 - [Mastodon][mastodon]
+- [Twitter][twitter]
 
 Here are some other noteworthy profiles of mine:
 
@@ -109,3 +110,4 @@ didn't list above are:
 [stackoverflow]: https://stackoverflow.com/users/1000145
 [steam-games]: https://steamcommunity.com/id/timvisee/games/?tab=all
 [steam]: https://steamcommunity.com/id/timvisee
+[twitter]: https://twitter.com/likecaffeinated
