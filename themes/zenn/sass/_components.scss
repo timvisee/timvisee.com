@@ -186,8 +186,13 @@ a.tag {
  */
 
 .anchor {
+    margin-left: 0.1em;
     transition: opacity 0.2s ease;
     opacity: 0;
+}
+
+.anchor::after {
+    content: '#';
 }
 
 *:hover > .anchor,
