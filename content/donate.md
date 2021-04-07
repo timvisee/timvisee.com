@@ -27,13 +27,14 @@ A **big** thanks to all awesome supporters!
 
 ### Recurring sponsoring
 
-- [GitHub](https://github.com/users/timvisee/sponsorship)<span class="muted">
+- [GitHub](https://github.com/users/timvisee/sponsorship)
 - [Liberapay](https://liberapay.com/timvisee/)
 - [Patreon](https://patreon.com/timvisee)
 
 ### One-time donation
 - [Ko-fi](https://ko-fi.com/timvisee)<span class="muted">: buy me a coffee</span>
 - [PayPal](https://paypal.me/timvisee)
+- [GitHub](https://github.com/sponsors/timvisee?frequency=one-time)
 - [bunq.me](https://bunq.me/timvisee/0/Sponsor)<span class="muted">: support via an iDeal or SOFORT payment</span>
 
 ### Cryptocurrency donation
