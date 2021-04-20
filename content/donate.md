@@ -40,3 +40,4 @@ A **big** thanks to all awesome supporters!
 ### Cryptocurrency donation
 - Bitcoin: `3B1mBcqobSrgDFMhoQDtcVoWHRuwTjwMLZ`
 - Etherium: `0x956E4443A050bC5626c272D86AA0Ee213509E22c`
+- BAT: `0x00dD84d3D82aa1e0c0E2A67a726302607EF87b6f`
