@@ -58,7 +58,7 @@ Most of my [work](@/projects.md) are available on my git profiles:
 
 - [GitHub][github] <span class="muted">([projects](https://github.com/timvisee?tab=repositories))</span>
 - [GitLab][gitlab] <span class="muted">([projects](https://gitlab.com/users/timvisee/projects))</span>
-- [sr.ht][sr.ht]
+- [sr.ht][sr.ht] <span class="muted">([projects](https://git.sr.ht/~timvisee))</span>
 
 Like any developer, I use Stack Overflow and alike for development and IT related
 questions and answers:
@@ -105,7 +105,7 @@ didn't list above are:
 [mastodon]: https://mastodon.social/@timvisee
 [mixcloud]: https://www.mixcloud.com/timvisee/
 [reddit]: https://reddit.com/u/timvisee
-[sr.ht]: https://git.sr.ht/~timvisee
+[sr.ht]: https://sr.ht/~timvisee
 [stackexchange]: https://stackexchange.com/users/980236?tab=accounts
 [stackoverflow]: https://stackoverflow.com/users/1000145
 [steam-games]: https://steamcommunity.com/id/timvisee/games/?tab=all
