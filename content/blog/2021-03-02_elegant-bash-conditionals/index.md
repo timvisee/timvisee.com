@@ -152,11 +152,11 @@ commands after all.
 Bash also has `[[`, which is
 [different](https://stackoverflow.com/q/13542832/1000145) from `[`.
 
-You can wrap multiple commands with `{ expr }` to run it as single expression in
+You can wrap multiple commands with `{ expr; }` to run it as single expression in
 your command chain. For example:
 
 ```bash
-[ $EUID -ne 0 ] && { echo You must be root; exit 1 }
+[ $EUID -ne 0 ] && { echo You must be root; exit 1; }
 ```
 
 The `true` and `false` commands do nothing more than returning `0` or `1`.
