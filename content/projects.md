@@ -8,6 +8,9 @@ zenn_hide_header_meta = true
 
 #### Highlights
 
+- [Send](@/projects/send.md)  
+    _Simple, private file sharing from your webbrowser._
+
 - [ffsend](@/projects/ffsend.md)  
     _Easily &amp; securely share files from the command line. Fully featured Firefox Send client._
 
