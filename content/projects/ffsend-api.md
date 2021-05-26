@@ -26,6 +26,7 @@ _View more on the project pages over at:_
 
 _Also see these related projects:_
 
+- [Send](@/projects/send.md) <span class="muted">(Send project)</span>
 - [`ffsend`](@/projects/ffsend.md) <span class="muted">(CLI client implementation)</span>
 
 [github]: https://github.com/timvisee/ffsend-api

@@ -44,6 +44,7 @@ _View more on the project pages over at:_
 
 _Also see these related projects:_
 
+- [Send](@/projects/send.md) <span class="muted">(Send project)</span>
 - [`ffsend-api`](@/projects/ffsend-api.md) <span class="muted">(Send library implementation for Rust)</span>
 
 [github]: https://github.com/timvisee/ffsend
