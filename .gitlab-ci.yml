@@ -1,6 +1,6 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  ZOLA_VERSION: "v0.13.0"
+  ZOLA_VERSION: "v0.14.0"
 
 stages:
   - build
@@ -26,9 +26,9 @@ deploy:
     - "sshpass -p $DEPLOY_SSH_PASS ssh -oStrictHostKeyChecking=no $DEPLOY_SSH_USER@$DEPLOY_SSH_HOST 'mv /var/customers/webs/timvisee/timvisee.com/live /var/customers/webs/timvisee/timvisee.com/old; mv /var/customers/webs/timvisee/timvisee.com/new /var/customers/webs/timvisee/timvisee.com/live; rm -rf /var/customers/webs/timvisee/timvisee.com/old'"
     - "echo Site is now deployed and live at https://timvisee.com/"
   dependencies:
-  - build
+    - build
   environment:
     name: production
     url: https://timvisee.com/
   only:
-  - deploy
+    - deploy
