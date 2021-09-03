@@ -112,6 +112,10 @@ content {
         transition: border 0.2s ease;
     }
 
+    details > summary {
+        cursor: pointer;
+    }
+
     #toc-container {
         margin-top: 1em;
         padding: 1em;
