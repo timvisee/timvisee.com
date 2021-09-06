@@ -26,7 +26,7 @@ Then run:
 
 ```bash
 # Clone the repository
-git clone https://gitlab.com/timivsee/timvisee.com
+git clone https://gitlab.com/timvisee/timvisee.com
 cd timvisee.com
 
 # Build and serve a local instance
