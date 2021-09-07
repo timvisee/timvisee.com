@@ -2,9 +2,6 @@
 title = "Firefox tricks: efficient QuantumBar usage"
 description = "Tricks to efficiently use the Firefox address bar. Using scope characters, bookmark keywords, and duckduckgo bangs, without add-ons."
 
-# TODO: remove to publish
-draft = true
-
 [taxonomies]
 categories = ["blog"]
 tags = ["firefox"]
@@ -14,6 +11,8 @@ toc = true
 zenn_applause = true
 comments = []
 +++
+
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/header.png", url="/blog/firefox-tricks-quantumbar/header.png") }}
 
 The Firefox [QuantumBar][firefox-address-bar] (formerly AwesomeBar, or just
 address bar) is surprisingly capable. There's a lot you can do with it to
@@ -54,7 +53,7 @@ Imagine you want to jump to an open Google tab, simply type:
 % google
 ```
 
-{{ fit_image(path="blog/2021-09-03_firefox-quantumbar-tricks/tab-google.png", url="/blog/firefox-quantumbar-tricks/tab-google.png") }}
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/tab-google.png", url="/blog/firefox-tricks-quantumbar/tab-google.png") }}
 
 Or you want to find an _MDN_ bookmark on _Progressive web apps_ you added to
 your huge bookmarks collection ages ago. [Proton][proton] even shows a fancy
@@ -64,7 +63,7 @@ hint now:
 * mdn pwa
 ```
 
-{{ fit_image(path="blog/2021-09-03_firefox-quantumbar-tricks/bookmark-mdn-pwa.png", url="/blog/firefox-quantumbar-tricks/bookmark-mdn-pwa.png") }}
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/bookmark-mdn-pwa.png", url="/blog/firefox-tricks-quantumbar/bookmark-mdn-pwa.png") }}
 
 Simple! By the way, use <kbd class="bind"><kbd>Ctrl</kbd>+<kbd>L</kbd></kbd> or
 <kbd>F6</kbd> to quickly focus the address bar.
@@ -87,7 +86,7 @@ keyword term to trigger it with. You may put `%s` in the bookmark URL, which
 will be replaced with what you type after the trigger keyword, making them
 interactive.
 
-{{ fit_image(path="blog/2021-09-03_firefox-quantumbar-tricks/bookmark-edit.png", url="/blog/firefox-quantumbar-tricks/bookmark-edit.png") }}
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/bookmark-edit.png", url="/blog/firefox-tricks-quantumbar/bookmark-edit.png") }}
 
 The simplest example would be to quickly jump to your favorite site. Set a
 bookmark with the `d` keyword. Type `d` in your address bar and hit enter to
@@ -104,7 +103,7 @@ d what is the answer to life
 wiki bikeshedding
 ```
 
-{{ fit_image(path="blog/2021-09-03_firefox-quantumbar-tricks/bookmark-search.png", url="/blog/firefox-quantumbar-tricks/bookmark-search.png") }}
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/bookmark-search.png", url="/blog/firefox-tricks-quantumbar/bookmark-search.png") }}
 
 <details>
 <summary>Tap to see bookmark config</summary>
@@ -125,7 +124,7 @@ Quickly jump to your favorite subreddit:
 r/ linuxmasterrace
 ```
 
-{{ fit_image(path="blog/2021-09-03_firefox-quantumbar-tricks/bookmark-reddit.png", url="/blog/firefox-quantumbar-tricks/bookmark-reddit.png") }}
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/bookmark-reddit.png", url="/blog/firefox-tricks-quantumbar/bookmark-reddit.png") }}
 
 <details>
 <summary>Tap to see bookmark config</summary>
@@ -144,7 +143,7 @@ ennl bikeshedding
 nlen fietsenstalling
 ```
 
-{{ fit_image(path="blog/2021-09-03_firefox-quantumbar-tricks/bookmark-translate.png", url="/blog/firefox-quantumbar-tricks/bookmark-translate.png") }}
+{{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/bookmark-translate.png", url="/blog/firefox-tricks-quantumbar/bookmark-translate.png") }}
 
 <details>
 <summary>Tap to see bookmark config</summary>
