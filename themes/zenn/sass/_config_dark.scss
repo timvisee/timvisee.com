@@ -12,6 +12,9 @@ $color-header: #FF6F33;
 $color-link: #6699cc;
 $color-link-hover: lighten($color-link, 15%);
 $color-code-bg: $color-main-bg-alt;
+$color-kbd-bg: #333;
+$color-kbd-border: #646464;
+$color-kbd-color: #eee;
 
 // Top logo and landing page
 $logo-color: $color-text;

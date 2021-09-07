@@ -116,6 +116,21 @@ content {
         cursor: pointer;
     }
 
+    kbd.bind > kbd,
+    kbd:not(.bind) {
+        background-color: $color-kbd-bg;
+        border-radius: 3px;
+        border: 1px solid $color-kbd-border;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 lighten($color-kbd-bg, 5%) inset;
+        color: $color-kbd-color;
+        display: inline-block;
+        font-size: .75em;
+        font-weight: 700;
+        line-height: 1;
+        padding: 2px 4px;
+        white-space: nowrap;
+   }
+
     #toc-container {
         margin-top: 1em;
         padding: 1em;
