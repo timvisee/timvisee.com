@@ -9,7 +9,11 @@ tags = ["firefox"]
 [extra]
 toc = true
 zenn_applause = true
-comments = []
+comments = [
+    {url = "https://www.reddit.com/r/firefox/comments/pjozlo/firefox_tricks_efficient_quantumbar_usage/", name = "Reddit"},
+    {url = "https://mastodon.social/@timvisee/106891027024448347", name = "Mastodon"},
+    {url = "https://twitter.com/likecaffeinated/status/1435260278950801408", name = "Twitter"},
+]
 +++
 
 {{ fit_image(path="blog/2021-09-07_firefox-tricks-quantumbar/header.png", url="/blog/firefox-tricks-quantumbar/header.png") }}
