@@ -15,31 +15,53 @@ zenn_hide_header_meta = true
 [![Download statistics][crate-download-badge]][crate-link]
 [![Crate version][crate-version-badge]][crate-link]
 [![Documentation][docs-badge]][docs]
-[![Build status on Travis CI][travis-master-badge]][travis-link]
+[![Build status on GitLab CI][gitlab-ci-master-badge]][gitlab-ci-link]
+[![License][crate-license-badge]][crate-link]
 
-[crate-version-badge]: https://img.shields.io/crates/v/version-compare.svg
 [crate-download-badge]: https://img.shields.io/crates/d/version-compare.svg
 [crate-license-badge]: https://img.shields.io/crates/l/version-compare.svg
 [crate-link]: https://crates.io/crates/version-compare
-[docs]: https://docs.rs/version-compare
+[crate-version-badge]: https://img.shields.io/crates/v/version-compare.svg
 [docs-badge]: https://docs.rs/version-compare/badge.svg
-[travis-master-badge]: https://travis-ci.org/timvisee/version-compare.svg?branch=master
-[travis-link]: https://travis-ci.org/timvisee/version-compare
+[docs]: https://docs.rs/version-compare
+[gitlab-ci-link]: https://gitlab.com/timvisee/version-compare/pipelines
+[gitlab-ci-master-badge]: https://gitlab.com/timvisee/version-compare/badges/master/pipeline.svg
 
-> A Rust library to easily compare version numbers in any format, and test them
-> against various comparison operators.
+> Rust library to easily compare version numbers with no specific format, and
+> test against various comparison operators.
 
 - [Visit project page on GitHub][github]
 
-Comparing version numbers is hard. Especially when version numbers get really complex,
-or when their formatting differs. 
+Comparing version numbers is hard, especially with weird version number formats.
 
-This library helps you to easily compare any kind of version number with minimal code.
+This library helps you to easily compare any kind of version number with no
+specific format using a best-effort approach.
+Two version numbers can be compared to each other to get a comparison operator
+(`<`, `==`, `>`), or test them against a comparison operator.
+
+Along with version comparison, the library provides various other tools for
+working with version numbers.
+
+```rust
+use version_compare::{compare, Cmp};
+
+fn main() {
+    let a = "1.3";
+    let b = "1.2.4";
+
+    match compare(a, b) {
+        Ok(Cmp::Lt) => println!("Version a is less than b"),
+        Ok(Cmp::Eq) => println!("Version a is equal to b"),
+        Ok(Cmp::Gt) => println!("Version a is greater than b"),
+        _ => panic!("Invalid version number"),
+    }
+}
+```
 
 ---
 
 - [Features](https://github.com/timvisee/version-compare/#features)
-- [Example](https://github.com/timvisee/version-compare/#example)
+- [Examples](https://github.com/timvisee/version-compare/#example)
 
 _View more on the project pages over at:_
 
