@@ -4,7 +4,7 @@ description = "Dworek - Create virtual drug labs in real-world locations with yo
 date = 2016-07-31
 
 [taxonomies]
-tags = ["webapp", "prototype"]
+tags = ["webapp", "prototype", "game"]
 categories = ["project"]
 
 [extra]

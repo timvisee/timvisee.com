@@ -35,6 +35,7 @@ zenn_hide_header_meta = true
 
 #### Other projects:
 
+- [Merge Mania](@/projects/merge-mania.md): _real-time merging/trading game in teams_
 - [Dworek](@/projects/dworek.md): _augmented production/trading game_
 - [Pokoebox](@/projects/pokoebox.md): _portable speaker media center_
 - [VoxelTex Engine](@/projects/voxeltex-engine.md): _3D OpenGL game engine_
