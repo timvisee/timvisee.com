@@ -17,6 +17,9 @@ zenn_hide_header_meta = true
 - [prs](@/projects/prs.md)  
     _Secure, fast &amp; convenient password manager CLI using GPG and git to sync._
 
+- [lazymc](@/projects/lazymc.md)  
+    _Put your Minecraft server to rest when idle._
+
 - [Barbapappa](@/projects/barbapappa.md)  
     _Bar management application to manage transactions and inventory._
 
