@@ -28,7 +28,7 @@ incoming status connections until the server is started and then transparently
 relays/proxies the rest. All without them noticing.
 
 <video controls>
-    <source src="https://user-images.githubusercontent.com/856222/141307395-c6252332-7fdb-4443-b9ae-1021a03f9650.mp4" type="video/mp4">
+    <source src="https://user-images.githubusercontent.com/856222/141378688-882082be-9efa-4cfe-81cc-5a7ab8b8e86b.mp4" type="video/mp4">
 </video>
 
 <br>
