@@ -91,7 +91,7 @@ See the [Donate](@/donate.md) page for more information.
 Some other random things I like besides my usual development activity that I
 didn't list above are:
 
-- Music, to listen to, usually while at work
+- Music: listening, DJing, piano
   - Deep house, House, Electronic, Techno and _related_
 - DIY (Do it Yourself) projects of various sorts, I like to be creative
 - Gaming, [oh yes][steam-games]
