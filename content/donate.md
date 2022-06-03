@@ -35,7 +35,7 @@ A **big** thanks to all awesome supporters!
 - [Ko-fi](https://ko-fi.com/timvisee)<span class="muted">: buy me a coffee</span>
 - [PayPal](https://paypal.me/timvisee)
 - [GitHub](https://github.com/sponsors/timvisee?frequency=one-time)
-- [bunq.me](https://bunq.me/timvisee/0/Sponsor)<span class="muted">: support via an iDeal or SOFORT payment</span>
+- [bunq.me](https://bunq.me/timvisee/Sponsor)<span class="muted">: support via an iDeal or SOFORT payment</span>
 
 ### Cryptocurrency donation
 - Bitcoin: `3B1mBcqobSrgDFMhoQDtcVoWHRuwTjwMLZ`
