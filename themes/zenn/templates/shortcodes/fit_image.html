@@ -1,6 +1,10 @@
 <p>
     <a href="{% if url %}{{ url | safe }}{% else %}{{ path | split(pat="/") | last }}{% endif %}" title="View full-size image">
+        {% if height %}
+        {% set image = resize_image(path=path, width=750, height=height, op="fit") %}
+        {% else %}
         {% set image = resize_image(path=path, width=750, height=1500, op="fit") %}
+        {% endif %}
         <img src="{{ image.url }}" />
     </a>
 </p>
