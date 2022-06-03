@@ -6,15 +6,15 @@ description = "About me"
 zenn_hide_header_meta = true
 +++
 
-Hello there, I'm Tim!
-I live in Holland 🇳🇱, and am currently in my twenties.
-My everyday passion is to develop awesome high-quality software to make life
-a little better.
+Tim here! A Holland 🇳🇱, based developer who enjoys creating awesome,
+high-quality software that makes your everyday web and computing experience
+better.
 
-I prefer to make software free and open-source, because I believe it's
-important to allow anybody to inspect, modify, improve, contribute and verify
-it without restrictions. I also contribute to various other open projects as
-well.
+I prefer to make software free and open-source. It's important to allow anybody
+to inspect, modify, improve, contribute and verify without restrictions. Just
+like I enjoy doing for external projects.
+
+{{ fit_image(path="about/me.png", url="/about/me.png", height=500) }}
 
 See the [Me on the web](@/about.md#me-on-the-web) section below for a
 comprehensive overview of my online profiles.
@@ -37,7 +37,7 @@ searching for innovative solutions to develop software not just for robots, but
 also for humans.
 
 #### Interests
-- Application back-end development
+- Application backend development
 - Systems programming (Rust)
 - Automation, containerization (Docker)
 - Linux
