@@ -14,7 +14,7 @@ I prefer to make software free and open-source. It's important to allow anybody
 to inspect, modify, improve, contribute and verify without restrictions. Just
 like I enjoy doing for external projects.
 
-{{ fit_image(path="static/me.png", url="/me.png", height=500) }}
+{{ fit_image(path="static/me.png", url="/me.png", height=250) }}
 
 See the [Me on the web](@/about.md#me-on-the-web) section below for a
 comprehensive overview of my online profiles.
