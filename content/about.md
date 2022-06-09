@@ -54,7 +54,7 @@ also for humans.
 - _and much more_
 
 ## Me on the web
-Most of my [work](@/projects.md) are available on my git profiles:
+Most of my [work](@/projects.md) is available on my git profiles:
 
 - [GitHub][github] <span class="muted">([projects](https://github.com/timvisee?tab=repositories))</span>
 - [GitLab][gitlab] <span class="muted">([projects](https://gitlab.com/users/timvisee/projects))</span>
