@@ -6,7 +6,7 @@ description = "About me"
 zenn_hide_header_meta = true
 +++
 
-Tim here! A Holland 🇳🇱, based developer who enjoys creating awesome,
+Tim here! A Holland 🇳🇱 based developer who enjoys creating awesome,
 high-quality software that makes your everyday web and computing experience
 better.
 
