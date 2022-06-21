@@ -12,6 +12,7 @@ build:
     - curl -L https://github.com/getzola/zola/releases/download/$ZOLA_VERSION/zola-$ZOLA_VERSION-x86_64-unknown-linux-gnu.tar.gz > zola.tar.gz
     - tar -xzf zola.tar.gz
     - ./zola build
+    - du -sch public/* | sort -h
   artifacts:
     paths:
       - public
