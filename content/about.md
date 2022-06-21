@@ -19,8 +19,7 @@ like I enjoy doing for external projects.
 See the [Me on the web](@/about.md#me-on-the-web) section below for a
 comprehensive overview of my online profiles.
 
-Here is my usual developer sales pitch, as posted on my [LinkedIn][linkedin]
-page:
+Here is my usual developer sales pitch:
 
 ## Sales pitch
 - Open-source & free software enthusiast
@@ -76,7 +75,6 @@ I do my news reading and social activity through the following websites:
 
 Here are some other noteworthy profiles of mine:
 
-- [LinkedIn][linkedin]
 - [Steam][steam]
 - [Mixcloud][mixcloud]
 
@@ -100,7 +98,6 @@ didn't list above are:
 [github]: https://github.com/timvisee
 [gitlab]: https://gitlab.com/timvisee
 [hackernews]: https://news.ycombinator.com/user?id=timvisee
-[linkedin]: https://linkedin.com/in/timvisee
 [lobsters]: https://lobste.rs/u/timvisee/
 [mastodon]: https://mastodon.social/@timvisee
 [mixcloud]: https://www.mixcloud.com/timvisee/
