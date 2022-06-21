@@ -16,43 +16,11 @@ like I enjoy doing for external projects.
 
 {{ fit_image(path="static/me.png", url="/me.png", height=250) }}
 
-See the [Me on the web](@/about.md#me-on-the-web) section below for a
-comprehensive overview of my online profiles.
-
-Here is my usual developer sales pitch:
-
-## Sales pitch
-- Open-source & free software enthusiast
-- Linux fanatic
-- Rust evangelist
-- Git master
-- Vim wizard
-
-Self-educated software engineer started at 8 years old, always looking to expand
-my technical knowledge with challenging projects.  
-Drive to built reliable, secure, robust & high-performance software with the
-best technologies available to make the digital world a better place. Constantly
-searching for innovative solutions to develop software not just for robots, but
-also for humans.
-
-#### Interests
-- Application backend development
-- Systems programming (Rust)
-- Automation, containerization (Docker)
-- Linux
-
-#### Experience
-- Java
-- Web technologies (PHP, HTML, JavaScript)
-- CI/CD
-- Python
-- Bash
-- C#
-- LaTeX
-- Windows
-- _and much more_
+Read my usual developer sales pitch [here](@/about/sales-pitch.md).
 
 ## Me on the web
+Here's a more comprehensive overview of my online presence:
+
 Most of my [work](@/projects.md) is available on my git profiles:
 
 - [GitHub][github] <span class="muted">([projects](https://github.com/timvisee?tab=repositories))</span>
@@ -92,7 +60,7 @@ didn't list above are:
 - Music: listening, DJing, piano
   - Deep house, House, Electronic, Techno and _related_
 - DIY (Do it Yourself) projects of various sorts, I like to be creative
-- Gaming, [oh yes][steam-games]
+- [Gaming][steam-games]
 - Scouting and other activities, outside, in-nature, such as camping or hiking
 
 [github]: https://github.com/timvisee
