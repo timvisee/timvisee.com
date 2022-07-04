@@ -44,6 +44,7 @@ I do my news reading and social activity through the following websites:
 Here are some other noteworthy profiles of mine:
 
 - [Steam][steam]
+- [Last.fm][lastfm]
 - [Mixcloud][mixcloud]
 
 To send me a message, please check out the [Contact](@/contact.md) page.
@@ -69,6 +70,7 @@ didn't list above are:
 [lobsters]: https://lobste.rs/u/timvisee/
 [mastodon]: https://mastodon.social/@timvisee
 [mixcloud]: https://www.mixcloud.com/timvisee/
+[lastfm]: https://www.last.fm/user/timvisee
 [reddit]: https://reddit.com/u/timvisee
 [sr.ht]: https://sr.ht/~timvisee
 [stackexchange]: https://stackexchange.com/users/980236?tab=accounts
