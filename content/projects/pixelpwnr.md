@@ -30,7 +30,6 @@ _View more on the project pages over at:_
 _Also see these related projects:_
 
 - [`pixelpwnr-server`](@/projects/pixelpwnr-server.md) <span class="muted">(pixelflut server)</span>
-- [`pixelpwnr-render`](@/projects/pixelpwnr-render.md) <span class="muted">(pixelflut renderer)</span>
 
 [github]: https://github.com/timvisee/pixelpwnr
 [gitlab]: https://gitlab.com/timvisee/pixelpwnr

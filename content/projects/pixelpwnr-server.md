@@ -29,7 +29,6 @@ _View more on the project pages over at:_
 _Also see these related projects:_
 
 - [`pixelpwnr`](@/projects/pixelpwnr.md) <span class="muted">(pixelflut client)</span>
-- [`pixelpwnr-render`](@/projects/pixelpwnr-render.md) <span class="muted">(pixelflut renderer)</span>
 
 [github]: https://github.com/timvisee/pixelpwnr-server
 [gitlab]: https://gitlab.com/timvisee/pixelpwnr-server
