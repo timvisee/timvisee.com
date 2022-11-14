@@ -1,6 +1,6 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  ZOLA_VERSION: "v0.14.0"
+  ZOLA_VERSION: "v0.16.1"
 
 stages:
   - build
