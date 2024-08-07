@@ -153,10 +153,10 @@ nlen fietsenstalling
 <summary>Tap to see bookmark config</summary>
 
 > Keyword: `ennl`  
-> Url: <sub><sup>`https://translate.google.com/#view=home&op=translate&sl=en&tl=nl&text=%s`</sup></sub>
+> Url: <sub><sup>`https://translate.google.com/?sl=en&tl=nl&op=translate&text=%s`</sup></sub>
 >
 > Keyword: `nlen`  
-> Url: <sub><sup>`https://translate.google.com/#view=home&op=translate&sl=nl&tl=en&text=%s`</sup></sub>
+> Url: <sub><sup>`https://translate.google.com/?sl=nl&tl=en&op=translate&text=%s`</sup></sub>
 
 </details>
 
