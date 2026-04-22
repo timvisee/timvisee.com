@@ -5,9 +5,6 @@ description = "A script to help you make a list and export all subreddits you jo
 [taxonomies]
 categories = ["guide", "blog"]
 tags = ["reddit", "snippet"]
-
-[extra]
-zenn_applause = true
 +++
 
 {{ fit_image(path="blog/2021-03-01_list-export-your-subreddits/header.png", url="/blog/list-export-your-subreddits/header.png") }}

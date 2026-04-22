@@ -8,7 +8,6 @@ tags = ["windows", "terminal", "linux"]
 
 [extra]
 toc = true
-zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=20383725", name = "Hacker News"},
     {url = "https://www.reddit.com/r/bashonubuntuonwindows/comments/can286/fix_windows_10_terminals_use_a_linux_terminal/", name = "Reddit"},

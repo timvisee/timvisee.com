@@ -8,7 +8,6 @@ tags = ["webapp", "prototype", "game"]
 categories = ["project"]
 
 [extra]
-zenn_applause = true
 zenn_hide_header_meta = true
 +++
 

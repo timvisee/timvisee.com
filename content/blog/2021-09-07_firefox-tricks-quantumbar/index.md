@@ -8,7 +8,6 @@ tags = ["firefox"]
 
 [extra]
 toc = true
-zenn_applause = true
 comments = [
     {url = "https://www.reddit.com/r/firefox/comments/pjozlo/firefox_tricks_efficient_quantumbar_usage/", name = "Reddit"},
     {url = "https://mastodon.social/@timvisee/106891027024448347", name = "Mastodon"},

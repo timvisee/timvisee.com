@@ -8,7 +8,6 @@ tags = ["rust", "performance", "aoc"]
 
 [extra]
 toc = true
-zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=26286781", name = "Hacker News"},
     {url = "https://www.reddit.com/r/adventofcode/comments/lttus6/2020_rust_solving_advent_of_code_2020_in_under_a/", name = "Reddit"},

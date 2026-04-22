@@ -8,7 +8,6 @@ tags = ["hack", "web", "xss", "javascript"]
 
 [extra]
 toc = true
-zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=21371201", name = "Hacker News"},
     {url = "https://www.reddit.com/r/netsec/comments/dnwudw/stealing_private_keys_from_a_secure_file_sharing/", name = "Reddit"},

@@ -8,7 +8,6 @@ tags = ["web", "css", "javascript", "theme", "website"]
 
 [extra]
 toc = true
-zenn_applause = true
 +++
 
 Developers [like][developers-like-dark] dark themes. When looking at a screen

@@ -8,7 +8,6 @@ tags = ["bash", "shell"]
 
 [extra]
 toc = true
-zenn_applause = true
 comments = [
     {url = "https://news.ycombinator.com/item?id=26314489", name = "Hacker News"},
     {url = "https://www.reddit.com/r/linux/comments/lw0ofg/elegant_bash_conditionals/", name = "Reddit"},

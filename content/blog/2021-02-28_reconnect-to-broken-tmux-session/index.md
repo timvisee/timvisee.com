@@ -5,9 +5,6 @@ description = "Reconnect to a running tmux session, that tmux fails to connect t
 [taxonomies]
 categories = ["guide", "blog"]
 tags = ["tmux"]
-
-[extra]
-zenn_applause = true
 +++
 
 Ever tried to attach to a running tmux session, only to find that that fails?

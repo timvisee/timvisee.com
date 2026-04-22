@@ -5,9 +5,6 @@ description = "A fresh and shiny new website, hurray!"
 [taxonomies]
 categories = ["release", "blog"]
 tags = ["website"]
-
-[extra]
-zenn_applause = true
 +++
 
 My personal website had basically been unchanged, lacking content, collecting
